@@ -1,0 +1,10 @@
+<template>
+ <div v-if="kind==='angel'" class="menu-motif motif-angel" aria-hidden="true"><img class="motif-wings" src="/art/menu-transitions/seraph-wings-v2.png" alt=""/><img class="motif-core" src="/art/menu-transitions/seraph-body-v2.png" alt=""/></div>
+ <svg v-else class="menu-motif" :class="`motif-${kind}`" viewBox="0 0 240 180" fill="none" aria-hidden="true" focusable="false">
+  <g v-if="kind==='gears'" stroke="currentColor" stroke-width="1.1"><g class="motif-chain-left" transform="translate(86 49) rotate(28)"><g class="motif-chain-slip"><ellipse v-for="n in 7" :key="n" :cx="-n*13" cy="0" rx="9" ry="3.7"/></g><circle r="4"/></g><g class="motif-chain-right" transform="translate(182 129) rotate(28)"><g class="motif-chain-slip"><ellipse v-for="n in 7" :key="n" :cx="n*13" cy="0" rx="9" ry="3.7"/></g><circle r="4"/></g></g>
+  <g v-if="kind==='gears'" stroke="currentColor" stroke-width=".8"><circle cx="130" cy="90" r="65"/><circle cx="130" cy="90" r="56"/><circle cx="130" cy="90" r="40"/><path v-for="n in 20" :key="n" d="M126 17h8v14h-8z" :transform="`rotate(${n*18} 130 90)`"/><path d="M70 90h120M130 30v120M92 52l76 76M168 52l-76 76"/><circle cx="130" cy="90" r="13"/></g>
+  <g v-else-if="kind==='tide'" stroke="currentColor" stroke-width=".8"><ellipse cx="130" cy="87" rx="93" ry="40" transform="rotate(-30 130 87)"/><ellipse cx="130" cy="87" rx="93" ry="40" transform="rotate(30 130 87)"/><path d="M42 117 80 57l49 54 38-75 42 65M34 142c43-40 62 20 104-8s53-9 93-27"/><path v-for="(p,i) in [[42,117],[80,57],[129,111],[167,36],[209,101],[130,87]]" :key="i" :d="`M${p[0]} ${p[1]-4}l4 4-4 4-4-4Z`" :fill="i===2?'currentColor':'none'"/></g>
+  <g v-else stroke="currentColor" stroke-width=".8"><path d="M48 133 68 32l123 16-19 109Z M68 32l12 14 111 2M57 143l114 14 20-109M88 66l70 9M84 81l70 9M80 96l46 6"/><circle cx="165" cy="112" r="31"/><path d="m165 75 0 74m-37-37h74m-51-14 28 28m0-28-28 28m14-33 6 19-6 19-6-19Z"/></g>
+ </svg>
+</template>
+<script setup>defineProps({kind:String})</script>

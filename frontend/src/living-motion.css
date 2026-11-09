@@ -1,0 +1,97 @@
+/* Movement follows the existing paper, engraving and cutout composition. */
+body.refraction-theme{
+ --motion-quick:120ms;--motion-panel:320ms;--motion-scene:480ms;
+ --motion-arrive:cubic-bezier(.16,1,.3,1);--motion-settle:cubic-bezier(.2,0,.38,.9);--motion-depart:cubic-bezier(.4,0,1,1);
+}
+/* Route content enters atomically; full-screen curtains own route departures. */
+body.refraction-theme .chapter-enter-active{transition:opacity 340ms var(--motion-arrive),transform 340ms var(--motion-arrive)}
+body.refraction-theme .chapter-leave-active{transition:opacity 120ms var(--motion-depart),transform 120ms var(--motion-depart);pointer-events:none}
+body.refraction-theme .chapter-enter-from{opacity:0;transform:translateY(8px)}
+body.refraction-theme .chapter-leave-to{opacity:0;transform:translateY(-3px)}
+
+/* Floating tools stay anchored to their existing corners. No size animation. */
+body.refraction-theme :is(.reading-float,.music-console).folio-float-enter-active{animation:none!important;transition:opacity 300ms var(--motion-arrive),transform 300ms var(--motion-arrive);transform-origin:left bottom}
+body.refraction-theme :is(.reading-float,.music-console).folio-float-leave-active{animation:none!important;transition:opacity 160ms var(--motion-settle),transform 160ms var(--motion-settle);pointer-events:none}
+body.refraction-theme :is(.reading-float,.music-console).folio-float-enter-from{opacity:0;transform:translateY(12px)}
+body.refraction-theme :is(.reading-float,.music-console).folio-float-leave-to{opacity:0;transform:translateY(6px)}
+body.refraction-theme .reading-float{animation:none}
+.folio-float-enter-active :is(.reading-frontispiece,.music-frontispiece){animation:folio-detail-in 240ms 30ms var(--motion-arrive) both}
+.folio-float-enter-active :is(.reading-control,.music-timeline,.music-controls){animation:folio-detail-in 210ms 70ms var(--motion-arrive) both}
+
+/* Element Plus retains ownership of mounting, focus trapping and scroll locks. */
+body.refraction-theme .dialog-fade-enter-active{animation-duration:320ms;animation-timing-function:var(--motion-settle)}
+body.refraction-theme .dialog-fade-leave-active{animation-duration:170ms;animation-timing-function:var(--motion-depart)}
+body.refraction-theme .dialog-fade-enter-active .el-overlay-dialog{animation:folio-dialog-in 320ms var(--motion-arrive) both}
+body.refraction-theme .dialog-fade-leave-active .el-overlay-dialog{animation:folio-dialog-out 170ms var(--motion-depart) both}
+body.refraction-theme .el-drawer{transition-property:transform;transition-duration:360ms;transition-timing-function:var(--motion-arrive)}
+body.refraction-theme .el-drawer-fade-enter-active{transition:background-color 360ms var(--motion-settle)}
+body.refraction-theme .el-drawer-fade-leave-active{transition:background-color 220ms var(--motion-settle)}
+body.refraction-theme .el-drawer-fade-leave-active .el-drawer{transition-duration:220ms;transition-timing-function:var(--motion-settle)}
+body.refraction-theme .el-drawer-fade-enter-active :is(.archive-frontispiece,.profile-identity){animation:folio-detail-in 280ms 50ms var(--motion-arrive) both}
+body.refraction-theme .el-drawer-fade-enter-active .save-card{animation:folio-detail-in 250ms 70ms var(--motion-arrive) both}
+body.refraction-theme .el-drawer-fade-enter-active .save-card:nth-child(2){animation-delay:95ms}
+body.refraction-theme .el-drawer-fade-enter-active .save-card:nth-child(3){animation-delay:110ms}
+body.refraction-theme .dialog-fade-enter-active :is(.ending-frontispiece,.chronicle-frontispiece,.formula-frontispiece){animation:folio-detail-in 220ms 30ms var(--motion-arrive) both}
+body.refraction-theme .dialog-fade-enter-active :is(.ending-manuscript,.chronicle-timeline){animation:folio-detail-in 190ms 60ms var(--motion-arrive) both}
+
+/* One portrait transition owns both the ink echo and its illustration. */
+body.refraction-theme .refraction-stage .refraction-actor{animation:none!important;clip-path:none}
+body.refraction-theme .refraction-stage .cast-dissolve-enter-active{transition:opacity 460ms var(--motion-arrive);z-index:2}
+body.refraction-theme .refraction-stage .cast-dissolve-leave-active{transition:opacity 240ms var(--motion-settle);pointer-events:none;z-index:1}
+body.refraction-theme .refraction-stage :is(.cast-dissolve-enter-from,.cast-dissolve-leave-to){opacity:0}
+body.refraction-theme .refraction-stage .cast-dissolve-enter-active .stage-caption{animation:folio-caption-in 360ms 90ms var(--motion-arrive) both}
+body.refraction-theme .refraction-stage .cast-dissolve-leave-active .stage-caption{opacity:0;transition:opacity 100ms}
+body.refraction-theme .refraction-stage :is(.stage-backdrop-enter-active,.stage-backdrop-leave-active){transition:opacity 540ms var(--motion-settle)!important}
+/* The silhouette's light drift uses a compositor transform, not layout margins. */
+body.refraction-theme .refraction-stage .portrait-silhouette{animation-name:folio-ink-breathe}
+body.refraction-theme .refraction-stage .stage-orbit{translate:calc(var(--stage-x,0px)*-.35) calc(var(--stage-y,0px)*-.35);transition:translate 600ms var(--motion-settle)}
+body.refraction-theme .refraction-stage .hero-seams{translate:calc(var(--stage-x,0px)*.2) 0;transition:translate 700ms var(--motion-settle)}
+.refraction-stage.motion-paused :is(.portrait-float,.portrait-silhouette){animation-play-state:paused}
+.stage-light{display:none}
+@media(hover:hover) and (pointer:fine){
+ body.refraction-theme .refraction-stage .stage-light{display:block;position:absolute;inset:-8%;z-index:2;pointer-events:none;background:linear-gradient(115deg,transparent 36%,#e8f0ff09 45%,#e8f0ff17 49%,transparent 59%);opacity:0;transform:translate(calc(var(--stage-x,0px)*3),calc(var(--stage-y,0px)*2));transition:transform 650ms var(--motion-settle),opacity 450ms var(--motion-settle)}
+ body.refraction-theme .refraction-stage:hover .stage-light{opacity:.7}
+}
+
+/* Small confirmations stay small. Existing button sizes and hover art stay intact. */
+body.refraction-theme :is(.profile-tabs,.book-actions,.formula-tabs,.collection-filters,.cast-switch,.rail-utilities,.music-controls,.creation-return-bar) button{transition:color 140ms,border-color 140ms,background-color 140ms,translate 120ms var(--motion-settle)}
+body.refraction-theme :is(.profile-tabs,.book-actions,.formula-tabs,.collection-filters,.cast-switch,.rail-utilities,.music-controls,.creation-return-bar) button:active:not(:disabled){translate:0 1px}
+body.refraction-theme .journey-menu[open] .journey-menu-panel,body.refraction-theme .stage-cast-menu[open] .stage-cast-list{animation:folio-detail-in 220ms var(--motion-arrive) both;transform-origin:right top}
+body.refraction-theme .book-entry:focus{animation:folio-ink-focus 750ms var(--motion-settle)}
+
+/* Keep the four approved curtains; strengthen peripheral choreography. */
+.effect-angel.phase-enter .arch-layer{animation:folio-arch-light 1050ms var(--motion-settle) both}
+.effect-angel.phase-enter .arch-layer-1{animation-delay:70ms}.effect-angel.phase-enter .arch-layer-2{animation-delay:140ms}.effect-angel.phase-enter .arch-layer-3{animation-delay:210ms}
+.effect-gears.phase-enter .door-engraving::before{animation:folio-detail-in 600ms 130ms var(--motion-arrive) both}
+.effect-gears.phase-enter .door-engraving::after{animation:folio-detail-in 600ms 220ms var(--motion-arrive) both}
+.effect-tide.phase-enter .tide-stat-echo span{animation:folio-echo-in 700ms 80ms var(--motion-arrive) both}
+.effect-tide.phase-enter .tide-stat-echo span:nth-child(2){animation-delay:120ms}.effect-tide.phase-enter .tide-stat-echo span:nth-child(3){animation-delay:160ms}.effect-tide.phase-enter .tide-stat-echo span:nth-child(4){animation-delay:200ms}.effect-tide.phase-enter .tide-stat-echo span:nth-child(5){animation-delay:240ms}.effect-tide.phase-enter .tide-stat-echo span:nth-child(6){animation-delay:280ms}
+.effect-hand.phase-enter .sheet-engraving{animation:folio-detail-in 650ms 90ms var(--motion-arrive) both}
+/* Rain formerly animated top on 46 elements; transforms avoid per-frame layout. */
+.menu-transition .rain-curtain i{animation-name:folio-rain-fall}
+.menu-transition .transition-caption{animation-timing-function:var(--motion-arrive)}
+
+@keyframes folio-detail-in{from{opacity:0;translate:0 7px}to{opacity:1;translate:0 0}}
+@keyframes folio-caption-in{from{opacity:0;translate:0 6px}to{opacity:1;translate:0 0}}
+@keyframes folio-dialog-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes folio-dialog-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(5px)}}
+@keyframes folio-ink-breathe{0%,100%{translate:0 0;opacity:var(--shadow-min,.84)}50%{translate:-4px 0;opacity:var(--shadow-max,.94)}}
+@keyframes folio-ink-focus{0%,35%{outline:1px solid #668bb9;outline-offset:4px}100%{outline:1px solid transparent;outline-offset:1px}}
+@keyframes folio-arch-light{from{stroke-opacity:.05;translate:0 10px}to{stroke-opacity:1;translate:0 0}}
+@keyframes folio-echo-in{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
+@keyframes folio-rain-fall{from{transform:translate3d(0,0,0) rotate(12deg)}to{transform:translate3d(-65px,145vh,0) rotate(12deg)}}
+@media(max-width:760px){
+ body.refraction-theme .folio-float-enter-from{transform:translateY(8px)}
+ body.refraction-theme .el-drawer{transition-duration:300ms}
+ body.refraction-theme .dialog-fade-enter-active,body.refraction-theme .dialog-fade-enter-active .el-overlay-dialog{animation-duration:270ms}
+}
+@media(prefers-reduced-motion:reduce){
+ body.refraction-theme :is(.page-enter-active,.page-leave-active,.chapter-enter-active,.chapter-leave-active,.folio-float-enter-active,.folio-float-leave-active){transition:opacity 1ms!important;animation:none!important;transform:none!important}
+ body.refraction-theme :is(.page-enter-from,.page-leave-to,.chapter-enter-from,.chapter-leave-to,.folio-float-enter-from,.folio-float-leave-to){transform:none!important}
+ body.refraction-theme :is(.el-drawer-fade-enter-active,.el-drawer-fade-leave-active,.el-drawer){transition-duration:1ms!important}
+ body.refraction-theme :is(.dialog-fade-enter-active,.dialog-fade-leave-active,.dialog-fade-enter-active .el-overlay-dialog,.dialog-fade-leave-active .el-overlay-dialog){animation:none!important;transition:opacity 1ms!important}
+ body.refraction-theme :is(.el-overlay,.reading-float,.music-console,.refraction-stage,.journey-menu-panel,.stage-cast-list) *{animation:none!important}
+ body.refraction-theme .refraction-stage :is(.hero-seams,.stage-orbit){translate:none;transition:none}
+ body.refraction-theme .refraction-stage .stage-light{display:none}
+ .menu-transition *{animation:none!important}
+}

@@ -1,0 +1,212 @@
+{
+  "scope": [
+    "新章连续性及来源",
+    "重大选择与持续后果",
+    "刷新重启重试回溯稳定性"
+  ],
+  "sessionId": "sess_c8da15ad413e4c4888c6b6ff077",
+  "budgetCny": "4.00",
+  "usage": {
+    "calls": 63,
+    "estimatedCny": "1.70650400",
+    "inputTokens": "1169016",
+    "outputTokens": "134372",
+    "unknown": "0",
+    "creation": {
+      "providerLogEntries": [
+        "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+      ],
+      "calls": 3,
+      "roundedEstimateCny": "0.0310",
+      "upperEstimateCny": "0.03115",
+      "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+    },
+    "budgetUpperEstimateCny": "1.73765400"
+  },
+  "remainingLowerEstimateCny": "2.26234600",
+  "operations": {
+    "1": {
+      "round": 1,
+      "branchEpoch": 0,
+      "logId": 69284,
+      "chars": 886
+    },
+    "2": {
+      "round": 2,
+      "branchEpoch": 0,
+      "logId": 69285,
+      "chars": 1919
+    },
+    "3": {
+      "round": 3,
+      "branchEpoch": 0,
+      "logId": 69286,
+      "chars": 3480
+    },
+    "4": {
+      "round": 4,
+      "branchEpoch": 0,
+      "logId": 69808,
+      "chars": 1712
+    },
+    "5": {
+      "round": 4,
+      "branchEpoch": 1,
+      "logId": 69999,
+      "chars": 2440
+    },
+    "6": {
+      "round": 5,
+      "branchEpoch": 1,
+      "logId": 70000,
+      "chars": 2324
+    },
+    "7": {
+      "round": 6,
+      "branchEpoch": 1,
+      "logId": 70193,
+      "chars": 1787
+    },
+    "8": {
+      "round": 7,
+      "branchEpoch": 1,
+      "logId": 70194,
+      "chars": 2778
+    },
+    "9": {
+      "round": 2,
+      "branchEpoch": 2,
+      "logId": 70347,
+      "chars": 1325
+    },
+    "10": {
+      "round": 3,
+      "branchEpoch": 2,
+      "logId": 70348,
+      "chars": 1610
+    }
+  },
+  "backendTests": {
+    "ConversationOperationIT": 326,
+    "SessionStateIT": 5,
+    "SceneStoryIT": 72,
+    "StoryArchiveIT": 27,
+    "service.StoryArchiveServiceTest": 28,
+    "service.StoryAuthorInputTest": 15,
+    "service.StoryAuthorContextTest": 9,
+    "service.StoryDurationTest": 4,
+    "llm.LLMRequestPolicyTest": 9
+  },
+  "backendTestCount": 495,
+  "frontendTests": 76,
+  "uniqueFreeChecksTotal": 571,
+  "reviews": {
+    "1": [
+      "问明期限、报酬、货损责任，停在接受前",
+      "通过；日常问答连成一段"
+    ],
+    "2": [
+      "有条件接单、验货、装船、避雨",
+      "约定范围通过；原归档将1.5时辰算成5400秒，后续修复单位换算"
+    ],
+    "3": [
+      "救遇险后生、送到药铺、领1000文",
+      "剧情有结果；原物品归档误记为异地货主持有，后续第7次实际修正"
+    ],
+    "4": [
+      "歇息1.5时辰、听后生打算",
+      "实际得到10800秒；姓名披露却新建人物，判为未通过，保留费用并回溯"
+    ],
+    "5": [
+      "回溯第3章后复测，后生自报周阿宝，约定有限帮助",
+      "同一原编号保留经历，总角色数未因报姓名增加；夜涨水而等天亮"
+    ],
+    "6": [
+      "拖船返乡、仅作证言、不替后生还债",
+      "范围与后果通过；有“顺着水势往上游”措辞瑕疵，未用地点规则修改故事"
+    ],
+    "7": [
+      "承运余事闭环、推进一周、相识关系变化、新委托",
+      "实际将旧药匣修正到仁和药铺；报酬未重复；未完成世界"
+    ],
+    "8": [
+      "拒绝下一份限期货运，修船棚并推进半月",
+      "原归档长度截断；原稿有半月后又第7日的时序错误。主API针对性校稿后归档恢复，5份角色回复不重跑"
+    ],
+    "9": [
+      "回溯接单前，明确拒绝原承运，改做本地短渡",
+      "拒绝分支成立；不领药、不收1000文，药由其他船家送走的消息以传闻方式获知"
+    ],
+    "10": [
+      "拒绝之后继续一周本地生活",
+      "没有领药或收到原药单1000文，也未被迫重接；曹大亲口确认那趟水路确实难走，仍可继续生活"
+    ]
+  },
+  "originalSaveUnchanged": true,
+  "oldBranchFutureHidden": true,
+  "sameRoleAfterNameReveal": true,
+  "publishedOldCustodyCorrected": true,
+  "restartRetainedAcceptedRoleReplies": true,
+  "archiveRecovery": {
+    "sameRoleDirections": true,
+    "sameSuccessfulRoleReplies": true,
+    "mainCallsBefore": 1,
+    "mainCallsAfter": 2,
+    "editorialOriginalKept": true,
+    "timing": {
+      "to": "约半月后，石矶津渡头，柳姓汉子再问三篓干菜慢货",
+      "from": "第七日午后，石矶津渡头，柳姓汉子报出干笋承运条件",
+      "basis": "正文从当日婉拒后写至半月后柳姓汉子再来，约十五日。",
+      "elapsedParts": [
+        {
+          "unit": "DAY",
+          "amount": 15
+        }
+      ],
+      "elapsedSeconds": 1296000
+    }
+  },
+  "health": "UP",
+  "frontendHttp": 200,
+  "runtime": {
+    "package": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-07-06\\new-chat\\tourism-decision-system\\BS\\backend\\target\\narrative-backend-0.1.0-SNAPSHOT.jar",
+    "executable": "E:\\javaee\\jdk\\jdk-21.0.7\\bin\\java.exe",
+    "port": 8090,
+    "pid": 35892,
+    "sha256": "CF6A994A3C91DDA3823E166919B5A16BB97D47B000300E254598C34E7774208D",
+    "startTime": "2026-10-23T21:43:12.2262034+08:00",
+    "modelCallAllowance": 24,
+    "stdout": "backend-20261023-214312-out.log",
+    "stderr": "backend-20261023-214312-err.log"
+  },
+  "productionChanges": [
+    "backend/src/main/java/com/bs/narrative/service/StoryAuthorInput.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryAuthorContext.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryArchiveService.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryContinuityService.java",
+    "backend/src/main/java/com/bs/narrative/service/ConversationOperationService.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryDuration.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryCastService.java",
+    "backend/src/main/java/com/bs/narrative/service/StoryItemOutcomes.java",
+    "backend/src/main/java/com/bs/narrative/llm/LLMRequestPolicy.java",
+    "backend/src/main/java/com/bs/narrative/llm/LLMApiException.java",
+    "backend/src/main/java/com/bs/narrative/llm/DeepSeekLLMProvider.java",
+    "frontend/src/utils/gameOperation.js"
+  ],
+  "testSources": [
+    "backend/src/test/java/com/bs/narrative/SceneStoryIT.java",
+    "backend/src/test/java/com/bs/narrative/StoryArchiveIT.java",
+    "backend/src/test/java/com/bs/narrative/service/StoryArchiveServiceTest.java",
+    "backend/src/test/java/com/bs/narrative/service/StoryAuthorInputTest.java",
+    "backend/src/test/java/com/bs/narrative/service/StoryDurationTest.java",
+    "backend/src/test/java/com/bs/narrative/llm/LLMRequestPolicyTest.java"
+  ],
+  "limitations": [
+    "旧章节2、3的原始错误耗时估计未批量改写，原始失败仍留档；新生成使用原单位换算。",
+    "第8次时序校稿由人工发现并触发，不冒充系统已能自动保证所有叙事无矛盾。",
+    "本批验收了7章主分支和拒接分支；不据此承诺任意百轮或任意题材都无误。"
+  ],
+  "feeNote": "新4元单独记账，未扣上批1.870881元。运行表含失败和废弃分支；创建日志按四位小数估价并加每调用0.00005元舍入余量，最终金额为本地单价上估，非充值平台账单。"
+}

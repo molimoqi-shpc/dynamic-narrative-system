@@ -1,0 +1,99 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+spring:
+  config:
+    import: "optional:file:../.runtime/bs-local-secrets.yml,optional:file:./.runtime/bs-local-secrets.yml"
+  application:
+    name: bs-narrative-backend
+
+  datasource:
+    # 用户已在 MySQL 连接 "shd" 下创建了 bs 数据库，直接连接之。
+    # ⚠ 请把 password 改成你本地 MySQL Workbench "shd" 连接实际用的口令（刚才自动尝试 root/123456/admin/mysql/空密码 均被拒绝）。
+    url: jdbc:mysql://localhost:3306/bs?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: ${MYSQL_BS_PASSWORD:111111}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 10
+      idle-timeout: 60000
+
+  jpa:
+    hibernate:
+      # 严禁自动建表；建表和种子走统一入口 init-all.sql（见 resources/sql/），保证用户"shd"连接手动执行一致
+      ddl-auto: none
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        # 显式指定 dialect，避免 DB 暂时不可达时 Hibernate 无法从 metadata 推断而导致启动失败
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_null
+
+  sql:
+    init:
+      # 默认不自动执行（避免用户已建好的 bs 库被重复写入）。
+      # 如需首次初始化：在 IDE 启动参数加 --spring.sql.init.mode=always 或直接用
+      #   src/main/resources/sql/init-all.sql  在 MySQL Workbench shd 连接下打开执行。
+      mode: never
+      schema-locations: classpath:sql/init-all.sql
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# LLM 配置（DeepSeek V4 OpenAI 兼容协议 /chat/completions）
+# 主副双 LLM：主用 v4-flash，副用 v4-flash（暂统一使用 flash 模型，pro 配置已注释）
+llm:
+  # DeepSeek 接口 Base URL
+  base-url: https://api.deepseek.com
+  # 超时（秒）：flash 响应较快，给足等待避免超时
+  timeout-seconds: 180
+  # 重试上限：超过此次数后走 Fallback（防坑规则2：绝不白屏）
+  max-retries: 2
+
+  # ===== 主 LLM（v4-flash 快速模型）=====
+  # 用于：Pass1 意图提取 / Pass2 叙事生成 / 场景生成 / 角色创建 / 目标推进 / 死亡总结
+  # 【2026-10-16】临时切换为 flash 模型，pro 配置已注释
+  main:
+    api-key: ${LLM_MAIN_API_KEY:}
+    # backup-api-key: ${LLM_MAIN_BACKUP_API_KEY:}
+    model: deepseek-v4-flash
+    # V4-Flash 价格 元/1M tokens
+    price-per-million:
+      prompt: 1.0
+      completion: 4.0
+    # ===== 以下为原 v4-pro 配置（暂时注释，待恢复时取消注释）=====
+    # api-key: ${LLM_MAIN_API_KEY:}
+    # backup-api-key: ${LLM_MAIN_BACKUP_API_KEY:}
+    # model: deepseek-v4-pro
+    # price-per-million:
+    #   prompt: 9.0
+    #   completion: 27.0
+
+  # ===== 副 LLM（v4-flash 快速模型）=====
+  # 用于：NPC 群戏批处理 / 打听辅助等角色扮演
+  sub:
+    api-key: ${LLM_SUB_API_KEY:}
+    backup-api-key: ${LLM_SUB_BACKUP_API_KEY:}
+    model: deepseek-v4-flash
+    # V4-Flash 价格 元/1M tokens
+    price-per-million:
+      prompt: 1.0
+      completion: 4.0
+
+# JWT 占位（T8 实现时再提供真实密钥）
+jwt:
+  secret: ${JWT_SECRET:}
+  expiration-minutes: 720

@@ -1,0 +1,242 @@
+/* Four authored motion sequences. All decoration lives inside the existing
+   covered-navigation host; no CSS event is needed to release its input lock. */
+.menu-transition .seraph-stage{position:absolute;inset:0;perspective:1100px;transform-style:preserve-3d}
+.menu-transition .seraph-wing-pair{position:absolute;left:50%;top:42%;width:min(94vw,1100px,135vh);aspect-ratio:3/2;translate:-50% -68%;transform:scale(var(--pair-scale));transform-origin:50% 68%;filter:drop-shadow(0 0 12px #d1e4ff1c)}
+.menu-transition .seraph-wing{position:absolute;inset:0;transform-origin:50% 68%;backface-visibility:hidden;will-change:transform,opacity}
+.menu-transition .seraph-wing img{display:block;width:100%;height:100%;object-fit:contain}
+.menu-transition .seraph-wing-left{clip-path:inset(0 50% 0 0);animation:seraph-unfurl-left 950ms var(--pair-delay) cubic-bezier(.16,.72,.2,1) both}
+.menu-transition .seraph-wing-right{clip-path:inset(0 0 0 50%);animation:seraph-unfurl-right 950ms var(--pair-delay) cubic-bezier(.16,.72,.2,1) both}
+.menu-transition .seraph-core{position:absolute;z-index:5;left:50%;top:calc(42% - 13vh);height:62vh;width:auto;max-width:none;translate:-50% 0;animation:seraph-materialise 750ms ease-out both;filter:drop-shadow(0 8px 20px #050f2455)}
+.menu-transition .seraph-halo{position:absolute;z-index:0;left:50%;top:calc(42% - 18vh);width:20vh;height:20vh;translate:-50% 0;color:#e8edf1;animation:seraph-halo 1.8s .1s both}
+.menu-transition .seraph-halo svg{width:100%;height:100%;stroke:currentColor;stroke-width:.8}
+.menu-transition .seraph-breath{position:absolute;z-index:6;left:50%;top:46%;width:10vh;height:23vh;translate:-50% -50%;background:radial-gradient(ellipse,#e9f1fb28,transparent 70%);animation:seraph-heart 1.8s .5s ease-out both}
+.menu-transition .angel-glow{animation-name:seraph-flood}
+.menu-transition .angel-scene .transition-caption{bottom:2%;font-size:16px;animation-delay:.8s;text-shadow:0 2px 8px #061020}
+.menu-transition .angel-architecture{opacity:.5}
+.menu-transition.phase-leave .seraph-stage{animation:seraph-depart var(--reveal-time) ease-out both}
+.menu-transition.phase-leave .angel-glow{animation-name:light-reveal}
+@keyframes seraph-unfurl-left{0%{opacity:0;transform:rotateY(82deg) rotateZ(calc(var(--pair-angle) + 34deg)) scaleX(.2)}18%{opacity:.8}80%{opacity:1;transform:rotateY(-4deg) rotateZ(calc(var(--pair-angle) - 2deg)) scaleX(1.02)}100%{opacity:1;transform:rotateY(0) rotateZ(var(--pair-angle)) scaleX(1)}}
+@keyframes seraph-unfurl-right{0%{opacity:0;transform:rotateY(-82deg) rotateZ(calc(-1 * var(--pair-angle) - 34deg)) scaleX(.2)}18%{opacity:.8}80%{opacity:1;transform:rotateY(4deg) rotateZ(calc(-1 * var(--pair-angle) + 2deg)) scaleX(1.02)}100%{opacity:1;transform:rotateY(0) rotateZ(calc(-1 * var(--pair-angle))) scaleX(1)}}
+@keyframes seraph-materialise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes seraph-halo{from{opacity:0;transform:scale(.7) rotate(-25deg)}55%{opacity:.4}to{opacity:.8;transform:scale(1) rotate(0)}}
+@keyframes seraph-heart{0%{opacity:0;transform:scale(.4)}70%{opacity:.8}to{opacity:.5;transform:scale(1.3)}}
+@keyframes seraph-flood{0%,76%{opacity:0;transform:scale(.1)}84%{opacity:.35}94%{opacity:.95}100%{opacity:1;transform:scale(2.5)}}
+@keyframes seraph-depart{to{opacity:0;transform:translateY(-16px) scale(1.035)}}
+
+/* Each gear half and its chain share one rig, so a departing chain cannot
+   slide away from its attachment. The links travel only while taking tension. */
+.menu-transition .gear-scene{--gear-diameter:min(57vw,535px,66vh)}
+.menu-transition .gear-rig{position:absolute;inset:0;z-index:4;pointer-events:none}
+.menu-transition .rig-left{animation:rig-engage-left 650ms cubic-bezier(.17,.72,.25,1) both}
+.menu-transition .rig-right{animation:rig-engage-right 650ms cubic-bezier(.17,.72,.25,1) both}
+.menu-transition .gear-rig .gear-half{width:var(--gear-diameter);animation:none;transform:translate(-50%,-50%)}
+.menu-transition .gear-tether{position:absolute;z-index:5;width:max(100vw,900px);height:48px;transform-origin:14px 24px;filter:drop-shadow(0 5px 3px #0009);opacity:0;animation:tether-tauten 750ms 350ms both}
+.menu-transition .tether-left{left:calc(50% - var(--gear-diameter)*.32);top:calc(46% - var(--gear-diameter)*.25 - 24px);rotate:-152deg}
+.menu-transition .tether-right{left:calc(50% + var(--gear-diameter)*.32);top:calc(46% + var(--gear-diameter)*.25 - 24px);rotate:28deg}
+.menu-transition .gear-tether svg{width:1020px;height:48px;max-width:none;overflow:visible}
+.menu-transition .tether-links{animation:chain-take-up 900ms 650ms cubic-bezier(.2,.65,.3,1) both}
+.menu-transition .tether-shackle{position:absolute;left:-7px;top:8px;width:27px;height:27px;border:4px solid #d3a75a;border-radius:50%;background:#172330;box-shadow:inset 0 0 0 1px #fff0bd,0 1px 3px #000}
+.menu-transition .gear-turn,.menu-transition .gear-inner{animation-delay:700ms;animation-duration:950ms}
+.menu-transition .gear-lock-pin{animation-delay:1450ms}
+.menu-transition .gear-specular{animation-duration:1.8s}
+.menu-transition.phase-leave .rig-left{animation:rig-pull-left var(--reveal-time) cubic-bezier(.45,0,.2,1) both}
+.menu-transition.phase-leave .rig-right{animation:rig-pull-right var(--reveal-time) cubic-bezier(.45,0,.2,1) both}
+.menu-transition.phase-leave .gear-rig .gear-half{animation:none;transform:translate(-50%,-50%)}
+.menu-transition.phase-leave .gear-tether{animation:none;opacity:1;transform:translateX(0)}
+.menu-transition.phase-leave .tether-links{animation:chain-release 950ms linear both}
+.menu-transition.phase-leave .gear-turn{animation:none;transform:rotate(85deg)}
+.menu-transition.phase-leave .gear-inner{animation:none;transform:rotate(-65deg)}
+.menu-transition.phase-leave .gear-lock-pin{animation:none;transform:rotate(90deg)}
+@keyframes rig-engage-left{from{transform:translateX(-70vw)}76%{transform:translateX(3px)}to{transform:translateX(0)}}
+@keyframes rig-engage-right{from{transform:translateX(70vw)}76%{transform:translateX(-3px)}to{transform:translateX(0)}}
+@keyframes tether-tauten{0%{opacity:0;transform:translateX(25px) rotate(5deg)}30%{opacity:1}65%{transform:translateX(-3px) rotate(-.6deg)}100%{opacity:1;transform:translateX(0) rotate(0)}}
+@keyframes chain-take-up{from{transform:translateX(-60px)}to{transform:translateX(0)}}
+@keyframes chain-release{to{transform:translateX(60px)}}
+@keyframes rig-pull-left{0%{transform:translateX(0)}15%{transform:translateX(-8px)}100%{transform:translateX(-105vw)}}
+@keyframes rig-pull-right{0%{transform:translateX(0)}15%{transform:translateX(8px)}100%{transform:translateX(105vw)}}
+
+/* A moving surface, a submerged middle plane and slower distant silhouettes. */
+.menu-transition .tide-body{background:radial-gradient(ellipse at 22% 28%,#9c253461,transparent 55%),radial-gradient(ellipse at 78% 75%,#6c162c8c,transparent 60%),#170b12}
+.menu-transition .lake-depths,.menu-transition .lake-phantoms{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.menu-transition .lake-depths{background:linear-gradient(180deg,#b52d3220,transparent 36%);isolation:isolate}
+.menu-transition .lake-water-surface{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;opacity:.78;animation:lake-surface-current 7s ease-in-out infinite alternate}
+.menu-transition .tide-currents{opacity:.15}
+.menu-transition .tide-eddy{opacity:.18}
+.menu-transition .lake-spirit{position:absolute;mix-blend-mode:screen;mask-image:linear-gradient(0deg,transparent,#000 23% 88%,transparent)}
+.menu-transition .spirit-0{left:7%;top:8%;width:35vw;opacity:.38;rotate:9deg}
+.menu-transition .spirit-1{left:59%;top:0%;width:19vw;opacity:.22;rotate:23deg}
+.menu-transition .spirit-2{left:28%;top:50%;width:25vw;opacity:.14;rotate:-15deg;scale:-1 1}
+.menu-transition .spirit-travel{position:relative;animation:spirit-current 4800ms ease-in-out infinite}
+.menu-transition .spirit-1 .spirit-travel{animation-duration:6200ms;animation-delay:-1900ms}
+.menu-transition .spirit-2 .spirit-travel{animation-duration:5400ms;animation-delay:-3100ms}
+.menu-transition .lake-spirit img{display:block;width:100%;height:auto;filter:sepia(.65) saturate(.75);animation:spirit-submerge 4200ms ease-in-out infinite}
+.menu-transition .spirit-1 img{animation-delay:-1300ms}
+.menu-transition .spirit-2 img{animation-delay:-2700ms}
+.menu-transition .spirit-wake{position:absolute;left:15%;right:8%;bottom:15%;height:7%;border-top:1px solid #d48c8b44;border-radius:50%;transform:rotate(-9deg)}
+.menu-transition .lake-refractions{position:absolute;inset:-5%;width:110%;height:110%;stroke:#e7a5a514;stroke-width:.7;animation:lake-refraction 4.5s ease-in-out infinite alternate}
+.menu-transition .lake-glint{position:absolute;width:5px;height:1px;background:#e5aab06b;box-shadow:0 0 4px #f29b9b44;animation:lake-glint 1.8s var(--glint-delay) infinite}
+.menu-transition .tide-rising{animation-timing-function:cubic-bezier(.12,.66,.16,1)}
+.menu-transition .tide-scene .transition-caption{animation-delay:1.25s;text-shadow:0 2px 12px #13070d}
+@keyframes spirit-current{0%,100%{transform:translate3d(-30px,13px,0) rotate(-3deg)}50%{transform:translate3d(65px,-16px,0) rotate(3deg)}}
+@keyframes spirit-submerge{0%,100%{opacity:.35;transform:scale(.97)}45%{opacity:1;transform:scale(1.025)}}
+@keyframes lake-refraction{from{transform:translate(-2%,0) skewX(-3deg)}to{transform:translate(3%,-4%) skewX(3deg)}}
+@keyframes lake-surface-current{from{transform:translate3d(-1%,1%,0) scale(1.02)}to{transform:translate3d(2%,-2%,0) scale(1.05)}}
+@keyframes lake-glint{0%,100%{opacity:0;transform:translateX(0) scaleX(.5)}50%{opacity:.8;transform:translateX(28px) scaleX(2.5)}}
+
+/* The rain, glass trails, picture and curled edge all belong to the same leaf.
+   The hand and leaf move together after contact, rather than pulling a blank page. */
+.menu-transition .scenery-hand{display:none}
+.menu-transition .rain-drag-rig{position:absolute;inset:0;transform-origin:var(--grip-x) var(--grip-y);will-change:transform}
+.menu-transition .rainy-scene-leaf{background:#142232;animation:rain-scene-arrive 430ms ease-out both;clip-path:none;overflow:hidden;transform-origin:var(--grip-x) var(--grip-y);box-shadow:0 -12px 28px #040b1577}
+.menu-transition .rain-mural{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;animation:rain-camera 1500ms ease-out both}
+.menu-transition .rain-glass-light{position:absolute;inset:0;background:linear-gradient(112deg,transparent 20%,#bfd1e30d 34%,transparent 42%),radial-gradient(ellipse at 29% 20%,#88a5c51a,transparent 60%);z-index:1}
+.menu-transition .rainy-scene-leaf .rain-curtain{z-index:2;animation:none;opacity:1}
+.menu-transition .rainy-scene-leaf .rain-streak{top:-100px;left:var(--rain-x);height:var(--rain-length);animation:rain-fall var(--rain-time) var(--rain-delay) linear infinite;will-change:transform}
+.menu-transition .rain-water-trails{position:absolute;inset:0;z-index:3;overflow:hidden}
+.menu-transition .rain-water-trails i{position:absolute;left:var(--drop-x);top:var(--drop-y);width:2px;height:54px;border-right:1px solid #d0e0ef77;border-radius:80% 20% 40% 60%;background:linear-gradient(transparent,#c4d9ec14);animation:glass-rivulet var(--drop-time) var(--drop-delay) ease-in infinite}
+.menu-transition .rain-water-trails i::after{content:'';position:absolute;bottom:-3px;left:-1px;width:4px;height:6px;border-radius:50%;border-right:1px solid #e0edfa88;background:#9dbcd522}
+.menu-transition .rain-leaf-ripples{position:absolute;inset:0;z-index:2}
+.menu-transition .rain-leaf-ripples span{position:absolute;width:80px;height:12px;border:1px solid #b4c8dd44;border-radius:50%;animation:rain-ripple 1.45s var(--ripple-delay) infinite}
+.menu-transition .rain-leaf-grain{position:absolute;inset:0;z-index:3;box-shadow:inset 0 0 12vw #040b1666;background:repeating-linear-gradient(0deg,transparent 0 3px,#b2c7df03 4px);pointer-events:none}
+.menu-transition .rain-leaf-inscription{position:absolute;left:7%;bottom:13%;z-index:4;font:26px/1.6 SimSun,serif;letter-spacing:7px;color:#d9e4ed;text-shadow:0 2px 14px #061121;animation:caption-in 450ms 450ms both}
+.menu-transition .rain-leaf-inscription small{display:block;font:9px/2 system-ui;letter-spacing:3px;color:#a7bfd3;margin-top:10px}
+.menu-transition .rain-fold{z-index:5;background:linear-gradient(133deg,#0e1a2700 5%,#91a9bf33 33%,#d8e7ed99 42%,#152638 43%,transparent 55%);animation:rain-fold-catch var(--enter-time) both}
+.menu-transition .rain-grip-corner{width:66px;height:66px;background:linear-gradient(135deg,#dce9f1b3,#5c7b9588 43%,transparent 46%);animation:rain-fold-catch var(--enter-time) both}
+.menu-transition .rain-grip-shadow{position:absolute;left:var(--grip-x);top:var(--grip-y);z-index:4;width:76px;height:20px;translate:-25% -15%;background:radial-gradient(ellipse,#030a13b3,transparent 70%);animation:grip-contact var(--enter-time) both}
+.menu-transition .rain-drag-rig .pull-hand{translate:-18% -16%;width:clamp(290px,34vw,470px);animation:hand-catch-rain var(--enter-time) cubic-bezier(.2,.7,.25,1) both;z-index:6}
+.menu-transition .rain-finger-contact{position:absolute;left:var(--grip-x);top:var(--grip-y);width:25px;height:2px;z-index:7;translate:-10% 6px;rotate:-15deg;background:#dceaf1c9;box-shadow:0 0 5px #aac4dd66;animation:grip-contact var(--enter-time) both}
+.menu-transition.phase-leave .rain-drag-rig{animation:rain-scene-pull var(--reveal-time) cubic-bezier(.38,.03,.6,1) both}
+.menu-transition.phase-leave .rain-drag-rig :is(.pull-sheet,.pull-hand,.pull-corner){animation:none;transform:none;opacity:1}
+.menu-transition.phase-leave .rain-fold{animation:rain-fold-stretch var(--reveal-time) both}
+.menu-transition.phase-leave .rain-finger-contact,.menu-transition.phase-leave .rain-grip-shadow{animation:none;opacity:1}
+.menu-transition.phase-leave .rainy-scene-leaf .rain-curtain{animation:none;opacity:1}
+.menu-transition.effect-hand.phase-leave .transition-veil{animation:veil-out 250ms both}
+@keyframes rain-scene-arrive{from{opacity:0}to{opacity:1}}
+@keyframes rain-camera{from{transform:scale(1.035)}to{transform:scale(1)}}
+@keyframes rain-fall{from{transform:translate3d(15px,-80px,0) rotate(8deg)}to{transform:translate3d(-65px,calc(100vh + 220px),0) rotate(8deg)}}
+@keyframes glass-rivulet{0%{opacity:0;transform:translate3d(0,-35px,0) scaleY(.7)}20%{opacity:.6}85%{opacity:.5}100%{opacity:0;transform:translate3d(-6px,110px,0) scaleY(1.2)}}
+@keyframes hand-catch-rain{0%,18%{opacity:0;transform:translate(100%,55%) rotate(9deg)}56%{opacity:1;transform:translate(-7px,-9px) rotate(-3deg)}72%{transform:translate(1px,2px) rotate(1deg)}100%{opacity:1;transform:translate(0,0) rotate(0)}}
+@keyframes grip-contact{0%,63%{opacity:0}82%,100%{opacity:1}}
+@keyframes rain-fold-catch{0%,63%{opacity:0;transform:scale(.25)}84%{opacity:1;transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
+@keyframes rain-scene-pull{0%{transform:translate3d(0,0,0) rotate(0)}18%{transform:translate3d(0,2vh,0) rotate(-.35deg) skewY(-.25deg)}48%{transform:translate3d(-1vw,25vh,0) rotate(-1.3deg) skewY(-.8deg)}100%{transform:translate3d(-2vw,120vh,0) rotate(-2deg) skewY(0)}}
+@keyframes rain-fold-stretch{from{transform:skew(0) scale(1)}35%{transform:skew(-12deg,-4deg) scale(1.08)}to{transform:skew(-5deg,-2deg) scale(1)}}
+
+/* Menu -> stage -> committed destination. Origin coordinates are captured from
+   the activated card, including keyboard activation and a scrolled viewport. */
+.motif-angel{isolation:isolate}
+.motif-angel img{position:absolute;object-fit:contain;pointer-events:none}
+.motif-angel .motif-wings{inset:0;width:100%;height:100%;transform-origin:50% 68%}
+.motif-angel .motif-core{left:50%;top:12%;height:87%;width:auto;max-width:none;translate:-50% 0}
+/* Only the card illustration moves. Its hood clears the large initial even
+   at the wide-screen artwork size; the full-screen seraph keeps its staging. */
+.folio-home .journey-primary .motif-angel{bottom:calc(-10px - clamp(32px,2.2vw,46px));transition:filter 220ms ease-out}
+.folio-home .journey-primary .journey-symbol{z-index:2;text-shadow:0 2px 8px #142b4544}
+.folio-home .journey-card:not(.journey-primary)::before{content:'';position:absolute;inset:8px;z-index:1;pointer-events:none;opacity:0;background:linear-gradient(#829aaf,#829aaf) left top/17px 1px no-repeat,linear-gradient(#829aaf,#829aaf) left top/1px 12px no-repeat,linear-gradient(#829aaf,#829aaf) right bottom/17px 1px no-repeat,linear-gradient(#829aaf,#829aaf) right bottom/1px 12px no-repeat;transition:opacity 180ms ease-out}
+.folio-home .journey-card:not(.journey-primary):focus-visible:not(:disabled)::before{opacity:.8}
+.folio-home .journey-card:focus-visible{outline:1px solid #6887a2;outline-offset:-4px}
+.folio-home .journey-primary:focus-visible{outline-color:#d9e8f4}
+.folio-home .journey-card:has(.motif-gears):focus-visible{outline-color:#9b7b4a}
+.folio-home .journey-card:has(.motif-tide):focus-visible{outline-color:#966473}
+.folio-home .journey-card .menu-motif:not(.motif-angel){transition:opacity 220ms,color 220ms}
+.folio-home .motif-gears{--motif-selected:#967443}.folio-home .motif-tide{--motif-selected:#8b4759}.folio-home .motif-hand{--motif-selected:#52728d}
+.folio-home .journey-card:focus-visible:not(:disabled) .menu-motif:not(.motif-angel){opacity:.34;color:var(--motif-selected,#52728d)}
+@media(hover:hover) and (pointer:fine){
+ .folio-home .journey-card:not(.journey-primary):hover:not(:disabled)::before{opacity:.72}
+ .folio-home .journey-card:hover:not(:disabled) .menu-motif:not(.motif-angel){opacity:.32;color:var(--motif-selected,#52728d)}
+ .folio-home .journey-primary:hover:not(:disabled) .motif-angel{filter:brightness(1.05) drop-shadow(0 0 12px #c2d9ff3d)}
+}
+body:is([data-motion="LIGHT"],[data-motion="STATIC"]) .folio-home .journey-card::before,body:is([data-motion="LIGHT"],[data-motion="STATIC"]) .folio-home .journey-card .menu-motif{transition:none}
+body.refraction-theme .folio-home[data-launch-kind] .journey-card{transition:opacity 160ms,background 160ms}
+body.refraction-theme .folio-home[data-launch-kind] .journey-card:not(.is-launching){opacity:.56}
+body.refraction-theme .folio-home .journey-card.is-launching{opacity:1;--cue-ink:#9cbde3}
+body.refraction-theme .folio-home[data-launch-kind="gears"] .is-launching{--cue-ink:#ad894d}
+body.refraction-theme .folio-home[data-launch-kind="tide"] .is-launching{--cue-ink:#8d3249}
+.folio-home .is-launching::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(110deg,transparent 10%,color-mix(in srgb,var(--cue-ink) 28%,transparent),transparent 85%);animation:card-cue-light 240ms ease-out both}
+.folio-home .is-launching .menu-motif{animation:card-motif-wake 240ms cubic-bezier(.16,.7,.3,1) both}
+.folio-home .is-launching .motif-wings{animation:card-wing-ready 240ms ease-out both}
+.folio-home .is-launching .motif-gears{animation:card-gear-ready 240ms ease-out both}
+.folio-home .is-launching .motif-chain-slip{animation:card-chain-taut 240ms both}
+.motif-chain-left{--mini-pull:8px}.motif-chain-right{--mini-pull:-8px}
+.folio-home .is-launching .motif-tide{animation:card-tide-ready 240ms ease-out both}
+.folio-home .is-launching .card-arrow{transform:translate(4px,-4px)}
+.menu-transition .menu-origin-trace{position:absolute;left:0;top:0;width:240px;height:190px;z-index:12;pointer-events:none;color:#d7e5f6;animation:menu-origin-lift 680ms cubic-bezier(.18,.66,.25,1) both;will-change:transform,opacity}
+.menu-transition .menu-origin-trace .menu-motif{inset:0;width:100%;height:100%;opacity:.9;color:inherit;filter:drop-shadow(0 0 12px #d4e4f955);z-index:1}
+.menu-transition .origin-gears{color:#f3d78e}.menu-transition .origin-tide{color:#d5879a}
+.menu-transition .origin-ring{position:absolute;inset:10% 17%;border:1px solid currentColor;border-radius:50%;opacity:.22;animation:origin-ring-open 600ms ease-out both}
+.menu-transition.has-origin.phase-enter .transition-veil{animation:origin-veil-in 500ms both}
+.menu-transition.has-origin.phase-enter :is(.angel-scene,.gear-scene,.tide-scene,.hand-scene){animation:menu-stage-materialise 450ms both}
+body:has(.menu-transition.has-origin:not(.motion-reduced)) .folio-home .is-launching .menu-motif{opacity:0;animation:none}
+.menu-transition.phase-covered .menu-origin-trace,.menu-transition.phase-leave .menu-origin-trace{display:none}
+@keyframes card-cue-light{from{opacity:0;translate:-40% 0}to{opacity:1;translate:20% 0}}
+@keyframes card-motif-wake{from{opacity:.25;filter:brightness(1)}to{opacity:.9;filter:brightness(1.4)}}
+@keyframes card-wing-ready{to{transform:scaleX(1.08) rotate(-2deg)}}
+@keyframes card-gear-ready{to{transform:rotate(12deg)}}
+@keyframes card-chain-taut{from{transform:translateX(var(--mini-pull)) scaleY(1.2)}to{transform:none}}
+@keyframes card-tide-ready{to{transform:translateY(-7px);color:#a23b53}}
+@keyframes menu-origin-lift{0%{opacity:.8;transform:translate(calc(var(--origin-x) - 120px),calc(var(--origin-y) - 95px)) scale(var(--origin-scale))}52%{opacity:1}78%{opacity:.5}100%{opacity:0;transform:translate(calc(50vw - 120px),calc(43vh - 95px)) scale(1.7)}}
+@keyframes origin-ring-open{from{transform:scale(.8);opacity:.2}to{transform:scale(1.4);opacity:0}}
+@keyframes origin-veil-in{0%,20%{opacity:0}100%{opacity:1}}
+@keyframes menu-stage-materialise{0%,30%{opacity:0}100%{opacity:1}}
+
+/* Feather tips settle after the wing root. Their transforms are nested rather
+   than overriding the six independent unfolding pivots. */
+.menu-transition .seraph-wing-left img{transform-origin:50% 68%;animation:feather-tip-left 1350ms var(--pair-delay) both}
+.menu-transition .seraph-wing-right img{transform-origin:50% 68%;animation:feather-tip-right 1350ms var(--pair-delay) both}
+@keyframes feather-tip-left{0%,38%{transform:skewY(5deg) scaleX(.96)}68%{transform:skewY(-2deg) scaleX(1.018)}85%{transform:skewY(.7deg)}100%{transform:none}}
+@keyframes feather-tip-right{0%,38%{transform:skewY(-5deg) scaleX(.96)}68%{transform:skewY(2deg) scaleX(1.018)}85%{transform:skewY(-.7deg)}100%{transform:none}}
+
+/* Tension stays separate from link travel; the shackle never detaches. */
+.menu-transition .tether-vibration{transform-origin:14px 24px;animation:tether-recoil 560ms 1000ms both}
+.menu-transition .tether-right .tether-vibration{animation-delay:1050ms}
+.menu-transition .tether-light-run{opacity:0;animation:tether-specular-pass 900ms 650ms ease-out both}
+.menu-transition.phase-leave .tether-vibration{animation:none;transform:none}
+.menu-transition.phase-leave .tether-light-run{animation:none;opacity:0}
+.menu-transition .gear-turn{animation-name:gear-weighted-turn}
+.menu-transition .gear-inner{animation-name:gear-weighted-inner}
+@keyframes tether-recoil{0%{transform:rotate(0)}15%{transform:rotate(.32deg)}32%{transform:rotate(-.24deg)}49%{transform:rotate(.16deg)}70%{transform:rotate(-.08deg)}100%{transform:rotate(0)}}
+@keyframes tether-specular-pass{0%{opacity:0;stroke-dashoffset:70}18%{opacity:.85}80%{opacity:.4}100%{opacity:0;stroke-dashoffset:-1020}}
+@keyframes gear-weighted-turn{0%,12%{transform:rotate(0)}80%{transform:rotate(87deg)}92%{transform:rotate(84.3deg)}100%{transform:rotate(85deg)}}
+@keyframes gear-weighted-inner{0%{transform:rotate(0)}80%{transform:rotate(-66.5deg)}92%{transform:rotate(-64.4deg)}100%{transform:rotate(-65deg)}}
+
+/* Wakes share the ghost's moving container, so ripples follow the apparition. */
+.menu-transition .spirit-wake{height:12%;border:0;transform:rotate(-9deg);pointer-events:none}
+.menu-transition .spirit-wake i{position:absolute;inset:0;border:1px solid #eb9fa562;border-radius:50%;animation:spirit-water-wake 1900ms var(--wake-delay) ease-out infinite}
+.menu-transition .spirit-1 .spirit-wake{opacity:.6}
+.menu-transition .spirit-2 .spirit-wake{opacity:.4}
+@keyframes spirit-water-wake{0%{opacity:0;transform:translateX(12%) scale(.45)}25%{opacity:.6}100%{opacity:0;transform:translateX(-20%) scale(1.6)}}
+
+/* The pinch first bends the surface, then the whole rain rig follows. */
+.menu-transition .rainy-scene-leaf{animation:rain-scene-arrive 430ms ease-out both,rain-pinch-surface var(--enter-time) ease-out both}
+.menu-transition .rain-grip-shadow{animation-name:rain-pinch-shadow}
+.menu-transition.phase-leave .rain-drag-rig .rainy-scene-leaf{animation:rain-leaf-tension var(--reveal-time) cubic-bezier(.38,.03,.6,1) both;transform-origin:var(--grip-x) var(--grip-y)}
+.menu-transition.phase-leave .rain-drag-rig .pull-hand{animation:rain-hand-tension var(--reveal-time) both;transform-origin:18% 16%}
+@keyframes rain-pinch-surface{0%,62%{transform:none}82%{transform:perspective(1500px) rotateX(.2deg) skewY(-.12deg)}100%{transform:perspective(1500px) rotateX(.25deg) skewY(-.18deg)}}
+@keyframes rain-pinch-shadow{0%,63%{opacity:0;transform:scale(.7)}84%{opacity:.9;transform:scale(1.15)}100%{opacity:.75;transform:scale(1)}}
+@keyframes rain-leaf-tension{from{transform:perspective(1500px) rotateX(.25deg) skewY(-.18deg)}18%{transform:perspective(1500px) rotateX(.7deg) skewY(-.45deg)}52%{transform:perspective(1500px) rotateX(1deg) skewY(-.65deg)}100%{transform:none}}
+@keyframes rain-hand-tension{0%{transform:none}18%{transform:rotate(-2deg) translateY(2px)}52%{transform:rotate(-3deg) translateY(4px)}100%{transform:rotate(-1deg)}}
+
+[data-menu-receiving="angel"] .world-intro-kicker>span{animation:arrival-rule-draw 600ms both;transform-origin:left}
+[data-menu-receiving="gears"] .archive-directory-line{animation:arrival-rule-draw 600ms both;transform-origin:right}
+@keyframes arrival-rule-draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+body[data-motion="LIGHT"] .folio-home .is-launching::after,body[data-motion="STATIC"] .folio-home .is-launching::after{animation:none;background:none}
+body[data-motion="LIGHT"] .folio-home .is-launching .menu-motif,body[data-motion="STATIC"] .folio-home .is-launching .menu-motif{animation:none}
+body:is([data-motion="LIGHT"],[data-motion="STATIC"]) .folio-home .is-launching .motif-wings{animation:none}
+body:is([data-motion="LIGHT"],[data-motion="STATIC"]) .folio-home .is-launching .motif-chain-slip{animation:none}
+body[data-motion="STATIC"] [data-menu-receiving]{animation:none!important}
+
+@media(max-width:760px){
+ .menu-transition .seraph-wing-pair{width:min(128vw,115vh);top:40%}
+ .menu-transition .seraph-core{top:calc(40% - 10vh);height:57vh}
+ .menu-transition .seraph-halo{top:calc(40% - 15vh);width:17vh;height:17vh}
+ .menu-transition .angel-scene .transition-caption{bottom:10%;font-size:14px}
+ .menu-transition .gear-scene{--gear-diameter:85vw}
+ .menu-transition .gear-tether{height:34px;width:900px}
+ .menu-transition .gear-tether svg{height:34px;width:722px}
+ .menu-transition .tether-shackle{width:20px;height:20px;top:5px;border-width:3px}
+ .menu-transition .spirit-0{width:65vw;left:-9%;top:20%}
+ .menu-transition .spirit-1{width:38vw;left:55%;top:10%}
+ .menu-transition .spirit-2{width:50vw;top:59%}
+ .menu-transition .rain-drag-rig .pull-hand{width:290px}
+ .menu-transition .rain-mural{object-position:38% 50%}
+ .menu-transition .rain-leaf-inscription{left:8%;bottom:26%;font-size:22px}
+}

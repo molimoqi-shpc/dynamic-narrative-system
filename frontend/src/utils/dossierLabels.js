@@ -1,0 +1,45 @@
+export const dossierLabels={
+ templateVersion:'模板版本',narrativeTier:'人物层次',snapshotAtSeconds:'档案时刻',id:'人物标识',name:'姓名',isPlayer:'玩家角色',tierReason:'记录依据',
+ identity:'身份与能力',establishedSelf:'已有身份设定',sixStats:'实际六维',sixStatsEstablished:'六维已确立',goals:'目标',talents:'天赋',effectKind:'作用类型',power:'强度',zhi:'知',hui:'慧',dou:'斗',wen:'闻',ben:'本',gui:'归',
+ currentState:'当时处境',recordedSceneId:'场景标识',recordedLocation:'记录地点',storySituation:'当前处境',emotion:'情绪记录',body:'身体',items:'持有物品',
+ personallyKnown:'本人已知',currentKnownState:'最新已知变化',lastObservedPeople:'最近所见',knownPeople:'认识的人',observedFacilities:'所见环境',pendingStimuli:'尚待回应的消息',sceneStateMeaning:'记录说明',
+ pastInformation:'过去经历',ownRecords:'本人经历',ownKnowledge:'已知资料',initialSceneHistory:'入场前文',psychology:'心理附加表',intentions:'本次意愿',
+ thought:'此刻想法',intention:'本段目标',actionDirection:'行动方向',communicationIntent:'交流意愿',boundaries:'边界',itemIntentions:'物品交接意愿',contest:'交手意愿',combatDisposition:'交手与战后处置意愿',context:'事情性质',restraint:'出手分寸',ifVictorious:'获胜后的处置意愿',ifDefeated:'落败后的应对意愿',mercyConditions:'留情条件',rescueIntent:'救援意愿',
+ selfConcept:'自我认知',personality:'性格',values:'价值观',emotionalState:'即时情绪',cognition:'认知与判断',motivations:'动机与利害',relationships:'逐人关系',memoryInterpretation:'过往理解',expression:'表达习惯',cooperationAndConflict:'合作与冲突',actionPlan:'行动方向',continuity:'连续性',
+ roleInScene:'身份与职责',immediateConcern:'眼前关切',attitude:'简单态度',willingHelp:'愿提供的帮助',knowledgeLimits:'所知范围',brief:'简要记录',
+ selfImage:'自我理解',socialRole:'社会角色',selfEsteem:'自尊依托',desiredImage:'希望呈现的形象',innerContradiction:'内在矛盾',identityUncertainties:'自我疑问',
+ stableTraits:'稳定性格',strengths:'长处',flaws:'缺点',temperament:'性情',habits:'习惯',relaxedBehavior:'放松时',stressResponse:'压力反应',contradictorySides:'性格的不同侧面',changeConditions:'变化条件',
+ coreValues:'核心价值',priorityOrder:'优先顺序',moralLines:'道德底线',loyalties:'忠诚对象',taboos:'禁忌',pride:'引以为荣',shame:'羞耻或隐痛',viewOfPower:'权力观',viewOfTrust:'信任观',valueConflicts:'价值冲突',
+ dominantEmotion:'主要情绪',secondaryEmotions:'其他情绪',intensity:'强弱程度',causes:'原因',surfaceExpression:'外在表现',privateFeelings:'未表达的感受',unmetNeeds:'未满足的需要',fears:'担忧',hopes:'期待',emotionalTriggers:'情绪触点',regulation:'情绪调节',recentChange:'近期变化',
+ attention:'关注之处',interpretation:'对经历的解释',confirmedKnowledge:'已确认的信息',hearsay:'听闻',suspicions:'怀疑',unknowns:'未知',biases:'偏见',confidence:'判断把握',possibleMisunderstanding:'可能的误解',
+ longTermGoals:'长期目标',nearTermGoals:'近期目标',immediateGoal:'眼前目标',priority:'优先事项',personalStakes:'个人利害',acceptableCosts:'可接受的代价',unacceptableCosts:'不可接受的代价',hiddenAgenda:'未公开的目的',urgency:'紧迫程度',successMeaning:'成功的含义',
+ roleId:'对方标识',knownIdentity:'已知身份',basis:'依据',publicAttitude:'公开态度',privateAttitude:'私下看法',trust:'信任',wariness:'戒备',attachment:'情感联系',debtsAndPromises:'恩债与承诺',expectations:'期待',cooperationScope:'合作范围',conflictPoints:'冲突点',disclosureToThisPerson:'愿透露的范围',
+ formativeExperiences:'重要经历',cumulativeHistory:'累计过往',recentExperiences:'近期经历',unresolvedThreads:'未了之事',fulfilledCommitments:'已履行承诺',outstandingCommitments:'待履行承诺',regrets:'遗憾',lessons:'所得教训',reinterpretedPast:'重新理解的过去',
+ register:'语体与礼貌',rhythm:'表达节奏',wordingHabits:'用词习惯',nonverbalHabits:'非语言习惯',willingTopics:'愿谈的话题',onlyIfAsked:'问到才谈',withheldInformation:'保留的信息',refusalStyle:'拒绝方式',conflictStyle:'争执方式',comfortStyle:'关怀方式',deceptionIntent:'隐瞒意图',
+ willingParticipation:'愿参与的事情',initiative:'愿主动推进的事',nonNegotiables:'不可协商的底线',negotiableTerms:'可协商条件',allianceAttitude:'结盟态度',hostilityAttitude:'敌对态度',intimacyAttitude:'亲近尺度',riskTolerance:'风险承受',stanceChangeConditions:'立场变化条件',
+ primaryDirection:'主要方向',reason:'原因',naturalFollowThrough:'自然接续',conditionalBranches:'可能的分支',if:'如果',then:'届时意愿',fallback:'替代方向',stopConditions:'停止条件',needPlayerDecision:'需要玩家决定',notYetHappened:'意愿说明',
+ retainedAnchors:'保留的人设锚点',changedSinceLast:'相比上次的变化',changeReasons:'变化原因',unresolvedContradictions:'未解矛盾',factsNeedingRecall:'待查的过往',currentSceneUpdate:'本场更新',
+ psychologyMeaning:'心理记录说明',playerDeclaredDirection:'玩家声明方向',awake:'清醒',bound:'受束缚',position:'所见位置',activity:'所见活动',lastObservedProcess:'最近所见过程',observedAtSeconds:'所见时刻',presence:'观察状态',
+ recordType:'记录类型',content:'内容',text:'内容',recordedTick:'记录世界刻',profile:'设定',background:'背景',startSeconds:'起始秒数',endSeconds:'结束秒数',situation:'处境',experience:'亲历',status:'状态',health:'生命',
+}
+Object.assign(dossierLabels,{
+ personalHistory:'人物来历',openingSharedHistory:'共同过往',withName:'相关人物',withRoleId:'相关人物',source:'记载来源',source_type:'记录类别',
+ roleId:'对方',actorId:'行动者',targetId:'交接对象',holderId:'持有者',ownerId:'所有者',legalOwnerId:'原所有者',itemRef:'物品',sceneId:'所在',subject:'记录对象',field:'所见方面',value:'记录内容',
+ alive:'存活',hidden:'隐蔽中',activityHistorical:'此前状态',conditions:'条件与约定',direction:'参与方向',attempt:'行动意愿',executionStatus:'进展',visibility:'知晓范围',
+ playerName:'主角姓名',history:'过往',description:'记述',summary:'简述',label:'关系',title:'记事',kind:'记事类别',type:'记录类别',state:'状态',
+ origin:'来历',knownEffects:'已知作用',significance:'故事牵系',limitations:'已知限制',characterTemplate:'当时的心理附加表',
+ startMoment:'起始时刻',endMoment:'结束时刻',timeProgress:'这一段的时间',from:'起始',to:'结束',year:'故事年序',day:'当年日序',period:'时段',precision:'时间精度',elapsedParts:'经过时间',amount:'数量',unit:'单位',
+ accounts:'账目',consequences:'后果',percepts:'所见',execution:'实际经过',scope:'知晓范围',meaning:'记录说明',occurredAtSeconds:'发生时刻',atSeconds:'记录时刻',recordedAtSeconds:'记录时刻',
+ gender:'性别',ageGroup:'外观年龄段',species:'种族',
+})
+const values={
+ LAST_SEEN:'最近所见',NOT_SEEN:'本次未见',LAST_OBSERVED:'最后亲见',CORE:'主要角色',EXTRA:'普通人物',PLAYER:'主角',NARRATIVE:'情境特长',STAT:'开局增益',LEGACY:'旧版记录',
+ OPENING_AUTHOR:'开篇设定',AUTHOR_ESTABLISHED_OPENING_RELATION:'开篇已确立的关系',SELF_PROFILE:'初始设定',ROLE_PROFILE:'当时的人物想法',ROLE_DECISION:'本人决定',TURN_EVENT:'亲历记事',PERSONAL:'个人经历',SCENE_ATTEMPT:'行动意愿',TALK_STATE:'交谈记忆',
+ UTTERANCE:'所闻话语',ACTION_RESULT:'行动结果',PROPOSED:'意愿，尚未发生',PENDING:'尚待处理',RUNNING:'进行中',ACTIVE:'进行中',COMPLETED:'已完成',CANCELLED:'已取消',PARTIAL:'尚未完成',FAILED:'未完成',RESOLVED:'已处理',ACCEPTED:'已接受',REJECTED:'未接受',
+ FAMILY:'家人',FRIEND:'朋友',ALLY:'盟友',ENEMY:'敌对',ACQUAINTANCE:'相识',PUBLIC:'公开',PRIVATE:'本人私有',PERSONAL_KNOWLEDGE:'本人所知',OBSERVED:'亲自所见',HEARD:'亲耳听见',
+ HELD:'持有中',STORED:'暂存',LEND:'借出',RETURN:'归还',GIVE:'赠予',USE:'使用',OWNED:'持有',
+ BEFORE_DAWN:'破晓前',DAWN:'黎明',MORNING:'上午',NOON:'正午',AFTERNOON:'下午',DUSK:'傍晚',EVENING:'夜晚',NIGHT:'夜间',MIDNIGHT:'午夜',PERIOD:'时段',MINUTE:'分钟',SECOND:'秒',HOUR:'小时',DAY:'日',SHICHEN:'时辰',
+ STORY_CLOCK:'故事时点',APPEARANCE:'外观记录',female:'女性',male:'男性',FEMALE:'女性',MALE:'男性',YOUNG:'青年',ADULT:'成年',CHILD:'儿童',ELDER:'年长',HUMAN:'人类',ELF:'精灵',DWARF:'矮人',
+}
+export function dossierLabel(key){return Object.hasOwn(dossierLabels,key)?dossierLabels[key]:/[\u3400-\u9fff]/.test(key)?key:'补充资料'}
+export function dossierValue(value){return value===true?'是':value===false?'否':typeof value==='string' && Object.hasOwn(values,value)?values[value]:String(value ?? '尚未记录')}

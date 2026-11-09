@@ -1,0 +1,78 @@
+{
+  "source": "Original live QA archive: different explicit places all supplied the same inn sceneId. Named equivalent is a local test reply, not another live result.",
+  "facts": {
+    "locationIndex": [
+      {
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4",
+        "name": "灰椋驿前厅"
+      }
+    ]
+  },
+  "legacyArchive": {
+    "sceneOutcomes": [],
+    "endingCast": [
+      {
+        "basis": "板车顺着来路往回走，卡莱布坐在车上……米拉跟在后头，看看天色，说了句：“还来得及回驿舍。”",
+        "roleId": "player_16cfebed0d7c46b99e508fa7c",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4",
+        "location": "旧驿道上，正推板车往回走"
+      },
+      {
+        "basis": "米拉跟在后头，看看天色，说了句：“还来得及回驿舍。”",
+        "roleId": "npc_6ad688b944cd42669b4815809d6f",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4",
+        "location": "旧驿道上，随板车往回走"
+      },
+      {
+        "basis": "卡莱布没急着上车，先回头看了一眼那两扇黑漆门，才转身坐上来。……板车顺着来路往回走，卡莱布坐在车上，匣子已经不在身边了，手却一直搁在膝上，像还捧着什么。",
+        "roleId": "npc_d45c584aefae4375886df11f95c1",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4",
+        "location": "旧驿道上，坐在板车上往回走"
+      },
+      {
+        "basis": "巴克把条子递过去……三人谢过管事，出门往公证人行会走。",
+        "roleId": "npc_1d62bf453a2038e8827f8a3b9cee",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4",
+        "location": "城东盐栈仓内"
+      }
+    ]
+  },
+  "namedEquivalent": {
+    "endingPlaces": {
+      "road": {
+        "locationName": "旧驿道回程路",
+        "opening": "三人乘板车回驿舍途中，尚未抵达。"
+      },
+      "saltStore": {
+        "locationName": "城东盐栈",
+        "opening": "管事留在盐栈仓内。"
+      }
+    },
+    "endingCast": [
+      {
+        "roleId": "player_16cfebed0d7c46b99e508fa7c",
+        "placeKey": "road",
+        "basis": "板车顺着来路往回走，卡莱布坐在车上……米拉跟在后头，看看天色，说了句：“还来得及回驿舍。”",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4"
+      },
+      {
+        "roleId": "npc_6ad688b944cd42669b4815809d6f",
+        "placeKey": "road",
+        "basis": "米拉跟在后头，看看天色，说了句：“还来得及回驿舍。”",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4"
+      },
+      {
+        "roleId": "npc_d45c584aefae4375886df11f95c1",
+        "placeKey": "road",
+        "basis": "卡莱布没急着上车，先回头看了一眼那两扇黑漆门，才转身坐上来。……板车顺着来路往回走，卡莱布坐在车上，匣子已经不在身边了，手却一直搁在膝上，像还捧着什么。",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4"
+      },
+      {
+        "roleId": "npc_1d62bf453a2038e8827f8a3b9cee",
+        "placeKey": "saltStore",
+        "basis": "巴克把条子递过去……三人谢过管事，出门往公证人行会走。",
+        "sceneId": "scene_5f2cc7d6b753488dae1212a4d4"
+      }
+    ]
+  }
+}

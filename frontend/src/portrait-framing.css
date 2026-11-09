@@ -1,0 +1,11 @@
+/* Asset-specific framing: only approved portraits carrying a frame opt in.
+   Keep stage, shadow and animation in one shared wrapper; no page geometry changes. */
+@media(min-width:761px){
+ .refraction-theme .refraction-stage .refraction-actor.portrait-framed .paper-person-wrap{inset:var(--portrait-inset,1% -8% -15% -14%)}
+}
+@media(min-width:1600px){
+ .refraction-theme .refraction-stage .refraction-actor.portrait-framed .paper-person-wrap{inset:var(--portrait-wide-inset,1% -5% -14% -16%)}
+}
+@media(max-width:760px){
+ .refraction-theme .refraction-stage .refraction-actor.portrait-framed .paper-person-wrap{inset:var(--portrait-mobile-inset,0 -1% -125% 31%)}
+}

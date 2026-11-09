@@ -1,0 +1,223 @@
+{
+  "profiles": [
+    {
+      "godId": "rain_god",
+      "godName": "玄暝·雨师",
+      "godStatus": "RAIN",
+      "godEmotion": "愠怒",
+      "baseZhi": 30,
+      "baseHui": 28,
+      "baseDou": 22,
+      "baseWen": 20,
+      "baseBen": 50,
+      "baseGui": 80,
+      "inventory": [
+        "止水符",
+        "司雨印"
+      ]
+    },
+    {
+      "godId": "museum_god",
+      "godName": "博物叟",
+      "godStatus": "MUSEUM",
+      "godEmotion": "阴鸷",
+      "baseZhi": 55,
+      "baseHui": 50,
+      "baseDou": 18,
+      "baseWen": 45,
+      "baseBen": 60,
+      "baseGui": 30,
+      "inventory": [
+        "博古录",
+        "窥心镜"
+      ]
+    },
+    {
+      "godId": "farm_god",
+      "godName": "后稷·农正",
+      "godStatus": "FARM",
+      "godEmotion": "平和",
+      "baseZhi": 14,
+      "baseHui": 16,
+      "baseDou": 3,
+      "baseWen": 18,
+      "baseBen": 50,
+      "baseGui": 90,
+      "inventory": [
+        "五谷穗"
+      ]
+    },
+    {
+      "godId": "river_god",
+      "godName": "洛川·河伯",
+      "godStatus": "RIVER",
+      "godEmotion": "中庸",
+      "baseZhi": 35,
+      "baseHui": 30,
+      "baseDou": 25,
+      "baseWen": 28,
+      "baseBen": 40,
+      "baseGui": 35,
+      "inventory": [
+        "分水刺",
+        "洛书残页"
+      ]
+    },
+    {
+      "godId": "judge_god",
+      "godName": "崔珏·判官",
+      "godStatus": "JUDGE",
+      "godEmotion": "铁面",
+      "baseZhi": 60,
+      "baseHui": 55,
+      "baseDou": 15,
+      "baseWen": 50,
+      "baseBen": 70,
+      "baseGui": 20,
+      "inventory": [
+        "生死簿",
+        "勾魂笔"
+      ]
+    },
+    {
+      "godId": "mengpo_god",
+      "godName": "孟婆",
+      "godStatus": "BREW",
+      "godEmotion": "阴晴",
+      "baseZhi": 45,
+      "baseHui": 38,
+      "baseDou": 8,
+      "baseWen": 42,
+      "baseBen": 50,
+      "baseGui": 60,
+      "inventory": [
+        "忘情汤",
+        "回魂引"
+      ]
+    },
+    {
+      "godId": "wangxiang_ghost",
+      "godName": "望乡客",
+      "godStatus": "GHOST",
+      "godEmotion": "彷徨",
+      "baseZhi": 18,
+      "baseHui": 22,
+      "baseDou": 5,
+      "baseWen": 25,
+      "baseBen": 30,
+      "baseGui": 40,
+      "inventory": []
+    },
+    {
+      "godId": "ferryman",
+      "godName": "无名·摆渡",
+      "godStatus": "FERRY",
+      "godEmotion": "沉默",
+      "baseZhi": 25,
+      "baseHui": 28,
+      "baseDou": 20,
+      "baseWen": 30,
+      "baseBen": 25,
+      "baseGui": 70,
+      "inventory": [
+        "引魂灯",
+        "冥橹"
+      ]
+    },
+    {
+      "godId": "shouquan_ghost",
+      "godName": "守泉鬼",
+      "godStatus": "GHOST",
+      "godEmotion": "凶煞",
+      "baseZhi": 15,
+      "baseHui": 12,
+      "baseDou": 30,
+      "baseWen": 8,
+      "baseBen": 10,
+      "baseGui": 80,
+      "inventory": []
+    }
+  ],
+  "relationships": [
+    {
+      "source": "museum_god",
+      "target": "rain_god",
+      "trust": 30,
+      "allied": 0,
+      "backstabbed": 1,
+      "note": "昔年博物叟曾于河伯之会背刺雨神，抢夺其半卷云图，雨神未知。"
+    },
+    {
+      "source": "rain_god",
+      "target": "museum_god",
+      "trust": 10,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "雨师对博物叟素无好感，但未察其旧恶。"
+    },
+    {
+      "source": "river_god",
+      "target": "judge_god",
+      "trust": 45,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "河伯与判官公事往来，敬而远之。"
+    },
+    {
+      "source": "judge_god",
+      "target": "river_god",
+      "trust": 50,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "判官视河伯为同僚，无偏私。"
+    },
+    {
+      "source": "mengpo_god",
+      "target": "wangxiang_ghost",
+      "trust": 20,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "孟婆厌望乡客徘徊不肯饮汤。"
+    },
+    {
+      "source": "wangxiang_ghost",
+      "target": "mengpo_god",
+      "trust": 15,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "望乡客惧孟婆忘情汤，远之。"
+    },
+    {
+      "source": "ferryman",
+      "target": "shouquan_ghost",
+      "trust": 60,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "摆渡人使唤守泉鬼守渡口。"
+    },
+    {
+      "source": "shouquan_ghost",
+      "target": "ferryman",
+      "trust": 70,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "守泉鬼畏摆渡人，听其号令。"
+    },
+    {
+      "source": "museum_god",
+      "target": "judge_god",
+      "trust": 20,
+      "allied": 0,
+      "backstabbed": 0,
+      "note": "博物叟曾贿赂判官改生死簿，未成。"
+    },
+    {
+      "source": "judge_god",
+      "target": "museum_god",
+      "trust": 15,
+      "allied": 0,
+      "backstabbed": 1,
+      "note": "判官识破博物叟贿赂，记其名于案。"
+    }
+  ]
+}

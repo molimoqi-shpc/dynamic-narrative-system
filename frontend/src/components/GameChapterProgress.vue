@@ -1,0 +1,19 @@
+<template>
+ <section v-if="hasTime || waits.length || chapter.events?.length" class="chapter-progress" aria-label="这一段的实际经过">
+  <div class="chapter-progress-summary"><span v-if="hasTime" class="chapter-duration"><i aria-hidden="true">◷</i> 经过 {{durationText(chapter.elapsedSeconds)}}</span><small v-if="hasTime">{{storyMoment(chapter.storyStartSeconds)}} → {{storyMoment(chapter.storySeconds)}}</small><span v-if="chapter.operationStatus==='CANCELLED'" class="chapter-state">剩余部分已取消</span></div>
+  <div v-for="(wait,i) in waits" :key="i" class="chapter-wait" :class="{'chapter-wait-met':wait.status==='SATISFIED'}"><span aria-hidden="true">{{wait.status==='SATISFIED'?'✓':'○'}}</span><strong>{{wait.conditioned===false?'已等候指定时间':waitLabel(wait.status)}}</strong><small>{{storyMoment(wait.atSeconds)}}</small><p v-if="wait.conditionText">所等情形：{{wait.conditionText}}</p></div>
+  <details v-if="chapter.events?.length" class="chapter-timeline"><summary>沿时间查看这一段 <span>{{chapter.events.length}} 条亲历记录</span></summary><ol><li v-for="(event,i) in chapter.events" :key="i"><span class="event-time">{{storyMoment(event.endSeconds)}}</span><div><small>{{eventLabel(event.kind)}}<template v-if="event.startSeconds!=null && event.endSeconds!=null && event.endSeconds>event.startSeconds"> · 持续 {{durationText(event.endSeconds-event.startSeconds)}}</template></small><p>{{event.text}}</p></div></li></ol></details>
+ </section>
+</template>
+<script setup>
+import {computed} from 'vue'
+import {durationText,storyMoment} from '../utils/storyTime'
+const props=defineProps({chapter:{type:Object,required:true}})
+const hasTime=computed(()=>Number.isFinite(props.chapter.elapsedSeconds) && Number.isFinite(props.chapter.storyStartSeconds) && Number.isFinite(props.chapter.storySeconds))
+const waits=computed(()=>Array.isArray(props.chapter.waitResults)?props.chapter.waitResults:[])
+const waitLabel=status=>({SATISFIED:'等待条件已满足',BOUND_REACHED:'等待到时，条件尚未满足',KNOWN_INVALIDATED:'已获知条件无法成立',INTERRUPTED_BY_REAL_RISK:'实际风险打断了等待'}[status] || '本次等待已结束')
+const eventLabel=kind=>({UTTERANCE:'听到的话',ACTION_RESULT:'实际经过',ATTEMPT_BEGIN:'行动开始',WAIT_END:'等待结束'}[kind] || '亲历记录')
+</script>
+<style scoped>
+.chapter-progress{margin:24px 0 8px;border-top:1px solid rgba(155,129,87,.24);padding-top:14px;color:var(--myth-bronze,#8c795b);font-size:13px}.chapter-progress-summary{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.chapter-duration{display:flex;align-items:center;gap:7px;color:var(--myth-ink,#363c37)}.chapter-duration i{font-size:21px;font-style:normal}.chapter-progress-summary>small{opacity:.8}.chapter-state{border:1px solid currentColor;border-radius:20px;padding:1px 9px}.chapter-wait{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:12px 0 0;padding:9px 12px;background:rgba(155,129,87,.06);border-radius:5px}.chapter-wait strong{font-weight:500}.chapter-wait small{margin-left:auto}.chapter-wait-met{color:#537363;background:rgba(83,115,99,.07)}.chapter-timeline{margin-top:14px}.chapter-timeline summary{cursor:pointer;padding:5px 0;list-style:none}.chapter-timeline summary::before{content:'＋';margin-right:8px}.chapter-timeline[open] summary::before{content:'−'}.chapter-timeline summary>span{margin-left:12px;font-size:11px;opacity:.7}.chapter-timeline ol{list-style:none;padding:0;margin:14px 0 0}.chapter-timeline li{display:flex;gap:16px;padding:0 0 17px}.event-time{width:44px;flex-shrink:0;text-align:right;font-size:20px;color:var(--myth-ink,#363c37)}.event-time small{font-size:10px;margin-left:3px}.chapter-timeline li>div{border-left:1px solid rgba(155,129,87,.3);padding-left:16px}.chapter-timeline p{margin:5px 0 0;line-height:1.8;color:var(--myth-ink,#363c37);white-space:pre-wrap}.chapter-timeline div>small{font-size:11px}@media(max-width:500px){.chapter-progress-summary{gap:8px}.chapter-timeline summary>span{display:none}}
+</style>

@@ -1,0 +1,283 @@
+{
+  "freeChecks": {
+    "backendPassed": 1372,
+    "backendSkipped": 5,
+    "backendAfterTimeSourceFix": 195,
+    "nativeUnitOutputChecks": 70,
+    "frontendComponents": 89,
+    "frontendUtilities": 15,
+    "timeMaintenance": 15
+  },
+  "contextCharsBefore": 108514,
+  "contextCharsAfter": 86754,
+  "timeRepair": {
+    "source": "actual MySQL readback after apply/rollback/reapply",
+    "changedRows": 16,
+    "correctedArchivedLogCopies": 16,
+    "immutableOperationFieldsChecked": 130,
+    "activeRejectionBranchUnchanged": true,
+    "originalLongSaveUnchanged": true,
+    "beforeHash": "f593239d1ac688c95d66ffc528e97add13f030dce52257e67ba3eafab96980f6",
+    "afterHash": "af8b133636ad561c5322c4799bdadc91737570f9e7639ee01479cece84024d89",
+    "modelCostCny": "0"
+  },
+  "newTimeScopeRepair": {
+    "changedRows": 15,
+    "originalStoryAndModelResponsesUnchanged": true,
+    "oldElapsedSeconds": 216000,
+    "correctedElapsedSeconds": 864000,
+    "currentClock": 1534500,
+    "basis": "original author elapsedSeconds and ten-day passage",
+    "semanticFailureRetained": true,
+    "costCny": "0"
+  },
+  "timeSourceRepair": {
+    "changedRows": 15,
+    "originalStoryAndModelResponsesUnchanged": true,
+    "oldElapsedSeconds": 21600,
+    "correctedElapsedSeconds": 604800,
+    "round5CheckpointClock": 2139300,
+    "basis": "original authored THIS_PASSAGE elapsedParts=7 DAY",
+    "semanticFailureRetained": true,
+    "costCny": "0"
+  },
+  "legacyArithmeticRepair": {
+    "changedRows": 15,
+    "oldElapsedSeconds": 345600,
+    "correctedElapsedSeconds": 259200,
+    "currentClock": 2398500,
+    "basis": "published three-day prose and original main-API archive 3 DAY; legacy author seconds arithmetic was wrong",
+    "originalProseRetained": true,
+    "qualityFailureRetained": true,
+    "modelCostCny": "0"
+  },
+  "globalTimeAudit": {
+    "readOnly": true,
+    "modelCostCny": "0",
+    "operations": 255,
+    "explicitAuthorUnitOperations": 2,
+    "legacyOrMissingUnits": 253,
+    "issues": []
+  },
+  "nativeUnitLiveCheck": {
+    "step": 14,
+    "status": "COMPLETED",
+    "elapsedParts": [
+      {
+        "unit": "DAY",
+        "amount": 3
+      }
+    ],
+    "elapsedSeconds": 259200,
+    "handoff": {
+      "currentSituation": "陆行舟请韩七、曹大到家中吃了答谢便饭，两人各带吃食上门；席间韩七讲旧年涨水、评点短渡营生，曹大评新篙钉、肯定挡生客之事，并指出屋顶椽子糟了，说换椽子时告诉他。饭后各自告辞。此后两天渡头营生如常，第三天收船时韩七顺口夸“你娘那锅鱼，炖得好”，陆行舟心里安定，曹大撑船远去。",
+      "actualTime": {
+        "from": "第三日傍晚收船后，渡头各船已系，曹大在舱里收拾",
+        "to": "此后两天傍晚收船，韩七夸鱼后各自归船",
+        "milestones": [
+          "邀请当日晌午前：陆行舟在渡头请韩七、曹大次日到家中吃便饭，两人都应下，韩七说带两条鲜鱼，曹大说带干鱼和腌菜，并说不为吃饭而来、是看陆行舟两头跑辛苦。",
+          "次日家宴：沈氏张罗家常饭，穿改好的青布褂子。韩七带两条鲜鱼，曹大带干鱼与竹筒腌菜。席间韩七讲早年蛤蟆矶涨水旧事、评点短渡营生是对的；曹大评新篙钉咬得住、肯定挡生客之事。曹大指出屋顶椽子糟了要换，沈氏应声说年月久了，曹大说换椽子时跟他说一声。",
+          "饭后：韩七临走说往后渡头上有什么事招呼一声；曹大在院门口停下，背对着说换椽子时告诉他，没等回话就走了。",
+          "此后两天：渡头照常出船收船，韩七见陆行舟会抬眼看，曹大分客时喊“对岸那趟你走”。",
+          "第三天傍晚收船：韩七把鱼篓往岸上一搁，冲陆行舟说“你娘那锅鱼，炖得好”，便拿篙子往自家去。陆行舟心里安定，曹大的船已撑远。"
+        ]
+      },
+      "completed": [
+        {
+          "basis": "“叔，曹大哥，我娘说这些日子多亏两位照应，想请二位明晚到家里吃顿便饭。”",
+          "result": "陆行舟在渡头请韩七、曹大次日到家中吃便饭，两人都应下。"
+        },
+        {
+          "basis": "“行，我去。不过话说前头，我带点干鱼过去，别的不带。”",
+          "result": "曹大答应赴宴并带干鱼与腌菜上门。"
+        },
+        {
+          "basis": "“那不成。鱼我自家舱里有，提两条过去，算我的心意。”",
+          "result": "韩七答应赴宴并带两条鲜鱼上门。"
+        },
+        {
+          "basis": "家宴当晚三人围桌吃饭，韩七讲旧年涨水评短渡营生，曹大评新篙钉并肯定挡生客之事，曹大指出屋顶椽子糟了要换。",
+          "result": "家宴已成，席间互道照应，曹大主动提点屋顶椽子事。"
+        },
+        {
+          "basis": "“你娘那锅鱼，炖得好。”",
+          "result": "此后两天营生如常，第三天收船时韩七顺口夸菜，人情自然近一层。"
+        }
+      ],
+      "open": [],
+      "characterChanges": [
+        {
+          "roleId": "player_ac06c94780f04eb7b54ae4d83",
+          "change": "办成答谢家宴，与韩七、曹大人情往来更近一层；心里安定。",
+          "cause": "本人实际邀请并操办家宴，席间听两人评点营生和肯定挡生客之事。"
+        },
+        {
+          "roleId": "npc_4948667056df4da289e295672aa3",
+          "change": "赴宴带鱼，席间评点短渡营生、讲旧年涨水，临走说有事招呼一声；此后两天见陆行舟会抬眼看，第三天主动夸鱼。",
+          "cause": "本人实际赴宴、席间说话及此后两天在渡头见闻。"
+        },
+        {
+          "roleId": "npc_d50f520fe2ba4d8f9af3b8d7875b",
+          "change": "赴宴带干鱼与腌菜，席间评新篙钉、肯定挡生客之事，指出屋顶椽子糟了并说换时告诉他；此后两天分客时喊“对岸那趟你走”。",
+          "cause": "本人实际赴宴、席间说话及此后两天分客。"
+        },
+        {
+          "roleId": "npc_78cc0d8e2d404f1fb4f19261f941",
+          "change": "张罗答谢家宴，收下韩七的鲜鱼和曹大的干鱼与腌菜；腰已好些，穿改好的青布褂子。",
+          "cause": "儿子提议请客，本人实际操办并接待韩七、曹大。"
+        }
+      ],
+      "source": {
+        "logId": 72421,
+        "round": 7,
+        "frame": 0
+      }
+    },
+    "priorHandoffReachedAuthor": true,
+    "repeatedPostAndRecoverFree": true,
+    "originalLongSaveUnchanged": true,
+    "usage": {
+      "calls": 89,
+      "estimatedCny": "2.46071200",
+      "inputTokens": "1679716",
+      "outputTokens": "195249",
+      "unknown": "0",
+      "creation": {
+        "providerLogEntries": [
+          "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+          "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+          "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+        ],
+        "calls": 3,
+        "roundedEstimateCny": "0.0310",
+        "upperEstimateCny": "0.03115",
+        "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+      },
+      "budgetUpperEstimateCny": "2.49186200"
+    }
+  },
+  "backupRestore": {
+    "backup": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-07-06\\new-chat\\tourism-decision-system\\BS\\.runtime\\delivery-backups\\story-backup-20261023-232254",
+    "backupBytes": 560373519,
+    "sha256": "49AE252308A4C60F61900B3A31AD8A7E9A73635B08206C60C91C8AC58C9074EB",
+    "restoredIntoNewIsolatedDatabase": true,
+    "tablesCompared": 29,
+    "counts": {
+      "auth_token": 106,
+      "character_creation": 21,
+      "game_goal_rule": 17,
+      "game_operation": 300,
+      "game_runtime": 139,
+      "game_scene": 244,
+      "game_session": 182,
+      "god_profile": 555,
+      "god_relationship": 24,
+      "interaction_log": 295,
+      "llm_operation_usage": 1154,
+      "npc_decision_log": 14,
+      "npc_goal": 12,
+      "npc_memory": 14,
+      "npc_plan": 0,
+      "player_memory": 155,
+      "player_objective": 36,
+      "player_profile": 170,
+      "role_knowledge": 8264,
+      "scene_connection": 52,
+      "session_checkpoint": 452,
+      "session_checkpoint_archive": 126,
+      "session_npc_alias": 45,
+      "story_foreshadow": 3,
+      "story_plot_event": 6,
+      "story_summary": 11,
+      "talent": 45,
+      "world_book": 2095,
+      "world_clock": 148
+    },
+    "longPrivateJsonCompared": true,
+    "authKeyIncluded": true,
+    "modelCostCny": "0",
+    "isolatedTestDatabaseRemoved": true
+  },
+  "reading": {
+    "reviewedSteps": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "timeMechanismPassed": true,
+    "proseTimelineFullyAccepted": false,
+    "review": "人工逐篇读完四次正文。第11次三船分客、雾天候渡与照看母亲构成一段日常关系变化，但正文有第二日后又第一日、第九日说满十天的日序瑕疵；主创原秒数为十天，归档却跨篇相减成2.5天，判质量失败并保留原稿。第12次续议、曹大送鱼与让出送布短活使关系实际更近，玩家没有被加盟约或担保；但正文把前篇第十日与本篇第二、三、九、十日混用，归档再次压成0.25天，判失败。第13次送布回家—聊照应—帮韩七换桩—应对生客—为母亲置衣有起因、行动、结果，正文三天收束；统一来源已工作，但旧格式主创自己把三天算成345600秒，判时间质量失败。前三次原稿、错误数值和费用均保留，修钟不冒充修好原稿。第14次在原单位模板统一后，邀请—各人带食物赴宴—席间评点营生—饭后照应更近，有完整因果，人物仍按韩七寡言、曹大嘴硬、母亲重分寸的既有态度行动，没有把普通赴宴升级为盟约或额外担保。主创给3 DAY且不再给手算秒数，保存的timeProgress与回合增量均为259200秒，重复POST/recover免费，世界仍可继续。这一轮验收通过的是原单位到存档时钟的链路及阶段生活可继续。 ",
+    "limitations": "第14次玩家提出两天，主创把邀请、次日家宴及余波写成约三日，并有“往后两天”“第三天”口径仍不够清楚的句式。没有将它包装为严格两天的文学时序通过，也不保证以后所有小说日期都零错误。源数据换算、归档覆盖问题与模型对故事本身的日期理解分开报告；程序不按日期关键词阻止剧情。日常关系场景可读、人物有承接，但不是用这一顿家宴证明整部长篇达到成熟小说水准。只读全局审计覆盖255个已完成操作，其中2个有明确主创原单位且无保存差异，253个旧格式或缺原单位，不能据此声称这些旧故事的文学时间线已全部核实。原长期存档未推进、未回溯、未修写。后续不自动花剩余额度继续抽故事。",
+    "steps": {
+      "11": {
+        "quality": "FAILED_TIME_SCOPE",
+        "authoredSeconds": 864000,
+        "originalSavedSeconds": 216000,
+        "correctedSeconds": 864000
+      },
+      "12": {
+        "quality": "FAILED_ORDINAL_SCOPE",
+        "authoredParts": [
+          {
+            "amount": 7,
+            "unit": "DAY"
+          }
+        ],
+        "originalSavedSeconds": 21600,
+        "correctedSeconds": 604800
+      },
+      "13": {
+        "quality": "FAILED_LEGACY_SECONDS_ARITHMETIC",
+        "originalAuthoredSeconds": 345600,
+        "proseAndOriginalArchiveDays": 3,
+        "correctedSeconds": 259200
+      },
+      "14": {
+        "timeSourceAndPersistence": "PASSED",
+        "requestedDays": 2,
+        "authoredParts": [
+          {
+            "amount": 3,
+            "unit": "DAY"
+          }
+        ],
+        "savedSeconds": 259200,
+        "proseDateWording": "NEEDS_FURTHER_REVIEW"
+      }
+    }
+  },
+  "usage": {
+    "calls": 89,
+    "estimatedCny": "2.46071200",
+    "inputTokens": "1679716",
+    "outputTokens": "195249",
+    "unknown": "0",
+    "creation": {
+      "providerLogEntries": [
+        "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+      ],
+      "calls": 3,
+      "roundedEstimateCny": "0.0310",
+      "upperEstimateCny": "0.03115",
+      "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+    },
+    "budgetUpperEstimateCny": "2.49186200"
+  },
+  "followupCostUpperCny": "0.75420800",
+  "budgetRemainingLowerCny": "1.50813800",
+  "runtime": {
+    "kind": "backend",
+    "pid": 22152,
+    "executable": "E:\\javaee\\jdk\\jdk-21.0.7\\bin\\java.exe",
+    "startTime": "2026-10-24T10:44:36.9099052+08:00",
+    "port": 8090,
+    "stdout": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-07-06\\new-chat\\tourism-decision-system\\BS\\.runtime\\backend-20261024-104436-out.log",
+    "stderr": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-07-06\\new-chat\\tourism-decision-system\\BS\\.runtime\\backend-20261024-104436-err.log",
+    "package": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-07-06\\new-chat\\tourism-decision-system\\BS\\backend\\target\\narrative-backend-0.1.0-SNAPSHOT.jar",
+    "sha256": "39F10F5A04DEAD06A659BED8007FD9A3B3F6B0EA38086A782860AF406F02837F"
+  },
+  "originalLongSaveUnchanged": true
+}

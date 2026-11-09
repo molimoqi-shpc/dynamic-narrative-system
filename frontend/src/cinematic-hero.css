@@ -1,0 +1,131 @@
+/* V7 composition: a close portrait and its displaced ink silhouette cross the
+   scenery boundary; the readable manuscript sits on its own paper layer. */
+.refraction-theme .chapter-ghost { position:absolute; right:14px; top:-30px; font:italic 140px/1 Georgia,serif; color:#23364c09; letter-spacing:-12px; pointer-events:none; }
+.refraction-theme .refraction-play.paper-theatre { overflow:clip!important; }
+.refraction-theme .refraction-play .story-heading h1 { position:relative; z-index:1; }
+.refraction-theme .refraction-play .story-reader:focus-visible { outline:1px solid #91a5bd; outline-offset:-1px; }
+.refraction-theme .refraction-play .composer-submit:disabled { background:#cd2835; opacity:.95; }
+.refraction-theme .refraction-stage .stage-caption { background:none; clip-path:none; text-shadow:0 2px 12px #07111fe6; padding:0; }
+.refraction-theme .refraction-stage .stage-caption-actions button { border-bottom-color:#d6e4f3aa; }
+.refraction-theme .refraction-stage .stage-description { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; max-height:none; overflow:hidden; margin-bottom:12px; }
+.refraction-theme .refraction-stage .refraction-plane { background:var(--stage-accent,#1758ed); }
+.refraction-theme .refraction-stage .refraction-plane::before { content:''; position:absolute; inset:0; pointer-events:none; opacity:.2; mix-blend-mode:soft-light; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23grain)' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+.refraction-theme .refraction-stage .portrait-silhouette { --shadow-min:.84; --shadow-max:.94; animation-name:cinematic-silhouette-light; filter:var(--silhouette-cutout); }
+.stage-filter-defs { position:absolute; width:0; height:0; pointer-events:none; }
+@keyframes cinematic-silhouette-light { 0%,100% { margin-left:0; opacity:var(--shadow-min); } 50% { margin-left:-4px; opacity:var(--shadow-max); } }
+.refraction-theme .refraction-stage .hero-seams { display:none; }
+.manuscript-paper { display:none; }
+.symbolic-figure>svg { display:block; width:100%; height:100%; }
+.refraction-theme .refraction-stage .paper-person.symbolic-portrait { filter:var(--symbolic-cutout); }
+.refraction-theme .refraction-stage .hero-seams::before,.refraction-theme .refraction-stage .hero-seams::after { content:''; position:absolute; width:120%; height:1px; background:#8da9ce; transform-origin:left; transform:rotate(37deg); }
+.refraction-theme .refraction-stage .hero-seams::before { left:0; top:68%; }
+.refraction-theme .refraction-stage .hero-seams::after { left:9px; top:69%; background:var(--stage-accent,#1758ed); }
+.refraction-theme .refraction-stage .stage-cast-list { z-index:12; }
+.stage-orbit { display:none; }
+.refraction-theme .refraction-stage.stage-night .paper-landscape { filter:saturate(.9); opacity:1; object-position:65% 50%; }
+.refraction-theme .refraction-stage.stage-night .paper-distance { background:linear-gradient(0deg,#0b152aeb,transparent 58%); }
+.refraction-theme .refraction-stage.stage-night .refraction-plane { opacity:.4; }
+.refraction-theme .refraction-stage.stage-night .portrait-silhouette { --shadow-min:.55; --shadow-max:.7; opacity:.65; }
+@media(min-width:761px) {
+  .refraction-theme .refraction-play.paper-theatre { grid-template-columns:128px minmax(0,.88fr) minmax(350px,1.12fr); }
+  .refraction-theme .refraction-play .story-stage { padding:26px 18px clamp(30px,2.5vw,42px) 24px; overflow:visible; }
+  .refraction-theme .refraction-play .story-reader { padding-right:clamp(45px,3.6vw,60px); scrollbar-width:none; scrollbar-gutter:auto; }
+  .refraction-theme .refraction-play .story-reader::-webkit-scrollbar { width:0; }
+  .refraction-theme .refraction-play .story-heading { margin-bottom:12px; }
+  .refraction-theme .refraction-play .decision-note { border-left:2px solid #315bd8; padding-left:10px; margin-bottom:8px; font-size:11px; line-height:16px; }
+  .refraction-theme .refraction-play .decision-note summary { cursor:pointer; }
+  .refraction-theme .refraction-play .decision-note summary:focus-visible { outline:1px solid #315bd8; outline-offset:4px; }
+  .refraction-theme .refraction-play .decision-note>p { line-height:1.8; margin:8px 0; }
+  .refraction-theme .refraction-play .story-heading h1 { font-size:clamp(34px,3.7vw,61px); letter-spacing:2px; }
+  .refraction-theme .refraction-play .story-prose { --prose-size:var(--reader-font-size,16px); }
+  .refraction-theme .refraction-play .refraction-stage { background:none; margin-left:-66px; clip-path:none; overflow:visible!important; }
+  .refraction-theme .refraction-play .refraction-stage::before { content:''; position:absolute; inset:0; background:#172535; clip-path:polygon(9% 0,100% 0,100% 100%,27% 100%,0 73%,13% 27%); z-index:-4; }
+  .refraction-theme .refraction-stage .paper-landscape,.refraction-theme .refraction-stage .paper-distance { clip-path:polygon(9% 0,100% 0,100% 100%,27% 100%,0 73%,13% 27%); }
+  .refraction-theme .refraction-stage .paper-landscape { inset:0; width:100%; height:100%; opacity:.93; filter:saturate(.8) contrast(1.08); object-position:65% center; }
+  .refraction-theme .refraction-stage .paper-distance { inset:0; background:linear-gradient(0deg,#101c2be6,transparent 62%),linear-gradient(90deg,#0b172e7a,transparent 60%); }
+  .refraction-theme .refraction-stage .stage-orbit { display:block; position:absolute; inset:0; width:100%; height:100%; fill:none; stroke:#e0e9f3; stroke-width:.7; opacity:.38; pointer-events:none; z-index:0; }
+  .refraction-theme .refraction-stage .stage-orbit .orbit-tick { stroke-width:.8; }
+  .refraction-theme .refraction-stage .refraction-plane { inset:-7% 32% -7% 4%; clip-path:polygon(0 0,24% 0,100% 100%,75% 100%); }
+  .refraction-theme .refraction-stage .refraction-actor { overflow:visible; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-cinematic .paper-person-wrap { translate:clamp(-64px,-3.5vw,-28px) 0; }
+  /* One continuous manuscript surface, measured against its writing strip.
+     It stays still when portraits change and never captures control input. */
+  .refraction-theme .refraction-play .manuscript-paper { display:block; position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; z-index:-1; }
+  .manuscript-paper path { vector-effect:non-scaling-stroke; }
+  .manuscript-paper-page { fill:var(--paper,#f3f3f1); }
+  .manuscript-paper-shadow { fill:none; stroke:#13233b26; stroke-width:2; }
+  .manuscript-paper-edge { fill:none; stroke:#e7ebed; stroke-width:1; }
+  .manuscript-paper-accent { fill:none; stroke:#2865b9; stroke-width:.8; opacity:.7; }
+  .manuscript-paper-echo { fill:none; stroke:#91a7bc; stroke-width:.5; opacity:.65; }
+  .refraction-theme .refraction-stage .paper-person-wrap { inset:0 -24% -110% -25%; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-cinematic .paper-person-wrap { inset:1% -8% -15% -14%; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-western-knight-male .paper-person-wrap { inset:1% -4% -25% -4%; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-western-rose-elf-female .paper-person-wrap { inset:1% -3% -32% -12%; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-western-cleric-male .paper-person-wrap { inset:2% -9% -33% -7%; }
+  .refraction-theme .refraction-stage .paper-person,.refraction-theme .refraction-stage .portrait-silhouette { object-fit:contain; object-position:center top; }
+  .refraction-theme .refraction-stage .portrait-silhouette { transform:translate(calc(-145px + var(--stage-x)*-.8),25px) scale(.92); opacity:.88; filter:var(--silhouette-cutout); mask-image:linear-gradient(90deg,transparent 4%,#000 18%,#000 100%),linear-gradient(0deg,#000 91%,transparent 100%); mask-composite:intersect; }
+  .refraction-theme .refraction-stage.stage-night .portrait-silhouette { filter:var(--silhouette-cutout); opacity:.75; }
+  .refraction-theme .refraction-stage .paper-foreground { background:radial-gradient(ellipse at 110% 78%,#091524e0,transparent 58%),linear-gradient(0deg,#0c182ba8 0,transparent 23%),linear-gradient(90deg,transparent 52%,#0c182b45 73%,#0c182bc9); clip-path:polygon(9% 0,100% 0,100% 100%,27% 100%,0 73%,13% 27%); }
+  .refraction-theme .refraction-stage .stage-caption { width:155px; max-width:24%; right:28px; bottom:140px; }
+  .refraction-theme .refraction-stage .stage-caption::before { display:none; }
+  .refraction-theme .refraction-stage .stage-caption h2::before { content:''; position:absolute; width:5px; height:5px; left:-14px; top:.6em; background:#e7f0ff; border:1px solid #749bff; transform:rotate(45deg); }
+  .refraction-theme .refraction-stage .stage-caption h2 { font-size:clamp(26px,2.4vw,39px); margin:8px 0; letter-spacing:2px; color:#f1f6ff; }
+  .refraction-theme .refraction-stage .stage-caption h2 { position:relative; }
+  .refraction-theme .refraction-stage .stage-caption-kicker { display:flex; align-items:center; gap:10px; font-size:9px; color:#d6dfeb; }
+  .refraction-theme .refraction-stage .stage-caption-kicker::after { content:''; height:1px; flex:1; background:linear-gradient(90deg,#c7d7ea99,transparent); }
+  .refraction-theme .refraction-stage .stage-description { font-size:11px; line-height:1.8; }
+  .refraction-theme .refraction-stage .stage-caption-actions { gap:3px; }
+  .refraction-theme .refraction-stage .stage-caption-actions button { padding:6px 0; letter-spacing:1px; border-bottom-color:#d6e4f380; transition:color .16s,border-color .16s; }
+  .refraction-theme .refraction-stage .stage-caption-actions button:hover:not(:disabled) { background:transparent; transform:none; color:#c1d5ff; border-bottom-color:#93b5ff; }
+  .refraction-theme .refraction-stage .stage-cast-menu { top:auto; bottom:28px; right:27px; left:auto; width:155px; z-index:10; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary { background:transparent; border:0; border-block:1px solid #c2d3e76b; padding:9px 0; box-shadow:none; text-shadow:0 1px 6px #07111f; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary:hover { border-color:#c7dcff; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary { gap:8px; white-space:nowrap; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary>.theatre-glyph { width:19px; height:21px; flex:none; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary>span { flex:1; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary>i { margin-left:auto; }
+  .refraction-theme .refraction-stage .stage-cast-menu summary b { color:#e3ecf7; }
+  .refraction-theme .refraction-stage .stage-cast-list { position:absolute; top:auto; bottom:44px; right:0; width:280px; max-width:calc(100vw - 64px); box-sizing:border-box; max-height:60vh; }
+  .refraction-theme .refraction-stage .cast-switch { bottom:86px; right:27px; width:155px; justify-content:space-between; border-bottom:1px solid #c2d3e76b; padding-bottom:5px; text-shadow:0 1px 6px #07111f; }
+  .refraction-theme .refraction-stage .cast-switch button { padding-inline:5px; }
+  .refraction-theme .refraction-stage :is(.cast-switch button,.stage-cast-menu summary,.stage-caption-actions button):focus-visible { outline:1px solid #dce9ff; outline-offset:4px; }
+  /* The writing-strip geometry is defined in folio-details.css. */
+  .refraction-theme .refraction-play .game-composer { position:relative; box-sizing:border-box; z-index:8; }
+  .refraction-theme .refraction-play .composer-form textarea { border-color:#8999a8; background:#ffffff65; }
+  .refraction-theme .refraction-play .theatre-tools { padding-left:20px; padding-right:13px; border-right:1px solid #a8b8c23d; }
+  .refraction-theme .refraction-play .theatre-tools>nav { gap:25px; }
+  .refraction-theme .refraction-play .theatre-tools>nav button { font-size:15px; }
+  .refraction-theme .refraction-play .rail-story { background:#17222d; }
+  .refraction-theme .refraction-play .world-header { z-index:12; }
+  .refraction-theme .refraction-play .world-header nav { background:linear-gradient(90deg,#101c323d,#101c3270); padding:5px 9px; backdrop-filter:none; }
+}
+@media(min-width:1600px) {
+  .refraction-theme .refraction-play.paper-theatre { grid-template-columns:170px minmax(0,.88fr) minmax(550px,1.12fr); }
+  .refraction-theme .refraction-play .story-stage { padding:35px 24px 42px 35px; }
+  .refraction-theme .refraction-play .refraction-stage { margin-left:-86px; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-cinematic .paper-person-wrap { inset:1% -5% -14% -16%; }
+  .refraction-theme .refraction-stage .portrait-silhouette { transform:translate(calc(-195px + var(--stage-x)*-.8),24px) scale(.94); }
+  .refraction-theme .refraction-stage .stage-caption { right:34px; width:170px; bottom:185px; }
+  .refraction-theme .refraction-stage .stage-cast-menu { right:34px; width:170px; }
+  .refraction-theme .refraction-stage .cast-switch { bottom:128px; right:34px; width:170px; }
+  .refraction-theme .chapter-ghost { font-size:185px; top:-38px; }
+}
+@media(max-width:1100px) and (min-width:761px) {
+  .refraction-theme .refraction-play.paper-theatre { grid-template-columns:94px minmax(0,1.1fr) minmax(280px,1fr); }
+  .refraction-theme .refraction-play .story-stage { padding:20px 14px 24px; }
+  .refraction-theme .refraction-stage .stage-caption { right:16px; width:130px; max-width:32%; }
+  .refraction-theme .refraction-stage .stage-caption h2 { font-size:26px; }
+  .refraction-theme .refraction-stage .cast-switch { width:130px; right:16px; }
+  .refraction-theme .refraction-stage .stage-cast-menu { right:16px; width:130px; }
+  .refraction-theme .refraction-stage .stage-description { display:none; }
+  .refraction-theme .refraction-play .theatre-tools>nav button { font-size:13px; }
+}
+@media(max-width:760px) {
+  .refraction-theme .chapter-ghost { font-size:88px; right:10px; top:-18px; letter-spacing:-7px; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-cinematic .paper-person-wrap { inset:0 -1% -125% 31%; }
+  .refraction-theme .refraction-stage .refraction-actor.portrait-western-knight-male .paper-person-wrap { inset:0 -8% -95% 27%; }
+  .refraction-theme .refraction-stage .stage-caption { background:#14233dc9; padding:8px; }
+  .refraction-theme .refraction-stage .hero-seams { opacity:.25; }
+  .refraction-theme .refraction-play .game-composer { clip-path:none; }
+}
+@media(prefers-reduced-motion:reduce) { .refraction-theme .refraction-stage .hero-seams { transition:none; } }

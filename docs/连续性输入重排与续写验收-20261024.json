@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-24",
+  "sessionId": "sess_c8da15ad413e4c4888c6b6ff077",
+  "scope": "Normal continuous story sources, unpublished copyediting and atomic archival",
+  "humanReading": {
+    "mainContinuityAccepted": true,
+    "everyTemporalPhrasePerfect": false,
+    "finalAssessment": "人工连读家宴末尾、两天修屋（step17）与七天生活出行（step19）。最终分支有连续的起因、行动、结果与余波：曹大此前指出椽子糟了，陆行舟请他查看、自出工料，修妥后当面结工钱；下一段承接屋顶已经修好的状态，经雨验漏、向曹大反馈，再征询母亲身体与意愿，带她当日往返青溪镇，回来休息后继续渡头营生。韩七的照应、曹大嘴硬但关切、沈氏担心拖累又愿出门的态度有承接。没有重演家宴、再次修同一根椽子、重复付工钱、重新接下已拒绝的旧送药委托或凭阶段目标结束世界。最终7日与604800秒一致，本篇起点来源直接绑定step17末尾。当前第9轮、分支4、PLAYING，无待完成操作。本轮主要接续断点通过有限场景复测；不能将此写成任意长篇永久零错或成熟小说文学质量全部验收。正文仍有概述与局部日序的含混句式：step19“如此过了两三日”后聚焦“第三日下午”，可理解为概述头几日再展开第三日，但措辞不够精确；timeProgress.basis中“第四日并顺带验顶无痕”也比正文多了一层概括，不作为新的第四日验屋事实。此类文字精度没有冒充全部消失。",
+    "reviews": {
+      "step15初测与首次恢复": "失败，保留两份主创原稿、归档超时和费用。主创两日修屋后又附往后几日雨后回访；首次编辑只改第二日为次日，遗漏多日尾声，且交接一边记尾声一边回到修屋当晚。该失败分支后来回溯，未改写原稿为通过样本。",
+      "publication-replay（step15原稿）": "只读真实复测约¥0.042445。主API明确删去超出两日框架的雨后尾声，保留修屋、结工钱与送客结果，并从同一修订稿整理个人经历和交接。检查确认原已发表章节和运行状态未改变。",
+      "step17修屋重测": "正常游戏流程完成，主API在发表前删除第四日天未亮再出船的多余尾声。原稿与修订均保存；正文最后停在修屋后回家，新增2 DAY=172800秒，工钱已结清。通过原方向内事件完成与后续可接续检查。",
+      "step18七日续写": "失败，归档把原稿正常的第二日、第四日、第五日及七日总结误压成三日，程序保留作者七日使正文/归档说明与时钟不一致。保留失败正文、原回复和费用，回溯到step17后复跑，未包装成通过。",
+      "publication-replay-step18": "只读真实复测约¥0.040690。补清普通日子可以省略、篇末总天数不重复计入后，主API保留原第四日、第五日及七日总结，不再压缩日序。该次仍误带更早夸鱼起点标签，随后由通用startSource绑定原文末尾机制修复，并用免费回归与step19真实存档验收。",
+      "step19最终七日重测": "正常游戏流程完成。正文第一夜雨、第二日反馈、第三日提议、第四日出行、第五日休息、第六七日营生与第七日傍晚回家构成完整一周；普通日子跳过而未被压成三日。母亲行动先有实际意愿，曹大韩七的态度有亲历依据，没有无端新盟约或旧任务重启。最终无正文编辑，主API只修订时间描述，程序将起点绑定step17原文末尾，7 DAY=604800秒保存。前述含混措辞仍明确保留为文字精度限制。重复POST免费，原长期档未改动，无待完成操作。该段为本轮最后一次正常故事生成。"
+    },
+    "costPolicy": "沿用原¥4批次上限，全部失败、归档恢复、两次只读真实回放和复跑均计费，不另开预算。最终一次正常故事临时使用已有8调用额度保护，在7调用内完成；收尾恢复正常24调用配置，不再收费生成。"
+  },
+  "freeChecks": {
+    "sourceOrder": 119,
+    "publicationAndTime": 91,
+    "finalSourceBoundRegression": 79,
+    "note": "Overlapping batches, never add these counts. Final batch includes 30 real-MySQL integration cases with mocked model."
+  },
+  "usage": {
+    "calls": 122,
+    "estimatedCny": "3.58507800",
+    "inputTokens": "2531010",
+    "outputTokens": "263517",
+    "unknown": "0",
+    "creation": {
+      "providerLogEntries": [
+        "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+      ],
+      "calls": 3,
+      "roundedEstimateCny": "0.0310",
+      "upperEstimateCny": "0.03115",
+      "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+    },
+    "budgetUpperEstimateCny": "3.61622800"
+  },
+  "newCostCny": "1.12436600",
+  "remainingBatchCny": "0.38377200",
+  "runtime": {
+    "story_seconds": 3435300,
+    "branch_epoch": 4,
+    "revision": 33,
+    "active_operation": null
+  },
+  "originalLongSaveUnchanged": true,
+  "pending": null,
+  "paidGenerationStopped": true
+}

@@ -1,0 +1,144 @@
+/* Shared folio details: thin navigation, etched scenery and usable utility windows. */
+.compass-mark { display:block; width:42px; height:48px; color:#223442; flex:none; }
+.refraction-theme .refraction-stage.stage-railway .paper-landscape { object-position:75% 12%; opacity:1; filter:saturate(.8); }
+.refraction-theme .refraction-play .world-brand { align-items:center; gap:12px; font-size:clamp(19px,1.75vw,28px); white-space:nowrap; }
+.refraction-theme .refraction-play .world-brand small { letter-spacing:2px; font-size:8px; margin-top:5px; color:#70808d; }
+.refraction-theme .refraction-play .world-location { border-left:1px solid #8fa1af55; padding-left:17px; }
+.refraction-theme .refraction-play .theatre-tools { isolation:isolate; padding-top:18px; gap:0; }
+.rail-etching { position:absolute; z-index:-1; inset:20% -20px 0 0; pointer-events:none; background-image:var(--rail-art); background-position:43% 50%; background-size:auto 100%; filter:grayscale(1) contrast(.6); opacity:.13; mask-image:linear-gradient(0deg,#000 20%,transparent 100%); }
+.refraction-theme .refraction-play .theatre-tools>nav { flex:0 1 auto; position:relative; margin-left:12px; gap:9px; padding:3px 0 15px; border-left:1px solid #66788588; }
+.refraction-theme .refraction-play .theatre-tools>nav button { padding:9px 0 9px 22px; min-height:35px; font:14px/1.5 "Noto Serif SC",SimSun,serif; letter-spacing:2px; }
+.refraction-theme .refraction-play .theatre-tools>nav button::after,.refraction-theme .refraction-play .rail-utilities button::after { display:block; left:-3px; width:4px; height:4px; background:#f3f3f1; border:1px solid #6c7f91; top:calc(50% - 2px); }
+.refraction-theme .refraction-play .theatre-tools>nav .rail-story { margin:0 -5px 5px -14px; padding:9px 0 9px 31px; clip-path:polygon(0 0,100% 5%,91% 100%,3% 94%); background:#1f2934; color:#fff; font-size:18px; letter-spacing:4px; }
+.refraction-theme .refraction-play .theatre-tools>nav .rail-story::after { display:none; }
+.refraction-theme .refraction-play .theatre-tools>nav button:not(.rail-story):hover::after { background:#315bd8; border-color:#315bd8; box-shadow:0 0 0 3px #315bd815; }
+.rail-utilities { margin:auto 0 18px 12px; padding-top:20px; border-left:1px solid #66788588; }
+.refraction-theme .refraction-play .rail-utilities button { display:flex; min-height:39px; padding:6px 0 6px 22px; align-items:baseline; gap:9px; letter-spacing:2px; }
+.rail-utilities small { display:none; }
+.refraction-theme .refraction-play .rail-utilities button[aria-expanded=true] { color:#315bd8; }
+.refraction-theme .refraction-play .theatre-tools .theatre-self { margin:0 0 4px 34px; padding:14px 0 0; border-top:1px solid #63798c; font-size:13px; flex:none; }
+.refraction-theme .refraction-play .theatre-self::after { display:none; }
+.refraction-theme .refraction-play .theatre-self small { display:block; font:10px/2 system-ui; color:#657584; letter-spacing:1px; }
+.opening-label { font:11px/1.5 system-ui; color:#71839a; letter-spacing:3px; margin:0 0 20px; }
+.opening-story { margin-bottom:28px; }
+.world-naming { font-style:italic; color:#6b7c8b; }
+.refraction-theme .refraction-play .world-header nav { background:#13202c9e; backdrop-filter:none; border-bottom:1px solid #d6e4f32b; }
+.refraction-theme .refraction-play .world-header nav>button { border-left:1px solid #a5bed042; padding-left:12px; }
+/* Floating panels are local controls, do not obscure or reset the reading state. */
+body.refraction-theme .reading-float.el-dialog { position:fixed; z-index:2101; width:340px; padding:16px; left:138px; bottom:30px; top:auto; margin:0!important; max-width:calc(100vw - 32px); border:1px solid #8c9ca9!important; border-top:3px solid #315bd8!important; box-shadow:8px 14px 40px #11213235!important; background:#f6f7f4!important; border-radius:0!important; }
+body.refraction-theme .reading-float .el-dialog__header { padding-bottom:12px; border-bottom:1px solid #99aab85c; }
+body.refraction-theme .reading-float .el-dialog__title { font:18px SimSun,serif; letter-spacing:2px; margin:0; }
+.reading-close { position:absolute; right:14px; top:12px; border:0; background:none; color:#7a8b9b; font:23px/1 system-ui; cursor:pointer; padding:4px; }
+body.refraction-theme .reading-float .el-dialog__body { padding:14px 5px 3px; color:#334759; }
+.utility-kicker { font:10px system-ui; color:#7a8b9b; letter-spacing:3px; margin:0 0 18px; }
+.reading-control { display:block; margin-bottom:13px; }
+.reading-control>span { display:flex; justify-content:space-between; font-size:12px; }
+.reading-control output { font:10px system-ui; color:#708397; font-variant-numeric:tabular-nums; }
+.reading-control input { width:100%; accent-color:#315bd8; height:16px; margin:6px 0 0; cursor:ew-resize; }
+.reading-font { display:flex; justify-content:space-between; align-items:center; font-size:12px; margin:16px 0; }
+.reading-font select { background:#eef1f3; color:#35495e; border:1px solid #b5c2cd; padding:7px; border-radius:0; }
+.reading-sample { font-family:var(--reader-font); font-size:var(--reader-font-size); letter-spacing:var(--reader-spacing); line-height:var(--reader-leading); border-block:1px solid #a1b3c153; padding:12px 0; margin:14px 0; overflow-wrap:anywhere; }
+.reading-float footer { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.reading-float footer small { font:9px/1.8 system-ui; color:#7c8a97; }
+.reading-float footer button { background:transparent; border:0; border-bottom:1px solid #69849b; padding:5px 0; color:#385a78; font-size:11px; cursor:pointer; flex:none; }
+body.refraction-theme.playing-game .music-dock { left:138px; bottom:30px; z-index:2100; }
+body.refraction-theme.playing-game .music-dock:not(.expanded) { display:none; }
+body.refraction-theme.playing-game .music-console { border-top:3px solid #315bd8!important; border-radius:0!important; box-shadow:8px 14px 40px #11213235!important; }
+.archive-intro>span { font:10px system-ui; letter-spacing:3px; color:#5d7997; }
+.archive-intro>p { font:14px/1.8 SimSun,serif; color:#718195; margin:13px 0 28px; }
+.archive-layout { display:grid; grid-template-columns:150px minmax(0,1fr); gap:30px; align-items:start; }
+.archive-layout>nav { position:sticky; top:0; display:flex; flex-direction:column; max-height:65vh; overflow:auto; border-left:1px solid #9eaebd; }
+body.refraction-theme .archive-layout>nav button { position:relative; text-align:left; padding:13px 10px 13px 17px; color:#556b80!important; border:0!important; border-bottom:1px solid #becbd83d!important; background:none!important; border-radius:0!important; cursor:pointer; }
+.archive-layout>nav button::before { content:''; position:absolute; left:-3px; top:22px; width:4px; height:4px; background:#315bd8; transform:rotate(45deg); }
+.archive-layout>nav button small { display:block; font:9px system-ui; letter-spacing:2px; margin-bottom:6px; }
+.archive-layout>nav button span { font:14px/1.7 SimSun,serif; }
+body.refraction-theme .archive-layout>nav button[aria-pressed=true] { background:#315bd80c!important; color:#254fc2!important; border-left:2px solid #315bd8!important; }
+.archive-passage { min-width:0; }
+.archive-passage header { margin-bottom:24px; }
+.archive-passage header>small { font:10px system-ui; letter-spacing:2px; color:#73859a; }
+.archive-passage h2 { font:26px/1.4 SimSun,serif; color:#263a50; margin:12px 0; }
+.archive-input { color:#789; font-size:11px; line-height:1.8; white-space:pre-wrap; }
+.archive-empty { padding:40px 0; color:#718296; }
+.story-archive .story-prose { white-space:pre-wrap; }
+@media(min-width:1600px) { body.refraction-theme .reading-float.el-dialog,body.refraction-theme.playing-game .music-dock { left:180px; } .refraction-theme .refraction-play .theatre-tools>nav { gap:16px; } }
+@media(max-height:740px) and (min-width:761px) { .refraction-theme .refraction-play .theatre-tools>nav { gap:1px; } .refraction-theme .refraction-play .theatre-tools>nav button { padding-block:7px; min-height:28px; } .rail-utilities { padding-top:10px; margin-bottom:12px; } .refraction-theme .refraction-play .rail-utilities button { min-height:32px; } }
+@media(max-width:1100px) and (min-width:761px) { .refraction-theme .refraction-play .world-brand small { display:none; } .refraction-theme .refraction-play .world-brand { gap:7px; font-size:18px; } .compass-mark { width:28px; } .rail-utilities small { display:none; } .refraction-theme .refraction-play .theatre-tools { padding-left:10px; } .refraction-theme .refraction-play .theatre-tools>nav button { letter-spacing:0; padding-left:12px; } .refraction-theme .refraction-play .theatre-tools>nav .rail-story { padding-left:24px; } body.refraction-theme .reading-float.el-dialog,body.refraction-theme.playing-game .music-dock { left:100px; } }
+@media(max-width:760px) {
+ .compass-mark { width:23px; height:30px; }
+ .refraction-theme .refraction-play .world-brand { font-size:16px; gap:5px; letter-spacing:1px; }
+ .refraction-theme .refraction-play .world-brand small,.refraction-theme .refraction-play .world-location,.rail-etching { display:none; }
+ .refraction-theme .refraction-play .world-header nav { background:none; border:0; }
+ .refraction-theme .refraction-play .theatre-tools { padding:0 3px; flex-direction:row; }
+ .refraction-theme .refraction-play .theatre-tools>nav { display:flex; flex:1; flex-direction:row; border:0; gap:0; margin:0; padding:0; }
+ .refraction-theme .refraction-play .theatre-tools>nav button { padding:4px; min-height:43px; font:10px system-ui; letter-spacing:0; }
+ .refraction-theme .refraction-play .theatre-tools>nav .rail-story { margin:0; padding:4px 6px; font:10px system-ui; letter-spacing:0; clip-path:none; }
+ .refraction-theme .refraction-play .theatre-tools :is(nav,.rail-utilities) button::after { display:none; }
+ .refraction-theme .refraction-play .theatre-tools .theatre-self { display:none; }
+ .rail-utilities { display:flex; flex:none; gap:3px; border:0; border-left:1px solid #becbd8; padding:0 0 0 3px; margin:0; }
+ .refraction-theme .refraction-play .rail-utilities button { display:flex; min-height:43px; padding:4px; font-size:10px; letter-spacing:0; }
+ .rail-utilities small { display:none; }
+ body.refraction-theme .reading-float.el-dialog,body.refraction-theme.playing-game .music-dock { left:12px; bottom:62px; max-height:calc(100dvh - 90px); overflow:auto; }
+ .archive-layout { grid-template-columns:1fr; gap:22px; }
+ .archive-layout>nav { position:static; flex-direction:row; border:0; max-width:100%; overflow:auto; }
+ body.refraction-theme .archive-layout>nav button { flex:none; min-width:105px; }
+ .archive-passage h2 { font-size:24px; }
+}
+@media(prefers-reduced-motion:no-preference) { .rail-utilities button:hover span { transform:translateX(2px); } .rail-utilities button span { transition:transform .18s ease; } .reading-float { animation:utility-arrive .2s ease both; } @keyframes utility-arrive { from { opacity:0; translate:0 10px; } to { opacity:1; translate:0 0; } } }
+
+/* Writing controls remain native, with a shared thin, parallel-cut outline. */
+.refraction-theme .refraction-play .game-composer { padding-top:10px; }
+.refraction-theme .refraction-play .composer-top { display:flex; align-items:center; gap:8px; margin-bottom:7px; }
+.refraction-theme .refraction-play .composer-top h2 { font-size:11px; line-height:1.6; }
+.refraction-theme .refraction-play .composer-top h2::before { content:'↣'; display:inline-block; margin-right:7px; color:#293e55; font:18px/1 Georgia,serif; rotate:-12deg; }
+.refraction-theme .refraction-play .composer-modes { margin:0 0 0 auto; gap:3px; }
+.refraction-theme .refraction-play .composer-modes button { font-size:9px; padding:3px 7px; line-height:1.4; }
+.refraction-theme .refraction-play .composer-form { gap:5px; align-items:start; }
+.refraction-theme .refraction-play .composer-entry { min-width:0; }
+.refraction-theme .refraction-play .composer-entry textarea { display:block; width:100%; }
+.refraction-theme .refraction-play .composer-form textarea { box-sizing:border-box; min-height:40px; height:40px; max-height:160px; padding:9px 11px; border:1px solid #9faebbb0; background:#ffffff4d; font:12px/20px var(--reader-font,SimSun,serif); resize:vertical; }
+.refraction-theme .refraction-play .composer-form textarea:focus-visible { outline:1px solid #6e8db7; outline-offset:1px; }
+.refraction-theme .refraction-play .composer-submit { box-sizing:border-box; min-width:0; min-height:40px; height:40px; padding:0 9px; font-size:13px; line-height:1.3; letter-spacing:.5px; gap:7px; }
+.refraction-theme .refraction-play .composer-foot { margin-top:5px; }
+.refraction-theme .refraction-play .composer-hints { gap:8px; }
+.refraction-theme .refraction-play .composer-hints button { font-size:9px; padding:2px 4px; }
+@media(min-width:761px) {
+ .refraction-theme .refraction-play .game-composer { --entry-height:clamp(44px,3.35vw,56px); --entry-cut:clamp(20px,1.55vw,26px); --entry-button:clamp(160px,13.5vw,226px); width:calc(100% + 11.5vw); max-width:calc(100vw - 360px); border-top:0; padding-top:12px; }
+ .refraction-theme .refraction-play .composer-top { max-width:calc(100% - var(--entry-button)*.7); gap:14px; margin-bottom:10px; flex-wrap:nowrap; }
+ .refraction-theme .refraction-play .composer-top h2 { flex:none; margin:0; font-size:clamp(13px,1.04vw,17px); font-weight:500; line-height:1.6; }
+ .refraction-theme .refraction-play .composer-top h2::before { font-size:22px; margin-right:10px; }
+ .refraction-theme .refraction-play .composer-modes { flex:1; justify-content:flex-end; gap:4px; margin-left:auto; }
+ .refraction-theme .refraction-play .composer-modes button { font-size:clamp(11px,.81vw,13.5px); padding:5px 12px; white-space:nowrap; }
+ .refraction-theme .refraction-play .composer-modes button[aria-pressed=true] { position:relative; min-width:clamp(112px,10.1vw,168px); padding-inline:16px; }
+ .refraction-theme .refraction-play .composer-modes button[aria-pressed=true]::before { content:''; position:absolute; top:0; bottom:0; left:2px; width:3px; background:#1c63e8; transform:skewX(22deg); transform-origin:top left; pointer-events:none; }
+ .refraction-theme .refraction-play .composer-form { grid-template-columns:minmax(0,1fr) var(--entry-button); gap:8px; align-items:stretch; }
+ .refraction-theme .refraction-play .composer-entry { padding:1px; background:#78838d; clip-path:polygon(0 0,calc(100% - var(--entry-cut)) 0,100% 100%,0 100%); }
+ .refraction-theme .refraction-play .composer-entry:focus-within { background:#1e5ec3; }
+ .refraction-theme .refraction-play .composer-entry textarea { min-height:0; height:calc(var(--entry-height) - 2px); max-height:none; border:0; padding:clamp(11px,1vw,16px) calc(var(--entry-cut) + 12px) 8px 16px; background:#eef0ef; clip-path:polygon(0 0,calc(100% - var(--entry-cut)) 0,100% 100%,0 100%); font-size:clamp(13px,1.08vw,18px); line-height:1.5; resize:none; outline:none; }
+ .refraction-theme .refraction-play .composer-entry textarea:focus-visible { outline:none; }
+ .refraction-theme .refraction-play .composer-submit { position:relative; isolation:isolate; min-height:var(--entry-height); height:var(--entry-height); padding:0 22px; gap:22px; font-size:clamp(16px,1.28vw,21px); font-weight:500; letter-spacing:1px; background:#fff; clip-path:polygon(0 0,calc(100% - var(--entry-cut)) 0,100% 100%,var(--entry-cut) 100%); }
+ .refraction-theme .refraction-play .composer-submit::before { content:''; position:absolute; z-index:-1; inset:1.2px; clip-path:polygon(0 0,calc(100% - var(--entry-cut)) 0,100% 100%,var(--entry-cut) 100%); background:#d21e2b; pointer-events:none; transition:background .15s; }
+ .refraction-theme .refraction-play .composer-submit:not(:disabled):hover { background:#fff; transform:translateX(2px); }
+ .refraction-theme .refraction-play .composer-submit:not(:disabled):hover::before { background:#b81e2a; }
+ .refraction-theme .refraction-play .composer-submit:disabled { background:#fff; opacity:1; }
+ .refraction-theme .refraction-play .composer-submit span { font:clamp(23px,1.8vw,30px)/1 Georgia,serif; }
+ .refraction-theme .refraction-play .composer-submit:focus-visible { outline:2px solid #fff; outline-offset:-4px; }
+ .refraction-theme .refraction-play .composer-foot { min-height:clamp(26px,1.9vw,32px); align-items:flex-start; margin-top:clamp(8px,.7vw,12px); gap:12px; font-size:clamp(10px,.75vw,12px); }
+ .refraction-theme .refraction-play .composer-foot>span { flex:none; line-height:22px; }
+ .refraction-theme .refraction-play .composer-hints { flex-wrap:wrap; gap:8px; }
+ .refraction-theme .refraction-play .composer-hints button { border:1px solid #9aa9b529; border-radius:24px; padding:3px 12px; background:#b7c2ca0b; font-size:clamp(10px,.79vw,13px); line-height:1.5; }
+ .refraction-theme .refraction-play .composer-hints button::before { content:'◇'; color:#354859; margin-right:7px; }
+ .refraction-theme .refraction-play :is(.composer-feedback,.composer-decision,.composer-recipient) { max-width:calc(100% - 11.5vw); box-sizing:border-box; }
+}
+@media(max-width:1100px) and (min-width:761px) {
+ .refraction-theme .refraction-play .game-composer { width:calc(100% + 6vw); max-width:calc(100vw - 285px); --entry-button:145px; }
+ .refraction-theme .refraction-play .composer-top { max-width:100%; flex-wrap:wrap; gap:5px 12px; }
+ .refraction-theme .refraction-play .composer-modes { flex:none; }
+ .refraction-theme .refraction-play .composer-submit { gap:12px; padding-inline:18px; }
+ .refraction-theme .refraction-play :is(.composer-feedback,.composer-decision,.composer-recipient) { max-width:calc(100% - 6vw); }
+}
+@media(max-width:760px) {
+ .refraction-theme .refraction-play .composer-top { flex-wrap:wrap; gap:3px; }
+ .refraction-theme .refraction-play .composer-top h2 { font-size:11px; }
+ .refraction-theme .refraction-play .composer-form textarea { font-size:12px; }
+ .refraction-theme .refraction-play .composer-submit { font-size:12px; flex-direction:row; }
+}

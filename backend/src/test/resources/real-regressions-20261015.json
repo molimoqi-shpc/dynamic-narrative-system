@@ -1,0 +1,69 @@
+{
+  "source": "Recorded real test, API credentials and private context excluded",
+  "observation": {
+    "status": "COMPLETED",
+    "effects": [
+      {
+        "kind": "OBSERVE",
+        "scope": "VISIBLE_SCENE",
+        "actorId": "rp_f96571c23c5ec3aaa89f",
+        "sceneId": "rs_2bddfd9d95af5d22cbd9a"
+      }
+    ],
+    "process": "旅人环顾河湾船棚，观察在场的芦匠和伙计继续各自的动作。芦匠仍低头检查小船上的系绳，绳结系在木柱上，他的短刀在身边。伙计在棚门边核对自己的货箱，腰间挂着水囊。两人都专注于手头的事情，没有其他新动作。",
+    "visibility": "PUBLIC",
+    "observations": [
+      {
+        "text": "芦匠继续检查小船系绳，伙计核对货箱，两人未显示新变化。",
+        "action": "观察",
+        "status": "COMPLETED",
+        "channel": "VISUAL"
+      }
+    ],
+    "durationSeconds": 5
+  },
+  "thoughtAuthorization": {
+    "steps": [
+      {
+        "text": "我想用布条擦自己的手，不接触别人的物品。",
+        "type": "PRIVATE_INTENT",
+        "unitId": "u1",
+        "seconds": null,
+        "authorization": "NON_EXECUTING"
+      }
+    ],
+    "units": [
+      {
+        "text": "我想用布条擦自己的手，不接触别人的物品。",
+        "type": "PRIVATE_INTENT",
+        "unitId": "u1",
+        "seconds": null,
+        "authorization": "NON_EXECUTING"
+      }
+    ],
+    "rawText": "我想用布条擦自己的手，不接触别人的物品。",
+    "unresolved": false,
+    "schemaVersion": 2
+  },
+  "visibleEvents": [
+    {
+      "id": "speech_ra_792160cb886c2d9466cb|carry_1",
+      "kind": "UTTERANCE",
+      "text": "芦匠说：“知道了。刀在我手边，谁也不动。绳结紧完，我收棚了。”",
+      "speech": "知道了。刀在我手边，谁也不动。绳结紧完，我收棚了。",
+      "actorId": "ra_792160cb886c2d9466cb",
+      "endSeconds": 45,
+      "startSeconds": 41
+    },
+    {
+      "id": "wait_end_1",
+      "kind": "WAIT_END",
+      "text": "你等候的这段时间已过去。",
+      "speech": "",
+      "actorId": "rp_f96571c23c5ec3aaa89f",
+      "endSeconds": 49,
+      "startSeconds": 41
+    }
+  ],
+  "rejectedStory": "芦匠站在船棚里，手边放着刀，语气平静却不容置疑：“知道了。刀在我手边，谁也不动。绳结紧完，我收棚了。”他说完便开始收拾绳索，动作利落。你在棚外等候，四周很安静，只有河面偶尔传来水波轻响。过了一会儿，你等候的这段时间已过去，芦匠手上的活也快收尾了。"
+}

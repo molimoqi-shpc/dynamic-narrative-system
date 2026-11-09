@@ -1,0 +1,33 @@
+.runtime/
+backend/target/
+frontend/node_modules/
+frontend/dist/
+.m2/
+backend/.runtime/
+scripts/__pycache__/
+*.repair-plan.json
+
+# Node 缓存与临时目录
+frontend/.npm-cache/
+frontend/.npm-logs/
+frontend/.npm-tmp/
+frontend/.vite/
+.vite/
+
+# Java 构建产物
+*.class
+
+# 论文（不公开，避免查重风险）
+论文/
+
+# 美术候选工作文件（不参与运行）
+assets/portrait-candidates/
+
+# 日志与系统文件
+*.log
+debug.log
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*.tmp

@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-24",
+  "scope": "One final manuscript, its final author units, and source-bound personal memory; targeted recovery and live continuation",
+  "sessionId": "sess_c8da15ad413e4c4888c6b6ff077",
+  "freeRegression": {
+    "java": 139,
+    "realMysqlMockedModelIncluded": 34,
+    "python": 6,
+    "overlappingEarlierBatchesNotAdded": true
+  },
+  "humanReading": {
+    "acceptedStepIds": [
+      25,
+      26
+    ],
+    "normalPassageAccepted": true,
+    "readingMethod": "Read both complete published manuscripts together with each person's recorded experience, the actual timing source, and the preceding chapter. Interface success alone was not treated as literary acceptance.",
+    "reviews": {
+      "第一章的实际接续": "step25从已经修好的屋顶接起，经雨后验漏、与韩七商量代接客、带母亲青溪镇往返，到返程后的身体疲劳。母亲先犹豫再同意，父亲旧事与出游构成情感联系，曹大表达愿意照应。没有把修屋和结清旧工钱重演一遍，也未把普通关怀停下来要求玩家逐句输入。",
+      "第二章的持续后果": "step26直接承接灯下缝补、胳膊腿发沉的末尾，主角分担重活并安排半日营生。母亲先保留自己的轻活，之后渐缓、恢复做饭；没有一上来就忘记疲劳或凭空瞬间痊愈。第一日、第二日、第三日、次日的先后持续向前，真正写到恢复生活的结果，世界仍可继续。",
+      "人物所知与行为": "主角在渡头实际说明母亲乏、只接半日客，韩七和曹大随后回应并实际分接客；主角回家向母亲转述，母亲才谈答谢。主要人物自己的新经历与处境均已保存。未把母亲家中私话提前当成所有人的所知。",
+      "账目与约定": "step25的旧代接客脚钱已经补清；step26沿用分客旧法、各收各的脚钱，未再次索取已经结清的旧款，未把普通帮忙升级为新盟约或无限担保。",
+      "时间与来源": "两章分别按主API最终同稿累计位置保存9天和4天，服务器实际推进13天。第二章初稿日序说明写到第3日而正文已经有第4日余波，定稿统一到第4日，未冻结在玩家原先预计的两天或旧日序说明。模糊的相对日期仍属于主API的时间估计，不将9天宣称为独立精确历法校算通过。",
+      "实际发现并修复的来源遗漏": "step25首次运行漏了timeProgress内的便利startSource字段，但冻结输入的上一篇logId与实际startSeconds仍对应修屋末尾。没有手改其原始payload；已修正不可再改文模式下的来源绑定，新增回归，并在step26实际确认startSource.logId=73134、recordedEndSeconds=3608100。",
+      "文本水准与范围": "两篇是可以连读、有起因与后果的日常人物章节，包含母子关系与营生照应；个别分客确认句仍可压缩，但没有变回玩家必须重做的旧任务。不把这个小样本评为任意题材长篇小说或所有后续开放行为都永远无错。",
+      "失败记录": "此前step19的两次有效JSON只读重放、step20与step21、step23的含混日期均没有被冒称为通过；旧失败分支保留。第一次按阶段相加的精简读取重复计同日，后来固定0累计位置的同一旧稿读取正确得出9天。一次推理模式请求超时、未返用量，已停用该模式并保守预留费用。"
+    }
+  },
+  "normalPassageChecks": {
+    "25": {
+      "status": "PLAYING",
+      "clock": {
+        "to": "青溪镇回来后第三日傍晚收船后，陆行舟挑满水缸，晚上沈氏在灯下缝补，针脚比往常慢，缝两针便把手在膝上搁一搁。",
+        "basis": "从起点（上一篇末尾）算起：第一日雨夜查漏；此后天气晴稳、日常行船，到第七日傍晚（累计第6天）与韩七商量；第二天一早（累计第7天）去青溪镇，日头偏西前返程，到家时天边还剩大片亮；此后两天无事，到第三天傍晚收船时（累计第9天），沈氏在院门口说胳膊腿发沉，晚上灯下缝补。",
+        "scope": "THIS_PASSAGE",
+        "source": "STORY_AUTHOR",
+        "version": "FINAL_PUBLICATION",
+        "milestones": [
+          {
+            "event": "雨夜查漏，天亮确认屋顶不漏",
+            "sourceQuote": "屋顶修妥后的第二天夜里，果然落了一场雨。",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "event": "第七日傍晚与韩七商量次日歇船去青溪镇",
+            "sourceQuote": "到第七日傍晚收船时，陆行舟把缆绳在桩上绕好，对韩七道：“叔，明日我想歇半日船，带我娘去青溪镇走走，晌午前出，日落前回来。”",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "event": "次日一早带沈氏行船去青溪镇，午后抵达，饭后买物，日头偏西前返程，到家时天边还剩大片亮",
+            "sourceQuote": "第二天一早，陆行舟先把船舱扫净，铺了一块旧席垫在船板上，又垫了个软和的麻布包。",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "event": "青溪镇回来后第三日傍晚，沈氏说胳膊腿发沉，让陆行舟别为她停船",
+            "sourceQuote": "到第三天傍晚收船时，沈氏在院门口等他，手里拄着扫帚，站得比平日直些，见他回来便说：“我这两日胳膊腿发沉，就许是坐船颠的。你别为我停了船，歇两天就缓过来了。”",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 9
+              }
+            ]
+          }
+        ],
+        "dayNumbering": "正文以屋顶修妥后的第二天夜里为第一日，从这夜起算此后第一天，统一起点0。第七日傍晚为累计第6天，次日去青溪镇为累计第7天，青溪回来后的第三日傍晚为累计第9天。",
+        "elapsedParts": [
+          {
+            "unit": "DAY",
+            "amount": 9
+          }
+        ],
+        "elapsedSeconds": 777600,
+        "recordingMethod": "FINAL_OFFSET_FROM_PUBLISHED_END"
+      },
+      "publishedTextExactlyFinalManuscript": true,
+      "previousChapterSourcePreserved": true,
+      "directClockSourceFieldPresent": false,
+      "sourceFieldNote": "The initial stage-25 run omitted the convenience startSource field; frozen frame source and actual prior end still match. Fixed in code before stage 26 and covered by regression. Original payload was not edited.",
+      "idempotentPostAndRecoveryFree": true,
+      "originalLongSaveUnchanged": true,
+      "usage": {
+        "calls": 156,
+        "estimatedCny": "4.60363900",
+        "inputTokens": "3262503",
+        "outputTokens": "335284",
+        "unknown": "1",
+        "creation": {
+          "providerLogEntries": [
+            "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+            "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+            "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+          ],
+          "calls": 3,
+          "roundedEstimateCny": "0.0310",
+          "upperEstimateCny": "0.03115",
+          "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+        },
+        "budgetUpperEstimateCny": "4.70478900",
+        "knownCostUpperEstimateCny": "4.63478900",
+        "reservedUnconfirmedCny": "0.07",
+        "coveredUnconfirmedCalls": 1,
+        "uncoveredUnconfirmedCalls": 0
+      },
+      "literaryReview": "Read the actual full manuscript and experiences separately."
+    },
+    "26": {
+      "status": "PLAYING",
+      "clock": {
+        "to": "日头偏西，沈氏在灶上把饭做好，端到院里。母子二人对坐着吃完，天还没黑。",
+        "from": "紧接上一段已发表正文的实际末尾（见startSource）",
+        "basis": "从第一日早上起算，至第四日傍晚结束。",
+        "scope": "THIS_PASSAGE",
+        "source": "STORY_AUTHOR",
+        "version": "FINAL_PUBLICATION",
+        "milestones": [
+          {
+            "event": "陆行舟半日短渡，午后回家照看沈氏",
+            "sourceQuote": "我这两日只做半日短渡，午后回来，客跑不掉。",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "event": "沈氏称胳膊腿缓了，曹大路过问候",
+            "sourceQuote": "缓了。沈氏应着，起身时手还在门框上按了一按，但比先前那晚利索些。",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "event": "沈氏下灶做饭，陆行舟午后收船回家",
+            "sourceQuote": "第二天一早，陆行舟照常出船。午后收船回家，沈氏果然已在灶上忙活。",
+            "elapsedPartsFromStart": [
+              {
+                "unit": "DAY",
+                "amount": 4
+              }
+            ]
+          }
+        ],
+        "startSource": {
+          "logId": 73134,
+          "round": 9,
+          "meaning": "本篇起点就是这段已发表原文的实际末尾；原文中的回忆、前面经过的日子不重新发生。此处只绑定来源，不替小说推断日期。",
+          "sourceRef": "/previousChapters/3/story",
+          "publishedEnding": "曹大没抬头，摆了摆手。\n\n回到家，沈氏把那两包点心搁在灶边，麻线和针线包收进针线篓。她坐在门槛上歇了一阵，忽然道：“坐半日船，倒比在家择一下午菜还累。”陆行舟给她倒了碗热水，她在手里捧着，慢慢喝完，才起身去灶上烧水。\n\n此后两天，沈氏没再提青溪镇的事，也没说哪里不舒服，只是坐着的时候比先前多些，起身时手要在门框上按一下。陆行舟把早晚的水挑了、柴劈了，没让她多弯腰。渡头照常出船收船，韩七那半日替他接的客，他回来后一笔一笔问清，该分的脚钱按分客的旧法子补给了韩七。韩七也没推，点清了便收进衣兜。\n\n到第三天傍晚收船时，沈氏在院门口等他，手里拄着扫帚，站得比平日直些，见他回来便说：“我这两日胳膊腿发沉，就许是坐船颠的。你别为我停了船，歇两天就缓过来了。”\n\n陆行舟看了她一眼，没多说，把缆绳挂好，进院把水缸挑满。晚上灯下，沈氏坐在小凳上缝补，针脚比往常慢，缝两针便把手在膝上搁一搁。屋里静着，屋顶新换的那一段在灯影里泛着浅黄。",
+          "recordedEndSeconds": 3608100
+        },
+        "dayNumbering": "正文第一日从陆行舟早起挑水开始；第二日营生照旧；第三日傍晚沈氏称缓；第四日沈氏下灶做饭。",
+        "elapsedParts": [
+          {
+            "unit": "DAY",
+            "amount": 4
+          }
+        ],
+        "elapsedSeconds": 345600,
+        "recordingMethod": "FINAL_OFFSET_FROM_PUBLISHED_END"
+      },
+      "publishedTextExactlyFinalManuscript": true,
+      "previousChapterSourcePreserved": true,
+      "directClockSourceFieldPresent": true,
+      "sourceFieldNote": null,
+      "idempotentPostAndRecoveryFree": true,
+      "originalLongSaveUnchanged": true,
+      "usage": {
+        "calls": 163,
+        "estimatedCny": "4.80868300",
+        "inputTokens": "3423267",
+        "outputTokens": "346354",
+        "unknown": "1",
+        "creation": {
+          "providerLogEntries": [
+            "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+            "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+            "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+          ],
+          "calls": 3,
+          "roundedEstimateCny": "0.0310",
+          "upperEstimateCny": "0.03115",
+          "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+        },
+        "budgetUpperEstimateCny": "4.90983300",
+        "knownCostUpperEstimateCny": "4.83983300",
+        "reservedUnconfirmedCny": "0.07",
+        "coveredUnconfirmedCalls": 1,
+        "uncoveredUnconfirmedCalls": 0
+      },
+      "literaryReview": "Read the actual full manuscript and experiences separately."
+    }
+  },
+  "batchStartUpperCny": "3.616228",
+  "newConservativeUpperCny": "1.29360500",
+  "newKnownCostUpperCny": "1.22360500",
+  "usage": {
+    "calls": 163,
+    "estimatedCny": "4.80868300",
+    "inputTokens": "3423267",
+    "outputTokens": "346354",
+    "unknown": "1",
+    "creation": {
+      "providerLogEntries": [
+        "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+        "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+      ],
+      "calls": 3,
+      "roundedEstimateCny": "0.0310",
+      "upperEstimateCny": "0.03115",
+      "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+    },
+    "budgetUpperEstimateCny": "4.90983300",
+    "knownCostUpperEstimateCny": "4.83983300",
+    "reservedUnconfirmedCny": "0.07",
+    "coveredUnconfirmedCalls": 1,
+    "uncoveredUnconfirmedCalls": 0
+  },
+  "restart": {
+    "runtime": {
+      "story_seconds": 3953700,
+      "branch_epoch": 8,
+      "revision": 36,
+      "active_operation": null
+    },
+    "worldAndPublishedMemorySha256": "ce43711cf60345d17833543662914fce4fd6691d6e81beb58fbad435c68aa3c5",
+    "usage": {
+      "calls": 163,
+      "estimatedCny": "4.80868300",
+      "inputTokens": "3423267",
+      "outputTokens": "346354",
+      "unknown": "1",
+      "creation": {
+        "providerLogEntries": [
+          "[LLM-TOKEN] model=deepseek-v4-flash input=627 output=956 total=1583 cost=0.0045 CNY",
+          "[LLM-TOKEN] model=deepseek-v4-flash input=1497 output=5862 total=7359 cost=0.0249 CNY",
+          "[LLM-TOKEN] model=deepseek-v4-flash input=1081 output=136 total=1217 cost=0.0016 CNY"
+        ],
+        "calls": 3,
+        "roundedEstimateCny": "0.0310",
+        "upperEstimateCny": "0.03115",
+        "note": "Creation provider logs round per-call prices to 4 decimals; upper estimate includes rounding allowance."
+      },
+      "budgetUpperEstimateCny": "4.90983300",
+      "knownCostUpperEstimateCny": "4.83983300",
+      "reservedUnconfirmedCny": "0.07",
+      "coveredUnconfirmedCalls": 1,
+      "uncoveredUnconfirmedCalls": 0
+    },
+    "originalLongSaveUnchanged": true,
+    "backend": "UP",
+    "frontend": 200,
+    "restartPreservedTextClockAndPersonalMemory": true,
+    "modelCallsAddedByRestartAndReload": 0
+  },
+  "unconfirmedReserve": {
+    "reason": "A reasoning publication request timed out without usage. It is still UNCONFIRMED in the ledger and will not be retried automatically. This is a budget reserve, not a claimed actual charge.",
+    "calls": [
+      {
+        "callId": "7b71aeb8-d298-4041-968c-4aec39d3df58",
+        "reservedCny": "0.07",
+        "inputUtf8ByteUpperBound": 30000,
+        "maximumCompletionTokens": 8192,
+        "promptPricePerMillionCny": "1",
+        "completionPricePerMillionCny": "4",
+        "calculatedUpperCny": "0.062768",
+        "basis": "The request contained only a 1751-character manuscript, a short preceding ending, the publication prompt and decision boundary. Their UTF-8 bytes are below 30000; each input token needs at least one byte. Configured output max was 8192. A rounded 0.07 CNY reserve exceeds both bounds combined.",
+        "verifiedPromptByteUpperEstimate": 9082
+      }
+    ]
+  },
+  "originalBatchCny": "4",
+  "additionalApprovedCny": "1",
+  "totalApprovedCny": "5",
+  "remainingBatchCny": "0.09016700",
+  "runtime": {
+    "story_seconds": 3953700,
+    "branch_epoch": 8,
+    "revision": 36,
+    "active_operation": null
+  },
+  "originalLongSaveUnchanged": true,
+  "limitations": [
+    "Paid replay 1 failed in provider JSON handling; cost retained, original content was lost by the old provider and cannot be reconstructed.",
+    "Paid replays 2 and 3 returned valid wire data but did not repair the old date ambiguity; they are not accepted as literary passes.",
+    "Steps 20, 21 and 23 were rejected in human reading; the first isolated duration reading also double-counted same-day scenes. These failures and costs are retained. One reasoning-mode request timed out without usage, has a separate CNY 0.07 reserve, and was not retried automatically.",
+    "The accepted passages are a normal new branch, not a claim that old published chapters were rewritten.",
+    "Finite real reading does not prove error-free arbitrary future novels or all legacy chapters."
+  ]
+}

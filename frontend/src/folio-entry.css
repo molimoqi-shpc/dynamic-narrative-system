@@ -1,0 +1,151 @@
+/* The same cut-paper typography and blue ink carry through the whole journey. */
+.creation-return-bar { position:sticky; bottom:14px; z-index:10; display:flex; align-items:center; flex-wrap:wrap; gap:14px 24px; margin-top:22px; padding:14px 18px; background:#f4f6f3f5; border:1px solid #9cafbf; border-left:3px solid #315bd8; box-shadow:0 5px 20px #21395212; }
+.creation-return-bar button { padding:5px 0; border:0; border-bottom:1px solid #7c94aa80; background:none; color:#344e69; font:13px SimSun,serif; cursor:pointer; }
+.creation-return-bar button:focus-visible { outline:2px solid #315bd8; outline-offset:4px; }
+.creation-return-bar small { margin-left:auto; font:10px/1.7 system-ui; color:#6a8095; }
+.journey-menu { position:relative; flex:none; color:#edf3fb; }
+.journey-menu>summary { display:grid; place-items:center; width:29px; height:29px; cursor:pointer; list-style:none; border:1px solid #c1d2e273; background:#13202ca6; }
+.journey-menu>summary::-webkit-details-marker { display:none; }
+.journey-menu svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:1.3; }
+.journey-menu-panel { position:absolute; right:0; top:39px; width:245px; padding:18px; background:#f5f5f2; color:#263342; border:1px solid #aebdc9; border-top:3px solid #315bd8; box-shadow:0 12px 30px #11213833; }
+.journey-menu-panel>p { font:11px/1.5 system-ui; letter-spacing:3px; color:#718294; margin:0 0 12px; }
+.refraction-play .journey-menu-panel>button { display:flex; justify-content:space-between; width:100%; padding:12px 0; border:0; border-bottom:1px solid #c5cdd4; background:none; color:#263342!important; font:14px/1.5 SimSun,serif; cursor:pointer; }
+.journey-menu-panel>small { display:block; margin-top:16px; font:10px/1.9 system-ui; color:#7a8b99; }
+.refraction-theme .refraction-play .world-header { gap:15px; }
+.refraction-theme .refraction-play .world-header>nav { margin-left:auto; }
+/* Never discard the old portrait before a decoded replacement is ready. */
+.refraction-theme .refraction-stage .refraction-actor { animation:none; clip-path:none; }
+.cast-dissolve-enter-active,.cast-dissolve-leave-active { transition:opacity .28s ease; clip-path:none!important; }
+.cast-dissolve-enter-from,.cast-dissolve-leave-to { opacity:0; }
+.cast-dissolve-leave-active { pointer-events:none; }
+.stage-backdrop-enter-active,.stage-backdrop-leave-active { transition:opacity .45s ease!important; }
+.stage-backdrop-enter-from,.stage-backdrop-leave-to { opacity:0!important; }
+.refraction-theme .refraction-play .theatre-tools button { text-shadow:none!important; font-weight:500; }
+.rail-spine { position:absolute; top:24px; bottom:19px; left:32px; width:1px; background:#6a7b8e75; z-index:-1; }
+.rail-paper-frame,.rail-plane-edge { display:none; }
+@media(min-width:761px) {
+ .rail-paper-frame { display:block; position:absolute; inset:0 auto 0 0; width:18px; background:#191b1d; color:#191b1d; z-index:11; pointer-events:none; }
+ .rail-paper-frame>svg { position:absolute; width:70px; height:70px; left:100%; top:0; }
+ .rail-plane-edge { display:block; position:absolute; inset:0; width:100%; height:100%; fill:none; stroke:#81909b70; stroke-width:.7; pointer-events:none; }
+ .refraction-theme .refraction-play .theatre-tools { padding-left:32px; padding-bottom:24px; border-right:0; transform-origin:44px 0; transform:perspective(1400px) rotateY(-3deg) rotateZ(-.3deg); }
+ .rail-spine { left:44px; }
+ .refraction-theme .refraction-play .theatre-tools>nav { border-left:0; gap:10px; padding-top:0; }
+ .refraction-theme .refraction-play .theatre-tools>nav button { padding-left:21px; font-size:14px; letter-spacing:1px; }
+ .refraction-theme .refraction-play .theatre-tools>nav .rail-story { margin:0 -5px -5px -14px; padding:9px 0 12px 31px; font:600 22px/1.3 SimSun,serif; letter-spacing:3px; clip-path:none; background:transparent; overflow:visible; isolation:isolate; }
+ .refraction-theme .refraction-play .theatre-tools>nav .rail-story::before { display:block; content:''; position:absolute; inset:-42px 0 -3px -15px; width:auto; height:auto; background:linear-gradient(151deg,#29323e 0,#171e27 51%,#101824 52%,#202936 100%); clip-path:polygon(0 0,28% 35%,88% 40%,100% 100%,24% 83%,0 65%); transform:none; z-index:-1; }
+ .refraction-theme .refraction-play .theatre-tools>nav .rail-story::after { display:block; content:''; position:absolute; left:4px; top:-15px; width:2px; height:39px; background:#315bd8; border:0; transform:rotate(-18deg); }
+ .refraction-theme .refraction-play .theatre-tools>nav button::after,.refraction-theme .refraction-play .rail-utilities button::after { border-color:#425366; width:4px; height:4px; left:-2px; }
+ .rail-utilities { border-left:0; }
+ .refraction-theme .refraction-play .theatre-tools>nav button:not(.rail-story) { transition:color .16s; }
+ .refraction-theme .refraction-play .theatre-tools>nav button:not(.rail-story):hover { color:#315bd8; }
+ .refraction-theme .refraction-play .theatre-tools button:focus-visible { outline:1px solid #315bd8; outline-offset:3px; }
+ .refraction-theme .refraction-play .rail-utilities button>span::after { content:''; display:inline-block; width:16px; height:9px; margin-left:8px; opacity:.42; background:linear-gradient(#556e86,#556e86) left 1px/16px 1px no-repeat,linear-gradient(#556e86,#556e86) left 5px/10px 1px no-repeat,linear-gradient(#556e86,#556e86) left 9px/5px 1px no-repeat; }
+ .refraction-theme .refraction-play .rail-utilities button[aria-controls="music-console"]>span::after { background:repeating-linear-gradient(90deg,#556e86 0 1px,transparent 1px 3px); clip-path:polygon(0 35%,20% 35%,20% 0,40% 0,40% 25%,60% 25%,60% 10%,80% 10%,80% 40%,100% 40%,100% 65%,80% 65%,80% 90%,60% 90%,60% 75%,40% 75%,40% 100%,20% 100%,20% 65%,0 65%); }
+ .refraction-theme .refraction-play .theatre-tools .theatre-self { border-top:0; min-width:0; margin-left:34px; padding-top:20px; }
+ .refraction-theme .refraction-play .theatre-self::before { content:''; display:block; position:absolute; left:0; top:7px; width:20px; height:1px; background:#344453; }
+ /* Let the engraving dissolve across the gutter instead of ending at the rail. */
+ .rail-etching {
+  inset:34% calc(-1 * clamp(110px,12vw,190px)) 0 0;
+  opacity:.19;
+  background-position:56% 50%;
+  background-repeat:no-repeat;
+  mask-image:linear-gradient(90deg,#000 20%,#000c 38%,#0006 62%,transparent 100%),linear-gradient(0deg,#000 20%,transparent 100%);
+  mask-composite:intersect;
+ }
+}
+/* Login and registration: generous paper, a cropped illustration, hard ink edges. */
+body.refraction-theme .entry-page { overflow:hidden; }
+body.refraction-theme .entry-layout { position:relative; isolation:isolate; max-width:1220px; grid-template-columns:1.15fr minmax(300px,405px); gap:85px; min-height:560px; margin:0 auto; padding:36px 0; }
+.entry-diagonal-art { position:absolute; z-index:-1; inset:0 25% 0 25%; opacity:.23; overflow:hidden; pointer-events:none; clip-path:polygon(12% 0,52% 0,100% 100%,55% 100%); background:#315bd8; }
+.entry-diagonal-art>img { position:absolute; width:120%; max-width:none; top:4%; left:-2%; filter:grayscale(1) contrast(1.1); opacity:.8; }
+body.refraction-theme .entry-brand { color:#202c38!important; font:24px SimSun,serif; }
+body.refraction-theme .entry-brand small { font:9px/1.6 system-ui; letter-spacing:2px; color:#718397; }
+body.refraction-theme .entry-intro h1 { font:500 clamp(40px,4.2vw,64px)/1.4 SimSun,serif; letter-spacing:3px; margin:24px 0 18px; }
+body.refraction-theme .entry-description { font:14px/2.1 SimSun,serif; color:#54697d!important; }
+body.refraction-theme .entry-flight { width:150px; margin:22px 0; opacity:.55; }
+body.refraction-theme .entry-verse { margin-top:28px; }
+body.refraction-theme .entry-verse>span { font-size:22px; }
+body.refraction-theme .entry-panel { background:#fafbf8ed; border:1px solid #a8b8c5; border-top:0; box-shadow:8px 10px 0 #233a5210; padding:28px; backdrop-filter:none; }
+body.refraction-theme .entry-page .entry-panel .entry-panel-kicker { display:inline-block; color:#fff!important; background:#202c38; margin:-28px 0 24px -40px; padding:10px 33px 11px 22px; clip-path:polygon(0 0,94% 0,100% 100%,6% 100%); font:9px/1.4 system-ui; letter-spacing:3px; }
+body.refraction-theme:not(.playing-game) .character-orbit-button { display:none; }
+body.refraction-theme .entry-panel h2 { font:500 24px/1.4 SimSun,serif; color:#25313c!important; }
+body.refraction-theme .entry-tabs { margin-bottom:20px; gap:25px; }
+body.refraction-theme .entry-tabs button { font:12px/1.5 system-ui; }
+body.refraction-theme .entry-tabs button[aria-pressed=true]::after { background:#315bd8; }
+body.refraction-theme .entry-field { background:#f0f3f4; border:0; border-bottom:1px solid #8b9eaf; padding-inline:10px; }
+body.refraction-theme .entry-field:focus-within { border-bottom-color:#315bd8; box-shadow:0 2px 0 #315bd81c; }
+body.refraction-theme .entry-submit { background:#bd293a; color:#fff; clip-path:polygon(0 0,93% 0,100% 100%,7% 100%); min-height:49px; margin-top:24px; }
+body.refraction-theme .entry-submit:hover:not(:disabled) { background:#a02031; }
+body.refraction-theme .entry-demo { color:#64798d; }
+body.refraction-theme .entry-demo :is(button,p) { color:#506d88; }
+body.refraction-theme .entry-panel-foot { letter-spacing:4px; margin-top:20px; }
+/* The library and prologue are pages of the same book, not a generic dashboard. */
+body.refraction-theme .brand-lockup { display:flex; gap:12px; color:#202c38!important; font:24px SimSun,serif; }
+body.refraction-theme .brand-lockup small { display:block; color:#718397; font:9px/1.8 system-ui; letter-spacing:2px; margin-top:4px; }
+body.refraction-theme .home-nav { padding:20px 0; }
+body.refraction-theme .home-hero { min-height:310px; grid-template-columns:1.1fr 1fr; padding:25px 0; }
+body.refraction-theme .hero-copy h1 { font:500 clamp(38px,4.1vw,60px)/1.3 SimSun,serif; letter-spacing:2px; margin:14px 0; }
+body.refraction-theme .hero-description { font:14px/2 SimSun,serif; margin:18px 0; }
+.home-vignette { overflow:hidden; background:#1b2b3c url('/art/refraction-v2/stage-clock-station.png') center 32%/cover; min-height:310px; }
+.home-vignette .threshold-person { position:absolute; z-index:1; height:185%; width:auto; max-width:none; top:-6%; left:9%; filter:grayscale(.16); }
+.home-vignette .flight-mark { position:absolute; right:-10%; top:30%; width:60%; opacity:.3; z-index:2; }
+.home-vignette::before { inset:-30% 40% -30% 7%; opacity:.9; }
+.vignette-index,.vignette-caption { z-index:3; text-shadow:0 2px 12px #071321; background:#16253b9e; padding:7px 10px; font:10px/1.5 system-ui; letter-spacing:1px; }
+.vignette-caption { right:15px; bottom:17px; }.vignette-index { right:15px; top:12px; }
+body.refraction-theme .journey-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; border-block:1px solid #b4c1cc; }
+body.refraction-theme .journey-card { border:0; border-right:1px solid #c4cdd4; padding:24px 18px; background:none; box-shadow:none; min-height:160px; align-items:flex-start; }
+body.refraction-theme .journey-card:last-child { border-right:0; }
+body.refraction-theme .journey-card:hover { background:#e7edf2; box-shadow:none; transform:none; }
+body.refraction-theme .journey-card h2 { color:#202c38; font:20px/1.5 SimSun,serif; margin-top:10px; }
+body.refraction-theme .journey-card p { font-size:11px; line-height:1.8; }
+body.refraction-theme .journey-symbol { background:none; font:italic 26px Georgia,serif; color:#315bd8; width:26px; height:33px; padding:0; flex:none; }
+body.refraction-theme .journey-primary { border-top:0; background:#e4eaf144; }
+body.refraction-theme .home-footer { padding:18px 0; }
+.session-library { padding:0 0 24px; }
+.library-kicker { font:10px system-ui; letter-spacing:3px; color:#6683a0; }
+.session-library>h2 { font:26px/1.5 SimSun,serif; color:#26394d; margin:17px 0 10px; }
+.library-description { font:12px/1.9 system-ui; color:#75889a; margin-bottom:28px; }
+body.refraction-theme .el-overlay .session-library .save-card { position:relative; border:1px solid #bcc8d2; border-left:3px solid #315bd8; padding:20px; margin:15px 0; background:#f5f7f6!important; }
+.session-library .save-card-heading { display:flex; justify-content:space-between; align-items:center; }
+body.refraction-theme .el-overlay .session-library .save-number { font:italic 27px Georgia,serif; color:#6c87a1; }
+.session-library .save-card h3 { font:22px/1.4 SimSun,serif; margin:15px 0; color:#26394d; }
+.session-library .save-card p { font:11px/1.9 system-ui; color:#73869a; }
+body.refraction-theme .el-overlay .session-library .el-button--primary { background:#25384e!important; border:0; padding:11px 24px; height:auto; margin-top:14px; clip-path:polygon(0 0,94% 0,100% 100%,6% 100%); }
+.creation-masthead { max-width:1080px; margin:0 auto 30px; display:flex; align-items:center; gap:12px; border-bottom:1px solid #c0cbd4; padding-bottom:20px; }
+.creation-masthead>span { font:24px SimSun,serif; color:#26394d; }.creation-masthead small { display:block; font:9px/2 system-ui; letter-spacing:2px; color:#73869a; }
+.creation-masthead .flight-mark { width:140px; margin-left:auto; opacity:.4; }
+body.refraction-theme .creation-page { position:relative; isolation:isolate; }
+body.refraction-theme .creation-page.refraction-creation { padding:24px clamp(20px,4vw,60px)!important; }
+.creation-masthead { margin-bottom:18px; padding-bottom:14px; }
+body.refraction-theme .creation-shell { max-width:900px!important; }
+body.refraction-theme .creation-shell>header { margin-bottom:22px!important; padding-bottom:16px; }
+body.refraction-theme .creation-shell>header h2 { font:36px/1.5 SimSun,serif; letter-spacing:3px; }
+body.refraction-theme .creation-world { border:0; border-block:1px solid #bdcbd8; border-left:3px solid #315bd8; box-shadow:10px 12px 0 #dbe5ee40; padding:28px; }
+.chapter-timeline .event-time { font:11px/1.8 system-ui; width:85px; color:#70879e; }
+@media(min-width:1600px){.refraction-theme .refraction-play .theatre-tools>nav { gap:12px; }.refraction-theme .refraction-play .theatre-tools>nav button { font-size:21px; font-weight:600; color:#20252c; }.rail-spine { left:44px; }.refraction-theme .refraction-play .theatre-tools>nav .rail-story { font-size:30px; padding:6px 0 15px 37px; color:#fff; }.refraction-theme .refraction-play .theatre-tools>nav .rail-story::before { bottom:3px; }}
+@media(max-height:740px) and (min-width:761px) { .refraction-theme .refraction-play .theatre-tools>nav { gap:4px; }.refraction-theme .refraction-play .theatre-tools>nav button { padding-block:6px; }.refraction-theme .refraction-play .theatre-tools>nav .rail-story { margin-bottom:10px; padding-block:8px; } }
+@media(max-width:1100px) and (min-width:761px) { .rail-paper-frame { width:18px; }.refraction-theme .refraction-play .theatre-tools { padding-left:20px; }.rail-spine { left:32px; }.refraction-theme .refraction-play .theatre-tools>nav .rail-story { padding-left:25px; font-size:18px; margin-left:-14px; }.refraction-theme .refraction-play .theatre-tools>nav button { padding-left:12px; }.refraction-theme .refraction-play .world-header nav>button[aria-label="返回主菜单"] { display:none; } }
+@media(max-width:760px) {
+ .rail-spine { display:none; }.journey-menu>summary { width:24px; height:27px; color:#344e68; background:transparent; border-color:#a5b7c7; }.journey-menu-panel { top:35px; }
+ .refraction-theme .refraction-play .world-header { gap:7px; padding-inline:10px; }.refraction-theme .refraction-play .world-header>nav { padding:0; margin-left:auto; gap:5px; }
+ .refraction-theme .refraction-play .world-header .mobile-options { display:none!important; }
+ body.refraction-theme .entry-layout { display:flex; flex-direction:column; gap:24px; padding:25px 0; min-height:0; }
+ .entry-diagonal-art { inset:0 -10% auto 52%; height:230px; opacity:.13; }
+ body.refraction-theme .entry-intro { align-self:stretch; }
+ body.refraction-theme .entry-intro h1 { font-size:34px; margin:12px 0; }
+ body.refraction-theme .entry-intro h1 br { display:none; }
+ body.refraction-theme .entry-flight { width:90px; position:absolute; right:0; top:10px; }
+ body.refraction-theme .entry-verse { display:none; }
+ body.refraction-theme .entry-panel { max-width:none; padding:24px; }
+ body.refraction-theme .entry-panel-kicker { margin:-24px 0 20px -32px; }
+ body.refraction-theme .home-hero { grid-template-columns:1fr; }
+ .home-vignette { min-height:230px; }.home-vignette .threshold-person { height:215%; top:-9%; left:20%; }
+ body.refraction-theme .journey-grid { grid-template-columns:1fr 1fr; }
+ body.refraction-theme .journey-card { min-height:140px; padding:18px 10px; border-bottom:1px solid #c4cdd4; }
+ body.refraction-theme .journey-card:nth-child(2n) { border-right:0; }
+ body.refraction-theme .home-nav { padding:18px 0; }.brand-lockup .compass-mark { width:31px; height:36px; }
+ body.refraction-theme .brand-lockup { font-size:21px; }
+ .creation-masthead { margin-bottom:20px; }.creation-masthead .flight-mark { width:70px; }
+ body.refraction-theme .creation-world { padding:22px 18px; }
+}
+@media(prefers-reduced-motion:reduce) { .cast-dissolve-enter-active,.cast-dissolve-leave-active,.stage-backdrop-enter-active,.stage-backdrop-leave-active { transition:none!important; } }

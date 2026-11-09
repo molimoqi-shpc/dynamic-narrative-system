@@ -1,0 +1,2182 @@
+{
+  "version" : "MODEL_PROTOCOL_V1",
+  "stages" : {
+    "GENERAL" : {
+      "type" : "object",
+      "properties" : { }
+    },
+    "WORLD" : {
+      "type" : "object",
+      "properties" : {
+        "title" : {
+          "type" : "string"
+        },
+        "genre" : {
+          "type" : "string"
+        },
+        "culturalStyle" : {
+          "type" : "string"
+        },
+        "era" : {
+          "type" : "string"
+        },
+        "introduction" : {
+          "type" : "string"
+        },
+        "summary" : {
+          "type" : "string"
+        },
+        "namingBasis" : {
+          "type" : "string"
+        },
+        "questions" : {
+          "type" : "array"
+        },
+        "boundaries" : {
+          "type" : "array"
+        }
+      },
+      "required" : [ "title", "genre", "culturalStyle", "era", "introduction", "summary", "boundaries", "questions" ]
+    },
+    "TALENTS" : {
+      "type" : "object",
+      "properties" : {
+        "personality_tags" : {
+          "type" : "array"
+        },
+        "talents" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "talent_name" : {
+                "type" : "string"
+              },
+              "talent_description" : {
+                "type" : "string"
+              },
+              "power_level" : {
+                "type" : "number"
+              },
+              "stat_key" : {
+                "type" : "string"
+              }
+            }
+          },
+          "minItems" : 3
+        }
+      },
+      "required" : [ "personality_tags", "talents" ]
+    },
+    "BIRTH" : {
+      "type" : "object",
+      "properties" : {
+        "birth_story" : {
+          "type" : "string"
+        },
+        "player_name" : {
+          "type" : "string"
+        },
+        "story_time" : {
+          "type" : "string"
+        },
+        "first_event_description" : {
+          "type" : "string"
+        },
+        "initial_location" : {
+          "type" : "object",
+          "properties" : {
+            "location_name" : {
+              "type" : "string"
+            },
+            "scene_description" : {
+              "type" : "string"
+            },
+            "present_npcs" : {
+              "type" : "array"
+            },
+            "scene_cast" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "self_history" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "coord_x" : {
+              "type" : "number"
+            },
+            "coord_y" : {
+              "type" : "number"
+            }
+          }
+        },
+        "initial_inventory" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "owner" : {
+                "type" : "string"
+              },
+              "items" : {
+                "type" : "array"
+              }
+            }
+          }
+        },
+        "player_journal" : {
+          "type" : "object",
+          "properties" : {
+            "playerName" : {
+              "type" : "string"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "itemRef" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "important" : {
+                    "type" : "boolean"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "knownEffects" : {
+                    "type" : "string"
+                  },
+                  "limitations" : {
+                    "type" : "string"
+                  },
+                  "significance" : {
+                    "type" : "string"
+                  },
+                  "origin" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "relationships" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "roleId" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "label" : {
+                    "type" : "string"
+                  },
+                  "summary" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "agreements" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "counterpartId" : {
+                    "type" : "string"
+                  },
+                  "proposerId" : {
+                    "type" : "string"
+                  },
+                  "status" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "terms" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "characterAppearances" : {
+              "type" : "array"
+            }
+          }
+        },
+        "initial_moment" : {
+          "type" : "object",
+          "properties" : {
+            "year" : {
+              "type" : "number"
+            },
+            "day" : {
+              "type" : "number"
+            },
+            "period" : {
+              "type" : "string"
+            },
+            "minuteOfDay" : {
+              "type" : "number"
+            }
+          }
+        }
+      },
+      "required" : [ "birth_story", "player_name", "initial_location", "story_time", "initial_inventory", "player_journal", "first_event_description" ]
+    },
+    "OPENING_ITEMS" : {
+      "type" : "object",
+      "properties" : {
+        "initial_inventory" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "owner" : {
+                "type" : "string"
+              },
+              "items" : {
+                "type" : "array"
+              }
+            }
+          }
+        }
+      },
+      "required" : [ "initial_inventory" ]
+    },
+    "OBJECTIVES" : {
+      "type" : "object",
+      "properties" : {
+        "objectives" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "objective_id" : {
+                "type" : "string"
+              },
+              "title" : {
+                "type" : "string"
+              },
+              "current_step" : {
+                "type" : "string"
+              },
+              "rule" : {
+                "type" : "object"
+              }
+            }
+          }
+        }
+      },
+      "required" : [ "objectives" ]
+    },
+    "ROLE" : {
+      "type" : "object",
+      "properties" : {
+        "thought" : {
+          "type" : "string"
+        },
+        "intention" : {
+          "type" : "string"
+        },
+        "actionDirection" : {
+          "type" : "string"
+        },
+        "communicationIntent" : {
+          "type" : "string"
+        },
+        "boundaries" : {
+          "type" : "string"
+        },
+        "narrativeTier" : {
+          "type" : "string",
+          "enum" : [ "CORE", "EXTRA" ]
+        },
+        "tierReason" : {
+          "type" : "string"
+        },
+        "itemIntentions" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "itemRef" : {
+                "type" : "string"
+              },
+              "intention" : {
+                "type" : "string"
+              },
+              "targetId" : {
+                "type" : "string"
+              },
+              "conditions" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "characterTemplate" : {
+          "type" : "object",
+          "properties" : {
+            "selfConcept" : {
+              "type" : "object"
+            },
+            "personality" : {
+              "type" : "object"
+            },
+            "values" : {
+              "type" : "object"
+            },
+            "emotionalState" : {
+              "type" : "object"
+            },
+            "cognition" : {
+              "type" : "object"
+            },
+            "motivations" : {
+              "type" : "object"
+            },
+            "relationships" : {
+              "type" : "array"
+            },
+            "memoryInterpretation" : {
+              "type" : "object"
+            },
+            "expression" : {
+              "type" : "object"
+            },
+            "cooperationAndConflict" : {
+              "type" : "object"
+            },
+            "actionPlan" : {
+              "type" : "object"
+            },
+            "continuity" : {
+              "type" : "object"
+            },
+            "roleInScene" : {
+              "type" : "string"
+            },
+            "immediateConcern" : {
+              "type" : "string"
+            },
+            "attitude" : {
+              "type" : "string"
+            },
+            "willingHelp" : {
+              "type" : "string"
+            },
+            "knowledgeLimits" : {
+              "type" : "string"
+            },
+            "boundaries" : {
+              "type" : "string"
+            }
+          }
+        },
+        "contest" : {
+          "type" : "object"
+        },
+        "combatDisposition" : {
+          "type" : "object"
+        }
+      },
+      "required" : [ "thought", "intention", "actionDirection", "communicationIntent", "boundaries", "narrativeTier", "tierReason", "characterTemplate" ]
+    },
+    "AUTHOR" : {
+      "type" : "object",
+      "properties" : {
+        "story" : {
+          "type" : "string"
+        },
+        "stop" : {
+          "type" : "string",
+          "enum" : [ "RESOLVED", "CONTINUE", "DECISION" ]
+        },
+        "continuity" : {
+          "type" : "string"
+        },
+        "roleIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "newCharacters" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "profile" : {
+                "type" : "string"
+              },
+              "narrativeTier" : {
+                "type" : "string"
+              },
+              "existingRoleId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "plotRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "eventId" : {
+                "type" : "string"
+              },
+              "threadId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "worldBookRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "mechanics" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "actorId" : {
+                "type" : "string"
+              },
+              "targetId" : {
+                "type" : "string"
+              },
+              "kind" : {
+                "type" : "string"
+              },
+              "statKey" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "lifeEnding" : {
+          "type" : "object",
+          "properties" : {
+            "kind" : {
+              "type" : "string"
+            },
+            "playerRequested" : {
+              "type" : "boolean"
+            },
+            "fulfilled" : {
+              "type" : "boolean"
+            },
+            "summary" : {
+              "type" : "string"
+            }
+          }
+        },
+        "authorPlan" : {
+          "type" : [ "object", "string" ]
+        },
+        "decision" : {
+          "type" : "object",
+          "properties" : {
+            "type" : {
+              "type" : "string"
+            },
+            "question" : {
+              "type" : "string"
+            },
+            "stakes" : {
+              "type" : "string"
+            },
+            "counterpartId" : {
+              "type" : "string"
+            }
+          }
+        },
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        }
+      },
+      "anyOf" : [ {
+        "required" : [ "story", "stop", "timeProgress" ]
+      }, {
+        "required" : [ "roleRequests" ]
+      }, {
+        "required" : [ "plotRequests" ]
+      }, {
+        "required" : [ "worldBookRequests" ]
+      }, {
+        "required" : [ "newCharacters" ]
+      }, {
+        "required" : [ "mechanics" ]
+      } ]
+    },
+    "DIRECT_AUTHOR" : {
+      "type" : "object",
+      "properties" : {
+        "story" : {
+          "type" : "string"
+        },
+        "stop" : {
+          "type" : "string",
+          "enum" : [ "RESOLVED", "CONTINUE", "DECISION" ]
+        },
+        "continuity" : {
+          "type" : "string"
+        },
+        "roleIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "newCharacters" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "profile" : {
+                "type" : "string"
+              },
+              "narrativeTier" : {
+                "type" : "string"
+              },
+              "existingRoleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "plotRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "eventId" : {
+                "type" : "string"
+              },
+              "threadId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "worldBookRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "mechanics" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "actorId" : {
+                "type" : "string"
+              },
+              "targetId" : {
+                "type" : "string"
+              },
+              "kind" : {
+                "type" : "string"
+              },
+              "statKey" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "lifeEnding" : {
+          "type" : "object",
+          "properties" : {
+            "kind" : {
+              "type" : "string"
+            },
+            "playerRequested" : {
+              "type" : "boolean"
+            },
+            "fulfilled" : {
+              "type" : "boolean"
+            },
+            "summary" : {
+              "type" : "string"
+            }
+          }
+        },
+        "authorPlan" : {
+          "type" : [ "object", "string" ]
+        },
+        "decision" : {
+          "type" : "object",
+          "properties" : {
+            "type" : {
+              "type" : "string"
+            },
+            "question" : {
+              "type" : "string"
+            },
+            "stakes" : {
+              "type" : "string"
+            },
+            "counterpartId" : {
+              "type" : "string"
+            }
+          }
+        },
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        },
+        "endingPlaces" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "properties" : {
+              "locationName" : {
+                "type" : "string"
+              },
+              "opening" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "endingCast" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "placeKey" : {
+                "type" : "string"
+              },
+              "basis" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "itemOutcomes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "itemRef" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "state" : {
+                "type" : "string"
+              },
+              "holderId" : {
+                "type" : "string"
+              },
+              "mode" : {
+                "type" : "string"
+              },
+              "source" : {
+                "type" : "string"
+              },
+              "scene" : {
+                "type" : "object"
+              },
+              "sceneId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleExperiences" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "contestResolutions" : {
+          "type" : "array"
+        },
+        "playerJournal" : {
+          "type" : "object",
+          "properties" : {
+            "playerName" : {
+              "type" : "string"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "itemRef" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "important" : {
+                    "type" : "boolean"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "knownEffects" : {
+                    "type" : "string"
+                  },
+                  "limitations" : {
+                    "type" : "string"
+                  },
+                  "significance" : {
+                    "type" : "string"
+                  },
+                  "origin" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "relationships" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "roleId" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "label" : {
+                    "type" : "string"
+                  },
+                  "summary" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "agreements" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "counterpartId" : {
+                    "type" : "string"
+                  },
+                  "proposerId" : {
+                    "type" : "string"
+                  },
+                  "status" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "terms" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "characterAppearances" : {
+              "type" : "array"
+            }
+          }
+        },
+        "continuityState" : {
+          "type" : "object"
+        },
+        "plotUpdates" : {
+          "type" : "object"
+        },
+        "objectiveUpdates" : {
+          "type" : "array"
+        },
+        "events" : {
+          "type" : "array"
+        }
+      },
+      "anyOf" : [ {
+        "required" : [ "story", "stop", "timeProgress", "roleIds", "continuity", "endingPlaces", "endingCast", "roleExperiences" ]
+      }, {
+        "required" : [ "roleRequests" ]
+      }, {
+        "required" : [ "plotRequests" ]
+      }, {
+        "required" : [ "worldBookRequests" ]
+      }, {
+        "required" : [ "newCharacters" ]
+      }, {
+        "required" : [ "mechanics" ]
+      } ]
+    },
+    "STORY_FRAME" : {
+      "type" : "object",
+      "properties" : {
+        "stop" : {
+          "type" : "string"
+        },
+        "continuity" : {
+          "type" : "string"
+        },
+        "roleIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "newCharacters" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "profile" : {
+                "type" : "string"
+              },
+              "narrativeTier" : {
+                "type" : "string"
+              },
+              "existingRoleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "plotRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "eventId" : {
+                "type" : "string"
+              },
+              "threadId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "worldBookRequests" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "beforeEntryId" : {
+                "type" : "number"
+              },
+              "limit" : {
+                "type" : "number"
+              }
+            }
+          }
+        },
+        "mechanics" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "actorId" : {
+                "type" : "string"
+              },
+              "targetId" : {
+                "type" : "string"
+              },
+              "kind" : {
+                "type" : "string"
+              },
+              "statKey" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "lifeEnding" : {
+          "type" : "object",
+          "properties" : {
+            "kind" : {
+              "type" : "string",
+              "enum" : [ "ONGOING", "RETIREMENT" ]
+            },
+            "playerRequested" : {
+              "type" : "boolean"
+            },
+            "fulfilled" : {
+              "type" : "boolean"
+            },
+            "summary" : {
+              "type" : "string"
+            }
+          },
+          "required" : [ "kind", "playerRequested", "fulfilled" ]
+        },
+        "authorPlan" : {
+          "type" : [ "object", "string" ]
+        },
+        "decision" : {
+          "type" : "object",
+          "properties" : {
+            "type" : {
+              "type" : "string"
+            },
+            "question" : {
+              "type" : "string"
+            },
+            "stakes" : {
+              "type" : "string"
+            },
+            "counterpartId" : {
+              "type" : "string"
+            }
+          }
+        },
+        "endingPlaces" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "properties" : {
+              "locationName" : {
+                "type" : "string"
+              },
+              "opening" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "endingCast" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "placeKey" : {
+                "type" : "string"
+              },
+              "basis" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "itemOutcomes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "itemRef" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "state" : {
+                "type" : "string"
+              },
+              "holderId" : {
+                "type" : "string"
+              },
+              "mode" : {
+                "type" : "string"
+              },
+              "source" : {
+                "type" : "string"
+              },
+              "scene" : {
+                "type" : "object"
+              },
+              "sceneId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleExperiences" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "contestResolutions" : {
+          "type" : "array"
+        },
+        "playerJournal" : {
+          "type" : "object",
+          "properties" : {
+            "playerName" : {
+              "type" : "string"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "itemRef" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "important" : {
+                    "type" : "boolean"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "knownEffects" : {
+                    "type" : "string"
+                  },
+                  "limitations" : {
+                    "type" : "string"
+                  },
+                  "significance" : {
+                    "type" : "string"
+                  },
+                  "origin" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "relationships" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "roleId" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "label" : {
+                    "type" : "string"
+                  },
+                  "summary" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "agreements" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "counterpartId" : {
+                    "type" : "string"
+                  },
+                  "proposerId" : {
+                    "type" : "string"
+                  },
+                  "status" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "terms" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "characterAppearances" : {
+              "type" : "array"
+            }
+          }
+        },
+        "continuityState" : {
+          "type" : "object"
+        },
+        "plotUpdates" : {
+          "type" : "object"
+        },
+        "objectiveUpdates" : {
+          "type" : "array"
+        },
+        "events" : {
+          "type" : "array"
+        },
+        "startMoment" : {
+          "type" : "object",
+          "properties" : {
+            "year" : {
+              "type" : "number"
+            },
+            "day" : {
+              "type" : "number"
+            },
+            "period" : {
+              "type" : "string"
+            },
+            "minuteOfDay" : {
+              "type" : "number"
+            }
+          }
+        },
+        "endMoment" : {
+          "type" : "object",
+          "properties" : {
+            "year" : {
+              "type" : "number"
+            },
+            "day" : {
+              "type" : "number"
+            },
+            "period" : {
+              "type" : "string"
+            },
+            "minuteOfDay" : {
+              "type" : "number"
+            }
+          }
+        },
+        "scenes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "key" : {
+                "type" : "string"
+              },
+              "content" : {
+                "type" : "string"
+              },
+              "place" : {
+                "type" : "string"
+              },
+              "kind" : {
+                "type" : "string"
+              },
+              "at" : {
+                "type" : "object",
+                "properties" : {
+                  "year" : {
+                    "type" : "number"
+                  },
+                  "day" : {
+                    "type" : "number"
+                  },
+                  "period" : {
+                    "type" : "string"
+                  },
+                  "minuteOfDay" : {
+                    "type" : "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "anyOf" : [ {
+        "required" : [ "endMoment", "scenes", "stop", "roleIds", "endingPlaces", "endingCast", "roleExperiences", "lifeEnding" ]
+      }, {
+        "required" : [ "roleRequests" ]
+      }, {
+        "required" : [ "plotRequests" ]
+      }, {
+        "required" : [ "worldBookRequests" ]
+      }, {
+        "required" : [ "newCharacters" ]
+      }, {
+        "required" : [ "mechanics" ]
+      } ]
+    },
+    "STORY_TEXT" : {
+      "type" : "string",
+      "contentMediaType" : "text/plain",
+      "description" : "按已确定场景框架生成完整纯正文；此阶段使用chat文本传输，不请求JSON对象。"
+    },
+    "REVIEW" : {
+      "type" : "object",
+      "properties" : {
+        "paragraphRevisions" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "paragraphId" : {
+                "type" : "string"
+              },
+              "text" : {
+                "type" : "string"
+              },
+              "reason" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "cast" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "profile" : {
+                "type" : "string"
+              },
+              "narrativeTier" : {
+                "type" : "string"
+              },
+              "relationToPlayer" : {
+                "type" : "object"
+              }
+            }
+          }
+        },
+        "chronologyChanged" : {
+          "type" : "boolean"
+        },
+        "editorialReview" : {
+          "type" : "object"
+        },
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        },
+        "timingCorrection" : {
+          "type" : "object",
+          "properties" : {
+            "required" : {
+              "type" : "boolean"
+            },
+            "reason" : {
+              "type" : "string"
+            },
+            "sourceQuotes" : {
+              "type" : "array"
+            }
+          }
+        }
+      },
+      "required" : [ "paragraphRevisions", "chronologyChanged", "cast" ]
+    },
+    "ARCHIVE" : {
+      "type" : "object",
+      "properties" : {
+        "continuity" : {
+          "type" : "string"
+        },
+        "endingCast" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "placeKey" : {
+                "type" : "string"
+              },
+              "basis" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "itemOutcomes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "itemRef" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "state" : {
+                "type" : "string"
+              },
+              "holderId" : {
+                "type" : "string"
+              },
+              "mode" : {
+                "type" : "string"
+              },
+              "source" : {
+                "type" : "string"
+              },
+              "scene" : {
+                "type" : "object"
+              },
+              "sceneId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleExperiences" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "contestResolutions" : {
+          "type" : "array"
+        },
+        "newCharacterExperiences" : {
+          "type" : "array"
+        },
+        "knownPlotReviews" : {
+          "type" : "array"
+        },
+        "objectiveUpdates" : {
+          "type" : "array"
+        },
+        "events" : {
+          "type" : "array"
+        },
+        "continuityState" : {
+          "type" : "object"
+        },
+        "playerJournal" : {
+          "type" : "object",
+          "properties" : {
+            "playerName" : {
+              "type" : "string"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "itemRef" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "important" : {
+                    "type" : "boolean"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "knownEffects" : {
+                    "type" : "string"
+                  },
+                  "limitations" : {
+                    "type" : "string"
+                  },
+                  "significance" : {
+                    "type" : "string"
+                  },
+                  "origin" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "relationships" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "roleId" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "label" : {
+                    "type" : "string"
+                  },
+                  "summary" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "agreements" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "counterpartId" : {
+                    "type" : "string"
+                  },
+                  "proposerId" : {
+                    "type" : "string"
+                  },
+                  "status" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "terms" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "characterAppearances" : {
+              "type" : "array"
+            }
+          }
+        },
+        "plotUpdates" : {
+          "type" : "object"
+        },
+        "playerViewUpdates" : {
+          "type" : "object"
+        },
+        "endingPlaces" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "properties" : {
+              "locationName" : {
+                "type" : "string"
+              },
+              "opening" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "required" : [ "continuity", "endingPlaces", "endingCast" ]
+    },
+    "ARCHIVE_EDIT" : {
+      "type" : "object",
+      "properties" : {
+        "continuity" : {
+          "type" : "string"
+        },
+        "endingCast" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "placeKey" : {
+                "type" : "string"
+              },
+              "basis" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "sceneOutcomes" : {
+          "type" : "array"
+        },
+        "itemOutcomes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "itemRef" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "state" : {
+                "type" : "string"
+              },
+              "holderId" : {
+                "type" : "string"
+              },
+              "mode" : {
+                "type" : "string"
+              },
+              "source" : {
+                "type" : "string"
+              },
+              "scene" : {
+                "type" : "object"
+              },
+              "sceneId" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "roleExperiences" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "roleId" : {
+                "type" : "string"
+              },
+              "experience" : {
+                "type" : "string"
+              },
+              "situation" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "contestResolutions" : {
+          "type" : "array"
+        },
+        "newCharacterExperiences" : {
+          "type" : "array"
+        },
+        "knownPlotReviews" : {
+          "type" : "array"
+        },
+        "objectiveUpdates" : {
+          "type" : "array"
+        },
+        "events" : {
+          "type" : "array"
+        },
+        "continuityState" : {
+          "type" : "object"
+        },
+        "playerJournal" : {
+          "type" : "object",
+          "properties" : {
+            "playerName" : {
+              "type" : "string"
+            },
+            "items" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "itemRef" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "important" : {
+                    "type" : "boolean"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "knownEffects" : {
+                    "type" : "string"
+                  },
+                  "limitations" : {
+                    "type" : "string"
+                  },
+                  "significance" : {
+                    "type" : "string"
+                  },
+                  "origin" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "relationships" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "roleId" : {
+                    "type" : "string"
+                  },
+                  "name" : {
+                    "type" : "string"
+                  },
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "label" : {
+                    "type" : "string"
+                  },
+                  "summary" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "agreements" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "kind" : {
+                    "type" : "string"
+                  },
+                  "counterpartId" : {
+                    "type" : "string"
+                  },
+                  "proposerId" : {
+                    "type" : "string"
+                  },
+                  "status" : {
+                    "type" : "string"
+                  },
+                  "basis" : {
+                    "type" : "string"
+                  },
+                  "terms" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            },
+            "characterAppearances" : {
+              "type" : "array"
+            }
+          }
+        },
+        "plotUpdates" : {
+          "type" : "object"
+        },
+        "playerViewUpdates" : {
+          "type" : "object"
+        },
+        "endingPlaces" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object",
+            "properties" : {
+              "locationName" : {
+                "type" : "string"
+              },
+              "opening" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        },
+        "publication" : {
+          "type" : "object",
+          "properties" : {
+            "story" : {
+              "type" : "string"
+            },
+            "unchanged" : {
+              "type" : "boolean"
+            },
+            "timeProgress" : {
+              "type" : "object"
+            }
+          }
+        }
+      }
+    },
+    "ACCOUNTS" : {
+      "type" : "object",
+      "properties" : {
+        "continuity" : {
+          "type" : "string"
+        },
+        "knownPlotReviews" : {
+          "type" : "array"
+        },
+        "continuityState" : {
+          "type" : "object"
+        }
+      },
+      "required" : [ "continuityState", "knownPlotReviews", "continuity" ]
+    },
+    "TIME" : {
+      "type" : "object",
+      "properties" : {
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        }
+      },
+      "required" : [ "timeProgress" ]
+    },
+    "PUBLICATION" : {
+      "type" : "object",
+      "properties" : {
+        "timeProgress" : {
+          "type" : "object",
+          "properties" : {
+            "scope" : {
+              "type" : "string"
+            },
+            "from" : {
+              "type" : "string"
+            },
+            "to" : {
+              "type" : "string"
+            },
+            "dayNumbering" : {
+              "type" : "string"
+            },
+            "basis" : {
+              "type" : "string"
+            },
+            "elapsedParts" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "amount" : {
+                    "type" : "number"
+                  },
+                  "unit" : {
+                    "type" : "string",
+                    "enum" : [ "DAY", "HOUR", "MINUTE", "MONTH", "SECOND", "SHICHEN", "WEEK", "YEAR" ]
+                  }
+                }
+              }
+            },
+            "milestones" : {
+              "type" : "array"
+            },
+            "calendarInterval" : {
+              "type" : "object"
+            },
+            "elapsedSeconds" : {
+              "type" : "number"
+            }
+          }
+        },
+        "publication" : {
+          "type" : "object",
+          "properties" : {
+            "story" : {
+              "type" : "string"
+            },
+            "unchanged" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      },
+      "required" : [ "publication", "timeProgress" ]
+    },
+    "ENDING" : {
+      "type" : "object",
+      "properties" : {
+        "death_summary" : {
+          "type" : "string"
+        },
+        "final_evaluation" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "death_summary", "final_evaluation" ]
+    }
+  }
+}

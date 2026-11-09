@@ -1,0 +1,46 @@
+/* Navigation reflects the surface actually open, without changing rail shape. */
+body.refraction-theme .refraction-play .theatre-tools>nav .rail-story:not([aria-current]){background:#dce3e9!important;color:#516a80!important;text-shadow:none}
+body.refraction-theme .refraction-play .theatre-tools>nav button[aria-pressed=true]{color:#244e74!important;background:linear-gradient(90deg,#dce7f0c9,transparent)!important;box-shadow:inset 2px 0 #3d668e;font-weight:600}
+body.refraction-theme .refraction-play .theatre-tools>nav button[aria-pressed=true]::after,body.refraction-theme .refraction-play .rail-utilities button[aria-expanded=true]::after{background:#406990;border-color:#406990}
+body.refraction-theme .refraction-play .rail-utilities button[aria-expanded=true]{color:#254f76;font-weight:600;text-decoration:underline;text-decoration-color:#9ab0c3;text-underline-offset:6px}
+
+body.refraction-theme .refraction-play .new-story-button{position:relative;left:auto;right:auto;bottom:auto;transform:none;align-self:flex-end;flex:none;display:flex;align-items:center;gap:10px;margin:7px 12px 3px;padding:8px 12px;min-height:32px;background:#e6edf2!important;border:1px solid #a6bacb;border-radius:0;color:#315779;box-shadow:3px 4px 0 #c6d5e159;font-family:inherit;z-index:2;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%)}
+body.refraction-theme .refraction-play .new-story-button>span{font:19px Georgia;color:#617f9d}
+body.refraction-theme .refraction-play .new-story-button strong{font:12px SimSun,serif;letter-spacing:1px}
+body.refraction-theme .refraction-play .new-story-button small{font:9px system-ui;color:#627d96;border-left:1px solid #b7c6d3;padding-left:10px}
+body.refraction-theme .refraction-play .new-story-button:focus-visible{outline:2px solid #315b86;outline-offset:3px}
+body.refraction-theme .refraction-play .story-reader{overflow-anchor:none}
+.story-arrival-live{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;margin:-1px!important;padding:0!important;border:0!important}
+
+.reading-motion{border:0;border-block:1px solid #becbd550;padding:15px 0 13px;margin:16px 0}
+body.refraction-theme .engraved-reading.reading-float{display:flex;flex-direction:column;overflow:hidden!important}
+body.refraction-theme .engraved-reading>.el-dialog__header{position:relative;flex:none;background:#f7f5ee}
+body.refraction-theme .engraved-reading>.el-dialog__body{min-height:0;overflow:auto;overscroll-behavior:contain}
+.reading-motion legend{float:left;width:100%;box-sizing:border-box;font:11px/1.8 SimSun,serif;color:#4d6b86;margin-bottom:10px}
+.reading-motion legend small{float:right;font:8px/1.8 system-ui;color:#8398aa;letter-spacing:1px}
+.reading-motion>div{clear:both;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+body.refraction-theme .engraved-reading .reading-motion button{font:11px SimSun,serif;background:#f8f8f1;border:1px solid #b6c6d3;padding:9px 6px;color:#688198;cursor:pointer}
+body.refraction-theme .engraved-reading .reading-motion button[aria-pressed=true]{border-color:#5f81a1;color:#2a5175;background:linear-gradient(110deg,#dfe9f1,#edf1ed);box-shadow:inset 0 -2px #507597}
+.reading-motion>p{font:9px/1.9 system-ui;color:#7c92a6;margin:10px 0 0}
+.transition-short-label{position:absolute;inset:44% 15% auto;text-align:center;color:#3a5772;font:21px/1.8 SimSun,serif;letter-spacing:4px}
+.transition-short-label small{display:block;font:9px/1.8 system-ui;letter-spacing:2px;color:#7c91a4;margin-top:9px}
+@media(max-width:760px){
+ body.refraction-theme .refraction-play .theatre-tools>nav button[aria-pressed=true]{box-shadow:inset 0 -2px #3d668e}
+ body.refraction-theme .refraction-play .new-story-button{margin:4px 4px 2px;gap:7px;padding:7px 9px;min-height:30px}
+ body.refraction-theme .refraction-play .new-story-button strong{font-size:11px}
+ body.refraction-theme .refraction-play .new-story-button small{font-size:8px}
+}
+
+/* Preferences affect decoration, never game state, layout transforms or audio. */
+body.refraction-theme[data-motion="LIGHT"] :is(.portrait-float,.portrait-silhouette,.stage-light,.ambient-particles,.music-disc,.celestial-title-text,.stat-aura,.folio-seal){animation:none!important}
+body.refraction-theme[data-motion="LIGHT"] :is(.stage-light,.celestial-title canvas,.paper-glaze){display:none!important}
+body.refraction-theme[data-motion="LIGHT"] :is(.hero-seams,.stage-orbit,.refraction-plane,.paper-landscape,.paper-person-wrap,.paper-foreground){transition:none!important}
+body.refraction-theme[data-motion="LIGHT"] .selection-ribbon{transition-duration:140ms!important}
+body.refraction-theme[data-motion="LIGHT"] .el-overlay *{animation:none!important}
+body.refraction-theme[data-motion="LIGHT"] :is(.folio-float-enter-active,.folio-float-leave-active){transition:opacity 140ms!important;transform:none!important}
+body.refraction-theme[data-motion="LIGHT"] :is(.dialog-fade-enter-active,.dialog-fade-leave-active,.dialog-fade-enter-active .el-overlay-dialog,.dialog-fade-leave-active .el-overlay-dialog){animation-duration:140ms!important}
+body.refraction-theme[data-motion="LIGHT"] :is(.el-drawer,.el-drawer-fade-enter-active,.el-drawer-fade-leave-active){transition-duration:160ms!important}
+body.refraction-theme[data-motion="STATIC"] *,body.refraction-theme[data-motion="STATIC"] *::before,body.refraction-theme[data-motion="STATIC"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+body.refraction-theme[data-motion="STATIC"] :is(.stage-light,.celestial-title canvas,.paper-glaze){display:none!important}
+body.refraction-theme[data-motion="STATIC"] .menu-transition .transition-veil{background:#f3f4f2;opacity:1}
+body.refraction-theme[data-motion="STATIC"] .menu-transition :is(.transition-scenery,.angel-scene,.gear-scene,.tide-scene,.hand-scene){display:none}

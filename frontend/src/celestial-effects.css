@@ -1,0 +1,18 @@
+/* Motion accents for titles and six attributes, never for story paragraphs. */
+.home-page { position: relative; isolation: isolate; }
+.divine-title { color: var(--myth-bronze, #b49d6c); }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .divine-title { background-image: linear-gradient(105deg, #ad9565 0%, #d7c8a6 35%, #fbf4df 46%, #c3d6ef 51%, #fbf4df 56%, #b39b70 70%, #ad9565 100%); background-size: 280% 100%; background-position: 100% 50%; background-clip: text; -webkit-background-clip: text; color: transparent !important; animation: divine-letter-light 11s ease-in-out infinite; }
+  .play-page .divine-title { background-image: linear-gradient(105deg, #dccbaa 0%, #e9e3d8 35%, #ffffff 47%, #c6dcf9 51%, #fff4da 57%, #d0c4ac 74%, #dccbaa 100%); }
+  .creation-shell .divine-title { background-image: linear-gradient(105deg, #8b734b 0%, #947d53 35%, #c4a569 47%, #6981a6 51%, #ac905b 57%, #8b734b 100%); }
+}
+@keyframes divine-letter-light { 0%, 28% { background-position: 100% 50%; } 72%, 100% { background-position: 0% 50%; } }
+.stat-aura { position: relative; isolation: isolate; overflow: hidden; }
+.stat-aura::after { content: ''; position: absolute; bottom: 0; left: 10%; width: 80%; height: 1px; background: linear-gradient(90deg, transparent, #c8d8edaa, #c2a36d88, transparent); opacity: .3; transform: translateX(-60%); animation: stat-aura-drift 6s ease-in-out var(--stat-delay, 0s) infinite; pointer-events: none; }
+@keyframes stat-aura-drift { 0%, 100% { transform: translateX(-60%); opacity: .15; } 50% { transform: translateX(60%); opacity: .65; } }
+/* Closed Element Plus dialogs are retained in DOM; pause their decorative loops. */
+.el-overlay[style*="display: none"] .divine-title, .el-overlay[style*="display: none"] .stat-aura::after { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .divine-title, .stat-aura::after { animation: none !important; } .stat-aura::after { transform: none; opacity: .3; } }
+@media (forced-colors: active) { .divine-title { background: none !important; color: CanvasText !important; } .stat-aura::after { display: none; } }
+
+.hero-copy h1 .celestial-title, .hero-copy h1 .celestial-title-text, .stage-prologue h1 .celestial-title, .stage-prologue h1 .celestial-title-text { font-size: inherit; line-height: inherit; font-weight: inherit; letter-spacing: inherit; }

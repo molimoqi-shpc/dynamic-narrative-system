@@ -1,0 +1,145 @@
+/* Refraction: approved v7, real components and live data. */
+/* Portraits extend below the stage. Focus must not scroll this decorative viewport. */
+.refraction-play .refraction-stage{overflow:clip!important}
+.refraction-play .world-header .mobile-options{display:none}
+.refraction-play .world-header .perspective-switch button{color:#e8f0ff!important;background:transparent!important;border:1px solid #b5c9e755!important;border-radius:0;opacity:1;padding:6px;font-size:10px}
+.refraction-play .world-header .perspective-switch button[aria-pressed=true]{color:#fff!important;background:#244a80!important;border-color:#80a5dc!important}
+.journey-shortcuts{display:flex;gap:20px}
+@media(max-width:760px){.refraction-play .world-header .mobile-options{display:block!important;color:#2a405e;font-size:11px}.refraction-play .world-header .perspective-switch button{color:#29415e!important;border-color:#97accb!important}.refraction-play .world-header .perspective-switch button[aria-pressed=true]{color:#fff!important}.refraction-play .world-header nav{gap:8px}}
+.art-review-label{bottom:auto!important;height:auto!important}
+@media(max-width:760px){.refraction-play .refraction-stage .stage-cast-menu{top:auto;bottom:10px;left:18px;right:auto}.refraction-play .refraction-stage .stage-cast-menu summary{max-width:150px}.refraction-play .refraction-stage .paper-person-wrap{inset:0 0 -190% 30%}}
+.refraction-play .game-composer{margin-inline:0!important;overflow:visible!important;min-width:0;max-height:44vh}
+.refraction-play.paper-theatre{inset:0;height:100dvh;min-height:0;overflow:hidden}
+.refraction-play .game-composer{margin:8px 0 0!important}
+.refraction-play .world-header nav{color:#eef4ff}
+.refraction-play .world-header nav button{color:inherit}
+.refraction-stage .stage-caption{padding:12px;background:#15243be8;clip-path:polygon(7% 0,100% 0,100% 100%,0 100%)}
+.refraction-stage .stage-cast-menu:not([open]) .stage-cast-list{display:none!important}
+@media(max-width:760px){.refraction-play .refraction-stage{height:auto;min-height:0}.refraction-play .world-header nav{color:#293c55}.refraction-play .story-stage{height:auto;overflow:hidden}.refraction-play .story-reader{flex:1;overflow:auto;height:auto;min-height:0}.refraction-stage .stage-caption{padding:8px;background:#12223be8}}
+.refraction-play .story-chapter{padding:0 0 4px}
+.refraction-play .story-chapter:first-child .chapter-mark{display:none}
+.refraction-play .theatre-tools .theatre-glyph{padding:0!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important}
+.refraction-play .theatre-tools .theatre-glyph{color:#496784!important;opacity:1!important}
+.refraction-play .refraction-stage .paper-foreground{background:linear-gradient(90deg,transparent 65%,#111c30bf),linear-gradient(0deg,#111c30e6,transparent 30%)}
+.refraction-creation{--myth-bg:#eff1f4;--myth-bg-card:#fafbfc;--myth-bg-alt:#e5eaf1;--myth-ink:#253343;--myth-bronze:#304a68;--myth-bronze-hi:#60738a;--myth-divider:#a0afc244;--myth-cinnabar:#cf2938;color:var(--myth-ink)}
+.refraction-creation .creation-art,.refraction-creation .ambient-particles{display:none}
+.creation-world{padding:38px clamp(20px,4vw,64px);background:#fafbfc;border-left:4px solid #185be7;margin-bottom:28px;animation:refraction-prose .4s ease both}
+.creation-world h1{font:500 clamp(27px,4vw,44px)/1.4 serif;margin:12px 0;color:#1f2b3c}
+.world-intro-kicker{font:11px system-ui;letter-spacing:3px;color:#647995}
+.world-genre,.world-fixed-note{font:12px/1.8 system-ui;color:#6d7c90}
+.world-introduction{font-size:16px;line-height:2.05;margin:28px 0;white-space:pre-wrap}
+.world-start-questions,.creation-world>button{background:#243b5a;color:white;border:0;padding:14px 28px;font:14px system-ui;cursor:pointer;clip-path:polygon(0 0,96% 0,100% 100%,4% 100%)}
+.refraction-play.paper-theatre{
+ --paper:#f3f3f1;--ink:#20252c;--quiet:#626b75;--rust:#d62b35;
+ --myth-bronze:#354354;--myth-gold:#2760b8;--myth-bg-alt:#e9edf2;--myth-bg-card:#fafafa;
+ --myth-divider:#68788836;--myth-ink:var(--ink);--myth-bg:var(--paper);
+ display:grid;grid-template-columns:126px minmax(0,1.15fr) minmax(330px,.95fr);
+ grid-template-rows:72px minmax(0,1fr);gap:0;background:#f3f3f1;
+}
+.refraction-play::before,.refraction-play::after{display:none!important}
+.refraction-play .world-layout{display:contents}
+.refraction-play .world-header{grid-column:1/-1;grid-row:1;background:transparent;border:0;box-shadow:none;color:var(--ink);height:auto;padding:14px 26px;gap:24px}
+.refraction-play .world-brand{font-size:25px;letter-spacing:3px;gap:6px}
+.refraction-play .world-brand>span:first-child{display:block;font-size:28px;color:#335b8b}
+.refraction-play .world-location{color:#424f5e;font-size:11px;gap:10px;max-width:35%}
+.refraction-play .world-location strong{font-size:13px;letter-spacing:1px}
+.refraction-play .world-header nav{gap:13px}
+.refraction-play .world-header button{font-size:11px;color:#394553;letter-spacing:0}
+.refraction-play .world-header nav>button:nth-last-child(3){display:none}
+.refraction-play .story-stage{grid-column:2;grid-row:2;display:flex;flex-direction:column;min-width:0;min-height:0;background:transparent;border:0;box-shadow:none;padding:18px 20px 24px 26px;z-index:3;isolation:isolate}
+.refraction-play .story-stage::before,.refraction-play .story-stage::after{display:none!important}
+.refraction-play .story-reader{position:relative;min-height:0;flex:1;overflow:auto;padding:10px 20px 20px 0;background:transparent;scrollbar-width:thin;scrollbar-color:#8c9aa566 transparent;overscroll-behavior:contain}
+.refraction-play .story-reader::before,.refraction-play .story-reader::after{display:none}
+.refraction-play .story-heading{margin:0 0 30px;padding:0;border:0;position:relative}
+.refraction-play .story-heading>p{font:12px/1.7 system-ui;color:#626d78;letter-spacing:2px;margin:0 0 15px}
+.refraction-play .story-heading>p span{float:right;font-size:10px;letter-spacing:1px}
+.refraction-play .story-heading h1{color:#171e26;font-size:clamp(32px,3.4vw,54px);line-height:1.25;letter-spacing:3px;font-weight:600;margin:0}
+.refraction-play .story-heading h1 i{display:none}
+.refraction-play .story-heading-line{display:block;margin-top:18px;width:42px;height:3px;background:#145ced}
+.refraction-play .story-prose{font-size:16px;line-height:1.95;letter-spacing:.3px;text-shadow:none;color:#2b3037}
+.refraction-play .story-prose p{margin:0 0 1.4em;text-indent:0}
+.refraction-play .chapter-mark{margin:14px 0 16px;font:10px/1.6 system-ui;color:#86909a;letter-spacing:1px}
+.refraction-play .chapter-mark i{display:none}
+.refraction-play .decision-note{margin:0 0 22px;padding:0;border:0;background:transparent;color:#687483;font-size:12px}
+.refraction-play .decision-note summary{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.refraction-play .decision-note summary>span{color:#3b5d8a;border:0;margin-right:8px}
+.refraction-play .story-chapter{animation:refraction-prose .42s ease both}
+.refraction-play .story-end-mark{color:#8495a5;font-size:12px;padding:8px 0}
+.refraction-play .game-composer{flex:none;background:transparent;border:0;border-top:1px solid #7585954d;padding:14px 0 0;box-shadow:none;margin-top:8px}
+.refraction-play .game-composer::before,.refraction-play .game-composer::after{display:none}
+.refraction-play .composer-top{align-items:center;gap:8px;margin:0 0 12px}
+.refraction-play .composer-top h2{font-size:13px;color:#293545;letter-spacing:0;font-weight:500}
+.refraction-play .composer-modes{gap:5px}
+.refraction-play .composer-modes button{font-size:10px;padding:5px 8px;color:#687482}
+.refraction-play .composer-modes button[aria-pressed=true]{background:#222e3b;color:white;clip-path:polygon(0 0,92% 0,100% 100%,8% 100%);border:0}
+.refraction-play .composer-form{display:grid;grid-template-columns:minmax(0,1fr) 118px;gap:8px}
+.refraction-play .composer-form textarea{min-height:66px;height:66px;max-height:160px;border:1px solid #97a0a9;border-radius:0;background:#fff7;color:#263240;font-size:14px;line-height:1.5;padding:11px 12px;box-shadow:none;resize:vertical}
+.refraction-play .composer-form textarea::placeholder{color:#8b96a3}
+.refraction-play .composer-submit{color:white;background:#d52936;border:0;border-radius:0;clip-path:polygon(0 0,87% 0,100% 100%,13% 100%);font-size:14px;min-height:66px;box-shadow:none;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s,transform .15s}
+.refraction-play .composer-submit:not(:disabled):hover{background:#b81e2a;transform:translateX(2px)}
+.refraction-play .composer-submit:disabled{opacity:.45}
+.refraction-play .composer-foot{font-size:9px;color:#85909b;gap:4px;margin-top:8px}
+.refraction-play .composer-hints button{font-size:10px;border:0;background:transparent;color:#5b6d81;padding:5px 8px;border-radius:0}
+.refraction-play .composer-feedback{font-size:12px;background:#e8edf3;color:#3b5066;border-color:#8095ad}
+.refraction-play .theatre-tools{grid-column:1;grid-row:2;position:relative;inset:auto;height:auto;min-width:0;padding:20px 12px 20px 18px;display:flex;flex-direction:column;align-items:stretch;gap:12px;background:transparent;border:0;box-shadow:none;color:#29313d;z-index:5}
+.refraction-play .theatre-tools::before,.refraction-play .theatre-tools::after{display:none}
+.refraction-play .theatre-tools>nav{display:flex;flex:1;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:24px;padding:0;border:0}
+.refraction-play .theatre-tools button{min-height:36px;padding:5px 4px;font-size:15px;gap:8px;color:#25313e;background:transparent;border:0;box-shadow:none;justify-content:flex-start;transform:none;position:relative}
+.refraction-play .theatre-tools button::before{display:none}
+.refraction-play .theatre-tools button::after{content:"";position:absolute;left:-8px;top:50%;width:3px;height:3px;border:1px solid #7c90a8;transform:rotate(45deg);background:transparent}
+.refraction-play .theatre-tools button:hover,.refraction-play .theatre-tools button:focus-visible{color:#145ced;transform:translateX(3px);background:transparent}
+.refraction-play .theatre-tools .theatre-glyph{width:16px;height:18px;filter:none}
+.refraction-play .theatre-tools .rail-story{background:#202c3b;color:#fff;clip-path:polygon(0 0,88% 8%,100% 100%,5% 91%);padding:10px 12px;margin:0 -9px 1px -9px;font-size:19px;letter-spacing:3px}
+.refraction-play .theatre-self{order:2;border-top:1px solid #a5adb544!important;padding-top:15px!important;flex:none!important}
+.refraction-play .theatre-self span{font-size:12px}
+.refraction-play .theatre-self small{font-size:9px;color:#758394}
+.refraction-play .theatre-sound{order:3;flex:none}
+.refraction-play .refraction-stage{grid-column:3;grid-row:2;position:relative;margin-top:-72px;overflow:hidden;z-index:2;background:#202d3d;isolation:isolate;clip-path:polygon(0 0,100% 0,100% 100%,36% 100%,0 76%,8% 26%);--light-x:60%}
+.refraction-play .refraction-stage::after{display:none}
+.refraction-stage .paper-landscape{opacity:.75;object-position:58% center;filter:saturate(.6);z-index:-3}
+.refraction-stage .refraction-plane{position:absolute;inset:-8% 40% 10% -10%;background:#145fed;clip-path:polygon(0 0,54% 0,100% 100%,84% 100%);transform:translate(calc(var(--stage-x)*-.65),0);transition:transform .35s ease;z-index:-1}
+.refraction-stage .paper-distance{z-index:-2;background:linear-gradient(0deg,#101a2dee,transparent 65%),linear-gradient(90deg,#101c36a6,transparent)}
+.refraction-stage .stage-place{display:none}
+.refraction-actor{position:absolute;inset:0;z-index:1;animation:refraction-actor-in .65s cubic-bezier(.16,.72,.28,1) both}
+.refraction-stage .paper-person-wrap{position:absolute;inset:7% -23% -57% -18%;transform:translate(var(--stage-x),var(--stage-y));transition:transform .28s ease;animation:none;z-index:1}
+.refraction-stage .paper-person-child{inset:28% -15% -17% -10%}
+.portrait-float{position:absolute;inset:0;transform-origin:50% 85%;animation:portrait-sway 8s ease-in-out infinite}
+.refraction-stage .paper-person{width:100%;height:100%;object-fit:contain;object-position:center top;filter:drop-shadow(4px 6px 8px #111b3333)}
+.portrait-silhouette{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center top;filter:brightness(0);opacity:.5;transform:translate(calc(-38px + var(--stage-x)*-.8),-5px) scale(1.07);transform-origin:50% 20%;animation:silhouette-light 9s ease-in-out infinite;z-index:-1}
+.refraction-stage .paper-foreground{z-index:2;inset:0;background:linear-gradient(0deg,#111c30e6 0,transparent 30%);transform:none}
+.refraction-stage .stage-caption{inset:auto 22px 80px auto;width:155px;max-width:36%;z-index:5;color:#fff;text-shadow:0 2px 8px #101825}
+.refraction-stage .stage-caption h2{font-size:34px;letter-spacing:2px;margin:4px 0 10px}
+.refraction-stage .stage-caption-kicker{font:9px system-ui;letter-spacing:2px;color:#c1ccdc}
+.refraction-stage .stage-description{font-size:11px;line-height:1.8;max-height:5.4em;overflow:auto;color:#d9e0eb}
+.refraction-stage .stage-caption-actions{flex-direction:column;align-items:flex-start;gap:5px}
+.refraction-stage .stage-caption-actions button{font-size:11px;background:transparent;border:0;border-bottom:1px solid #b7c6de99;padding:5px 0;color:white}
+.refraction-stage .stage-cast-menu{top:88px;right:20px;z-index:8;font-family:system-ui}
+.refraction-stage .stage-cast-menu summary{font-size:10px;background:#152138d9;color:#eef3ff;border:1px solid #d8e6ff44;padding:9px;box-shadow:none}
+.refraction-stage .stage-cast-list{width:280px;max-height:65vh;background:#eff2f5;color:#293d56;box-shadow:0 15px 50px #080e1b66}
+.refraction-stage .stage-cast-list button{color:#283e59}
+.refraction-stage .cast-portrait-crop{background:#ccd6e4}
+.cast-switch{position:absolute;right:20px;bottom:24px;display:flex;align-items:center;gap:13px;z-index:7;color:#e7eef9;font:11px system-ui}
+.cast-switch button{border:0;background:transparent;color:inherit;font-size:27px;padding:2px 8px}
+.cast-switch button:hover{color:#7fc5ff}
+.refraction-stage .paper-unknown{inset:12% 20% 35%;background:linear-gradient(130deg,#92acd333,#07132388);clip-path:polygon(15% 0,85% 0,100% 100%,0 100%);color:#dae7f8}
+.refraction-stage .paper-unknown>span{background:transparent;border:0;color:inherit}
+.refraction-character-enter-active{transition:clip-path .42s cubic-bezier(.2,.7,.2,1),opacity .28s;animation:none}
+.refraction-character-leave-active{transition:clip-path .24s ease,opacity .2s;animation:none}
+.refraction-character-enter-from{opacity:0;clip-path:polygon(100% 0,100% 0,100% 100%,90% 100%)}
+.refraction-character-leave-to{opacity:0;clip-path:polygon(0 0,10% 0,0 100%,0 100%)}
+.refraction-character-enter-to,.refraction-character-leave-from{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+@keyframes portrait-sway{0%,100%{transform:translate(0,0) rotate(-.16deg)}50%{transform:translate(1px,-2px) rotate(.16deg)}}
+@keyframes silhouette-light{0%,100%{margin-left:0;opacity:.5}50%{margin-left:-4px;opacity:.64}}
+@keyframes refraction-actor-in{from{opacity:0;clip-path:polygon(100% 0,100% 0,100% 100%,85% 100%)}to{opacity:1;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}
+@keyframes refraction-prose{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.motion-paused .portrait-float,.motion-paused .portrait-silhouette{animation-play-state:paused}
+body.playing-game{--myth-bg-card:#f7f8fa;--myth-bg:#f1f3f5;--myth-bg-alt:#e7ecf2;--myth-ink:#263340;--myth-ink-dim:#697b90;--myth-bronze:#415770;--myth-bronze-hi:#5e7491;--myth-divider:#8294a644;--myth-gold:#1d61d8}
+body.playing-game .el-drawer,body.playing-game .el-dialog{--el-bg-color:#f3f5f7;background:#f3f5f7!important;color:#263340;border-color:#8f9eaf55}
+body.playing-game .el-overlay .el-drawer{animation:refraction-panel-in .36s ease both}
+@keyframes refraction-panel-in{from{clip-path:polygon(100% 0,100% 0,100% 100%,70% 100%)}to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}
+.art-review-label{top:70px;font-size:9px;color:#4b6081;background:#f1f4f8}
+@media(min-width:1600px){.refraction-play.paper-theatre{grid-template-columns:160px minmax(0,1.13fr) minmax(430px,1fr)}.refraction-play .story-stage{padding:32px 32px 30px}.refraction-play .story-prose{font-size:17px}.refraction-play .theatre-tools{padding-left:30px}.refraction-play .theatre-tools>nav{gap:30px}}
+@media(max-width:1150px){.refraction-play.paper-theatre{grid-template-columns:100px minmax(0,1.2fr) minmax(260px,.8fr)}.refraction-play .world-brand{font-size:21px}.refraction-play .world-location{display:none}.refraction-play .story-stage{padding:16px 13px}.refraction-play .story-prose{font-size:15px}.refraction-play .theatre-tools>nav{gap:21px}.refraction-play .theatre-tools button{font-size:13px}.refraction-stage .stage-caption{width:130px;max-width:45%}.refraction-stage .paper-person-wrap{inset:9% -40% -38% -35%}.refraction-play .composer-top{flex-wrap:wrap}.refraction-play .composer-form{grid-template-columns:minmax(0,1fr) 90px}}
+@media(max-width:760px){.refraction-play.paper-theatre{position:fixed;display:grid;grid-template-columns:1fr;grid-template-rows:54px 27vh minmax(0,1fr) 53px}.refraction-play .world-header{grid-row:1;grid-column:1;padding:8px 13px;gap:6px;z-index:10;background:#f1f3f5}.refraction-play .world-brand{font-size:19px}.refraction-play .world-header nav{gap:9px}.refraction-play .world-header button{font-size:10px}.refraction-play .world-header nav>button:not(.mobile-scene-toggle){display:none}.refraction-play .world-header nav .mode-switch{font-size:10px}.refraction-play .refraction-stage{grid-column:1;grid-row:2;margin:0;clip-path:none}.refraction-stage .paper-person-wrap{inset:-10% 0 -190% 30%}.refraction-stage .portrait-silhouette{opacity:.6}.refraction-stage .stage-caption{inset:16px auto auto 18px;width:150px;max-width:45%}.refraction-stage .stage-caption h2{font-size:27px}.refraction-stage .stage-caption-kicker,.refraction-stage .stage-description{display:none}.refraction-stage .stage-caption-actions{flex-direction:row;gap:15px}.refraction-stage .stage-cast-menu{top:10px;right:10px}.refraction-stage .cast-switch{bottom:7px;right:12px}.refraction-stage .refraction-plane{inset:-10% 10% -10% 30%}.refraction-play .story-stage{grid-row:3;grid-column:1;padding:12px 16px 9px;min-height:0}.refraction-play .story-heading{margin-bottom:15px}.refraction-play .story-heading h1{font-size:28px}.refraction-play .story-heading>p{margin-bottom:8px;font-size:10px}.refraction-play .story-reader{padding-right:4px}.refraction-play .story-prose{font-size:15px;line-height:1.85}.refraction-play .composer-top h2{font-size:12px}.refraction-play .game-composer{padding-top:9px}.refraction-play .composer-modes{margin-left:auto}.refraction-play .composer-form textarea,.refraction-play .composer-submit{min-height:54px;height:54px;font-size:12px}.refraction-play .composer-foot i{display:none}.refraction-play .theatre-tools{grid-row:4;grid-column:1;flex-direction:row;align-items:center;gap:0;padding:2px 8px;border-top:1px solid #cbd3dc;background:#edf0f4}.refraction-play .theatre-tools>nav{flex-direction:row;justify-content:space-around;gap:0}.refraction-play .theatre-tools button{font-size:10px;min-height:40px;padding:3px;flex-direction:column;gap:3px;white-space:nowrap}.refraction-play .theatre-tools .theatre-glyph{width:14px;height:14px}.refraction-play .theatre-tools .rail-story{font-size:10px;clip-path:none;margin:0;padding:4px 7px;letter-spacing:0}.refraction-play .theatre-tools button::after{display:none}.refraction-play .theatre-self,.refraction-play .theatre-sound{display:none}.art-review-label{top:55px;right:4px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.refraction-play *,body.playing-game .el-overlay .el-drawer{animation:none!important;transition:none!important;scroll-behavior:auto!important}.refraction-stage .paper-person-wrap,.refraction-stage .paper-landscape{transform:none!important}}
+

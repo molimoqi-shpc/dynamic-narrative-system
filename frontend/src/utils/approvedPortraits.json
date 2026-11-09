@@ -1,0 +1,3487 @@
+[
+  {
+    "key": "P261026-01",
+    "label": "黑缎回眸",
+    "src": "/art/portraits-v3/01-black-satin-over-shoulder.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN",
+      "MODERN"
+    ],
+    "roles": [
+      "NOBLE",
+      "DIPLOMAT",
+      "SOCIALITE"
+    ],
+    "hair": [
+      "blonde",
+      "champagne",
+      "盘发",
+      "金发"
+    ],
+    "eyes": [
+      "gray-green",
+      "灰绿"
+    ],
+    "outfit": [
+      "黑色晚礼服",
+      "黑缎",
+      "蕾丝长手套",
+      "露肩",
+      "细颈饰"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "人类",
+      "贵族",
+      "名媛",
+      "外交官",
+      "舞会",
+      "晚宴",
+      "背身",
+      "回眸",
+      "金发",
+      "盘发",
+      "黑缎",
+      "黑色礼服",
+      "蕾丝手套",
+      "优雅",
+      "沉静",
+      "灰绿眼"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-02",
+    "label": "霜发执杖者",
+    "src": "/art/portraits-v3/02-platinum-mage-female.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "MAGE",
+      "SCHOLAR",
+      "ACADEMY_MAGE"
+    ],
+    "hair": [
+      "platinum",
+      "silver-white",
+      "银白",
+      "浅金",
+      "长发"
+    ],
+    "eyes": [
+      "gray-violet",
+      "灰紫"
+    ],
+    "outfit": [
+      "深灰学院法袍",
+      "白衬衣",
+      "银扣",
+      "蓝灰领饰",
+      "魔杖"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "人类",
+      "法师",
+      "学院",
+      "学者",
+      "魔杖",
+      "银白长发",
+      "浅金发",
+      "灰紫眼",
+      "深灰法袍",
+      "白衬衣",
+      "细领饰",
+      "安静",
+      "灵巧"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-03",
+    "label": "银棘女骑士",
+    "src": "/art/portraits-v3/03-silver-thorn-knight-female.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "KNIGHT",
+      "WARRIOR",
+      "GUARD"
+    ],
+    "hair": [
+      "silver",
+      "silver-gray",
+      "银灰",
+      "长发"
+    ],
+    "eyes": [
+      "steel-blue",
+      "钢蓝"
+    ],
+    "outfit": [
+      "银钢板甲",
+      "黑色内衬",
+      "长剑",
+      "雕花护肩",
+      "蓝黑披风"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "人类",
+      "骑士",
+      "战士",
+      "护卫",
+      "银甲",
+      "板甲",
+      "银灰长发",
+      "钢蓝眼",
+      "长剑",
+      "黑内衬",
+      "剑誓",
+      "坚毅",
+      "英气"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-04",
+    "label": "蓝绶书院学者",
+    "src": "/art/portraits-v3/04-brunette-academy-mage-female.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN",
+      "MODERN"
+    ],
+    "roles": [
+      "MAGE",
+      "SCHOLAR",
+      "ACADEMY_MAGE"
+    ],
+    "hair": [
+      "chestnut",
+      "dark-brown",
+      "栗棕",
+      "长卷发"
+    ],
+    "eyes": [
+      "blue-gray",
+      "灰蓝"
+    ],
+    "outfit": [
+      "墨蓝学院外袍",
+      "白衬衣",
+      "深蓝领带",
+      "灰蓝毛衣",
+      "旧书"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "人类",
+      "学者",
+      "学院",
+      "法师",
+      "研究员",
+      "栗棕长卷发",
+      "灰蓝眼",
+      "墨蓝长袍",
+      "白衬衣",
+      "书卷",
+      "蓝领带",
+      "沉思",
+      "文雅"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-05",
+    "label": "蕾丝执事",
+    "src": "/art/portraits-v3/05-lace-attendant-female.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ATTENDANT",
+      "HOUSEKEEPER",
+      "SCHOLAR"
+    ],
+    "hair": [
+      "black",
+      "dark-brown",
+      "乌黑",
+      "盘发"
+    ],
+    "eyes": [
+      "warm-brown",
+      "暖棕"
+    ],
+    "outfit": [
+      "黑白蕾丝长裙",
+      "高领白蕾丝",
+      "黑缎泡袖",
+      "珍珠扣",
+      "蕾丝发饰"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "人类",
+      "侍从",
+      "女管家",
+      "执事",
+      "庄园",
+      "乌黑盘发",
+      "暖棕眼",
+      "黑白长裙",
+      "高领蕾丝",
+      "珍珠",
+      "细发饰",
+      "端庄",
+      "从容"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-08",
+    "label": "月白精灵使者",
+    "src": "/art/portraits-v3/08-moonwhite-elf-female.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "elf",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ELF",
+      "MAGE",
+      "ENVOY"
+    ],
+    "hair": [
+      "moon-white",
+      "silver-white",
+      "月白",
+      "银白长发"
+    ],
+    "eyes": [
+      "pale-lilac",
+      "淡紫"
+    ],
+    "outfit": [
+      "月白丝织长袍",
+      "银叶披帛",
+      "浅蓝刺绣",
+      "月石坠饰",
+      "细冠"
+    ],
+    "keywords": [
+      "女",
+      "成年",
+      "精灵",
+      "尖耳",
+      "月白",
+      "银白长发",
+      "淡紫眼",
+      "月石",
+      "银叶",
+      "长袍",
+      "使者",
+      "月术",
+      "轻盈",
+      "清冷",
+      "优雅"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-09",
+    "label": "月白精灵游侠",
+    "src": "/art/portraits-v3/09-moonwhite-elf-male.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "elf",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ELF",
+      "RANGER",
+      "SCOUT"
+    ],
+    "hair": [
+      "silver-white",
+      "银白",
+      "半束长发"
+    ],
+    "eyes": [
+      "ice-blue",
+      "冰蓝"
+    ],
+    "outfit": [
+      "银灰轻甲",
+      "月白短披风",
+      "深蓝内衬",
+      "修长弓",
+      "叶纹护腕"
+    ],
+    "keywords": [
+      "男",
+      "成年",
+      "精灵",
+      "尖耳",
+      "游侠",
+      "斥候",
+      "银白半束长发",
+      "冰蓝眼",
+      "月白披风",
+      "银灰轻甲",
+      "长弓",
+      "叶纹",
+      "敏锐",
+      "冷静",
+      "半束长发"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-06",
+    "label": "苍蓝誓骑",
+    "src": "/art/portraits-v3/06-azure-oath-knight-male-v2.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "KNIGHT",
+      "GUARD",
+      "PALADIN"
+    ],
+    "hair": [
+      "ash-blond",
+      "灰金",
+      "短发"
+    ],
+    "eyes": [
+      "blue",
+      "蓝"
+    ],
+    "outfit": [
+      "银钢板甲",
+      "银白铠甲",
+      "白色战袍",
+      "蓝白战旗",
+      "纹章战旗",
+      "单肩覆旗",
+      "誓剑"
+    ],
+    "keywords": [
+      "男性",
+      "成年",
+      "人类",
+      "骑士",
+      "灰金短发",
+      "蓝眼",
+      "银白板甲",
+      "白色战袍",
+      "蓝白战旗",
+      "单肩覆旗",
+      "纹章",
+      "双手持剑",
+      "竖剑",
+      "待命",
+      "庄重"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-07",
+    "label": "玄铁边境骑士",
+    "src": "/art/portraits-v3/07-black-iron-knight-male-v2.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "KNIGHT",
+      "WARRIOR",
+      "MERCENARY"
+    ],
+    "hair": [
+      "black",
+      "dark-brown",
+      "黑发",
+      "短发"
+    ],
+    "eyes": [
+      "hazel",
+      "榛色"
+    ],
+    "outfit": [
+      "深黑钢甲",
+      "玄铁甲",
+      "暗红披风",
+      "黑色盔甲",
+      "战损甲",
+      "旧长剑"
+    ],
+    "keywords": [
+      "男性",
+      "成熟",
+      "人类",
+      "边境骑士",
+      "短发",
+      "胡茬",
+      "深黑钢甲",
+      "微反光",
+      "暗红披风",
+      "刀痕",
+      "战损",
+      "磕碰",
+      "抱盔",
+      "佩剑",
+      "老兵"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261026-10",
+    "label": "象牙金纹圣骑士",
+    "src": "/art/portraits-v3/10-ivory-paladin-male-v3.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "PALADIN",
+      "KNIGHT",
+      "COMMANDER"
+    ],
+    "hair": [
+      "brown",
+      "深棕",
+      "短卷发"
+    ],
+    "eyes": [
+      "amber",
+      "琥珀"
+    ],
+    "outfit": [
+      "象牙白重甲",
+      "白金重甲",
+      "哑金细纹",
+      "白色短披风",
+      "巨剑"
+    ],
+    "keywords": [
+      "男性",
+      "成年",
+      "人类",
+      "圣骑士",
+      "壮硕",
+      "宽肩",
+      "棕色短卷发",
+      "琥珀眼",
+      "象牙白重甲",
+      "哑金纹",
+      "白披风",
+      "双手横握",
+      "巨剑",
+      "长剑柄",
+      "重装"
+    ],
+    "cinematic": true,
+    "approved": true
+  },
+  {
+    "key": "P261027-01",
+    "label": "月语精灵",
+    "src": "/art/portraits-v4/01-moonwatcher-elf-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "elf",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ELF",
+      "MAGE",
+      "ENVOY"
+    ],
+    "hair": [
+      "silver-white",
+      "银白长发",
+      "long",
+      "细发辫"
+    ],
+    "eyes": [
+      "violet",
+      "淡紫罗兰"
+    ],
+    "outfit": [
+      "月白长裙",
+      "月白纱裙",
+      "淡青纱袍",
+      "银灰披肩",
+      "银叶刺绣",
+      "半透明薄纱"
+    ],
+    "equipment": [
+      "白木法杖",
+      "藤蔓法杖",
+      "幽蓝水晶法杖"
+    ],
+    "keywords": [
+      "女性",
+      "成年",
+      "精灵",
+      "尖耳",
+      "银白长发",
+      "银发",
+      "细发辫",
+      "紫罗兰眼",
+      "淡紫眼",
+      "月白",
+      "淡青",
+      "银灰",
+      "白木法杖",
+      "藤蔓法杖",
+      "幽蓝水晶",
+      "托银叶",
+      "银叶",
+      "薄纱披肩",
+      "层叠纱裙",
+      "银线刺绣",
+      "星月纹",
+      "月光石",
+      "银链腰带",
+      "药草袋",
+      "浅灰皮靴",
+      "银耳坠",
+      "月牙坠",
+      "紫水晶额饰",
+      "纤细",
+      "长袍"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027-06",
+    "label": "金指男盗贼",
+    "src": "/art/portraits-v4/06-goldfinger-thief-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "THIEF",
+      "ROGUE"
+    ],
+    "hair": [
+      "chestnut",
+      "栗棕",
+      "栗色半长发",
+      "束发",
+      "黑丝带"
+    ],
+    "eyes": [
+      "honey-brown",
+      "蜜棕"
+    ],
+    "outfit": [
+      "深绿天鹅绒外套",
+      "墨绿天鹅绒",
+      "金线藤蔓刺绣",
+      "米白丝衬衫",
+      "墨绿单肩披风",
+      "暗红丝绸内衬"
+    ],
+    "equipment": [
+      "金色钥匙",
+      "开锁工具",
+      "短剑",
+      "钥匙吊坠"
+    ],
+    "keywords": [
+      "男性",
+      "成年",
+      "人类",
+      "盗贼",
+      "窃贼",
+      "栗色头发",
+      "栗棕",
+      "半长发",
+      "丝带束发",
+      "短须",
+      "金耳环",
+      "蜜棕眼",
+      "深绿",
+      "墨绿",
+      "天鹅绒",
+      "金线刺绣",
+      "藤蔓纹",
+      "米白衬衫",
+      "丝绸",
+      "荷叶袖口",
+      "单肩披风",
+      "暗红内衬",
+      "转钥匙",
+      "开锁工具",
+      "短剑",
+      "皮腰带",
+      "小布袋",
+      "放大镜",
+      "红宝石戒",
+      "钥匙吊坠",
+      "黑皮手套",
+      "高筒皮靴"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027-07",
+    "label": "曙光男骑士",
+    "src": "/art/portraits-v4/07-dawn-knight-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "KNIGHT",
+      "PALADIN",
+      "COMMANDER"
+    ],
+    "hair": [
+      "gold-brown",
+      "金褐",
+      "金褐短卷发",
+      "short"
+    ],
+    "eyes": [
+      "blue-gray",
+      "蓝灰"
+    ],
+    "outfit": [
+      "白银精工板甲",
+      "白银板甲",
+      "羽翼肩甲",
+      "白金长披风",
+      "白底金边披风",
+      "圣焰纹甲"
+    ],
+    "equipment": [
+      "圆盾",
+      "盾牌",
+      "曙光盾",
+      "符文长剑",
+      "竖举长剑"
+    ],
+    "keywords": [
+      "男性",
+      "成年",
+      "人类",
+      "骑士",
+      "圣殿骑士",
+      "团长",
+      "高大",
+      "金褐短发",
+      "短卷发",
+      "蓝灰眼",
+      "白银板甲",
+      "精工板甲",
+      "金边",
+      "圣焰纹",
+      "羽翼纹",
+      "羽翼肩甲",
+      "圣徽",
+      "鳞片护手",
+      "白色战裙",
+      "白金披风",
+      "深蓝内衬",
+      "鹰头扣",
+      "符文长剑",
+      "竖举长剑",
+      "圆盾",
+      "剑盾",
+      "曙光徽记",
+      "盾面划痕",
+      "银灰铁靴",
+      "腰挂圣典"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027-08",
+    "label": "黯月女祭司",
+    "src": "/art/portraits-v4/08-darkmoon-priestess-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "PRIESTESS",
+      "PRIEST",
+      "CLERIC"
+    ],
+    "hair": [
+      "black",
+      "乌黑长发",
+      "long",
+      "微卷发梢"
+    ],
+    "eyes": [
+      "dark-blue",
+      "暗蓝"
+    ],
+    "outfit": [
+      "靛蓝丝质长裙",
+      "靛蓝长裙",
+      "黑色层叠长袍",
+      "黑纱",
+      "月相刺绣",
+      "银月相刺绣",
+      "月牙头冠"
+    ],
+    "equipment": [
+      "圣典",
+      "月亮圣徽",
+      "银铃"
+    ],
+    "keywords": [
+      "女性",
+      "成年",
+      "人类",
+      "祭司",
+      "女祭司",
+      "神职者",
+      "乌黑长发",
+      "黑发",
+      "暗蓝眼",
+      "月牙冠",
+      "蓝宝石额饰",
+      "靛蓝",
+      "高立领",
+      "丝质长裙",
+      "层叠长袍",
+      "黑纱",
+      "半透明纱",
+      "银线刺绣",
+      "月相纹",
+      "新月",
+      "满月",
+      "星辰纹",
+      "月亮圣徽",
+      "蓝月光石",
+      "银链",
+      "银铃",
+      "双手捧书",
+      "圣典",
+      "银包书角",
+      "深蓝皮封",
+      "蓝色微光",
+      "黑色缎鞋"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027B-03",
+    "label": "焰鳞女龙裔",
+    "src": "/art/portraits-v5/03-ember-dragonborn-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "dragonborn",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "DRAGONBORN",
+      "NOBLE",
+      "SWORDSWOMAN"
+    ],
+    "hair": [
+      "burgundy",
+      "深酒红长发",
+      "橙金发尾",
+      "细辫",
+      "long"
+    ],
+    "eyes": [
+      "molten-gold",
+      "熔金竖瞳"
+    ],
+    "outfit": [
+      "红黑提花长裙",
+      "黑丝立领长裙",
+      "暗红龙鳞轻甲",
+      "火焰黑纱",
+      "金属腰带",
+      "黑色金边短靴"
+    ],
+    "equipment": [
+      "鞘中细剑",
+      "龙首胸针",
+      "红宝石胸针"
+    ],
+    "appearanceExclusions": [
+      "冰龙",
+      "霜龙",
+      "白龙",
+      "冰蓝鳞片",
+      "银蓝鳞片",
+      "银白鳞片",
+      "银白龙角",
+      "ice-blue",
+      "silver-blue",
+      "frost dragon"
+    ],
+    "keywords": [
+      "女性",
+      "成年",
+      "龙裔",
+      "人形面容",
+      "深红龙角",
+      "赤红龙角",
+      "暗红脸鳞",
+      "锁骨鳞片",
+      "象牙肤色",
+      "熔金眼",
+      "竖瞳",
+      "酒红长发",
+      "橙金发尾",
+      "细辫金环",
+      "赤红龙翼",
+      "收拢龙翼",
+      "红色鳞尾",
+      "黑丝长裙",
+      "红黑提花",
+      "火焰黑纱",
+      "龙鳞轻甲",
+      "金边",
+      "龙首胸针",
+      "红宝石",
+      "鞘中细剑",
+      "黑蕾丝手套",
+      "龙爪耳坠",
+      "金边短靴",
+      "双腿直立",
+      "完整双鞋",
+      "细鳞",
+      "银金属腰带"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027B-07",
+    "label": "圣焰修女骑士",
+    "src": "/art/portraits-v5/07-sacred-flame-nun-knight-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "NUN_KNIGHT",
+      "PALADIN",
+      "KNIGHT"
+    ],
+    "hair": [
+      "light-blonde",
+      "浅金长发",
+      "低发髻",
+      "盘发"
+    ],
+    "eyes": [
+      "amber-gold",
+      "琥珀金"
+    ],
+    "outfit": [
+      "黑白修女袍",
+      "银白轻板甲",
+      "火焰羽翼纹",
+      "黑色短头纱",
+      "银灰护胫",
+      "白色皮革护手"
+    ],
+    "equipment": [
+      "银色长柄战锤",
+      "战锤",
+      "掌心圣火",
+      "金色圣火",
+      "十字圣徽",
+      "圣典",
+      "圣水瓶"
+    ],
+    "keywords": [
+      "女性",
+      "成年",
+      "人类",
+      "修女骑士",
+      "圣殿修女骑士",
+      "浅金发",
+      "低发髻",
+      "银发簪",
+      "琥珀金眼",
+      "银白轻甲",
+      "黑白长袍",
+      "火焰纹",
+      "羽翼纹",
+      "黑色短头纱",
+      "银线刺绣",
+      "银十字圣徽",
+      "琥珀宝石",
+      "银色战锤",
+      "长柄战锤",
+      "掌心圣火",
+      "金色小火焰",
+      "圣典",
+      "深红书封",
+      "银包书角",
+      "圣水瓶",
+      "白皮护手",
+      "鳞片护手",
+      "银灰护胫",
+      "金属护足",
+      "双腿站直",
+      "完整双鞋",
+      "金线甲边"
+    ],
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027C-01",
+    "label": "影绸女盗贼",
+    "src": "/art/portraits-v6/01-shadow-silk-thief-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "THIEF",
+      "ROGUE"
+    ],
+    "hair": [
+      "dark-brown",
+      "深褐长发",
+      "高马尾"
+    ],
+    "eyes": [
+      "emerald-green",
+      "祖母绿"
+    ],
+    "outfit": [
+      "深青皮革长风衣",
+      "黑皮背心",
+      "深灰亚麻衬衫",
+      "深青长围巾",
+      "黑软皮靴"
+    ],
+    "equipment": [
+      "冰蓝宝石",
+      "反握黑匕首",
+      "开锁工具",
+      "小钩爪",
+      "钥匙"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "盗贼",
+      "深褐长发",
+      "高马尾",
+      "祖母绿眼",
+      "深玫瑰唇",
+      "深青皮风衣",
+      "立领",
+      "黑金属双排扣",
+      "金线藤蔓",
+      "黑皮背心",
+      "深灰亚麻",
+      "长围巾",
+      "掌托蓝宝石",
+      "冰蓝宝石光",
+      "黑匕首",
+      "开锁工具",
+      "小钩爪",
+      "金属钥匙",
+      "剪指皮手套",
+      "银长耳坠",
+      "黑色软靴",
+      "双脚朝前",
+      "深青",
+      "皮革长风衣",
+      "冰蓝宝石",
+      "金藤蔓刺绣",
+      "黑靴搭扣",
+      "白蓝光",
+      "银耳坠"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent"
+  },
+  {
+    "key": "P261027C-02",
+    "label": "双月双剑女骑士",
+    "src": "/art/portraits-v6/02-twin-moon-dual-knight-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "DUAL_SWORD_KNIGHT",
+      "KNIGHT",
+      "WARRIOR"
+    ],
+    "hair": [
+      "platinum",
+      "铂金长发",
+      "后颈盘辫"
+    ],
+    "eyes": [
+      "steel-blue",
+      "钢蓝"
+    ],
+    "outfit": [
+      "深蓝钢板甲",
+      "新月银纹",
+      "深蓝月相战袍",
+      "银灰衬披风",
+      "银蓝护胫"
+    ],
+    "equipment": [
+      "银白直刃长剑",
+      "黑刃长剑",
+      "双剑"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "双剑骑士",
+      "铂金发",
+      "后颈盘辫",
+      "风吹碎发",
+      "钢蓝眼",
+      "左颊浅伤",
+      "深蓝钢甲",
+      "银线",
+      "新月纹",
+      "藤蔓银纹",
+      "深蓝战袍",
+      "银月相",
+      "深蓝披风",
+      "银灰内衬",
+      "两柄长剑",
+      "银白剑",
+      "黑刃剑",
+      "倒V持剑",
+      "月白微光",
+      "暗紫微光",
+      "铁靴",
+      "双腿站直",
+      "完整剑尖",
+      "铂金长发",
+      "深蓝钢板甲",
+      "银灰衬披风",
+      "月牙挂饰",
+      "新月肩扣",
+      "一黑一银",
+      "双剑分持",
+      "新月纹甲"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "DUAL_SWORD_KNIGHT"
+      ],
+      "keywords": [
+        "双剑",
+        "双刃",
+        "两柄剑",
+        "两柄长剑",
+        "两把剑",
+        "两把长剑",
+        "一黑一银"
+      ]
+    }
+  },
+  {
+    "key": "P261027C-03",
+    "label": "双刃男骑士",
+    "src": "/art/portraits-v6/03-twin-blade-dual-knight-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "DUAL_SWORD_KNIGHT",
+      "KNIGHT",
+      "WARRIOR"
+    ],
+    "hair": [
+      "black",
+      "黑短发",
+      "后梳"
+    ],
+    "eyes": [
+      "dark-amber",
+      "深琥珀"
+    ],
+    "outfit": [
+      "炭灰暗红板甲",
+      "黄铜镶边",
+      "暗红战袍",
+      "暗红厚呢披风",
+      "深灰护胫",
+      "黑铁头靴"
+    ],
+    "equipment": [
+      "两柄弧刃长剑",
+      "交叉双剑",
+      "双剑"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "双剑骑士",
+      "黑短发",
+      "后梳",
+      "短须",
+      "小麦肤色",
+      "鼻梁旧疤",
+      "深琥珀眼",
+      "胸前X形双剑",
+      "下颌下交点",
+      "弧刃长剑",
+      "剑刃火花",
+      "炭灰板甲",
+      "暗红甲",
+      "黄铜边",
+      "火焰雕纹",
+      "交叉双剑徽",
+      "暗红战袍",
+      "黄铜狮首扣",
+      "磨损披风",
+      "深灰护胫",
+      "黑铁靴",
+      "双脚朝前",
+      "双剑交叉",
+      "炭灰暗红板甲",
+      "黄铜狮首",
+      "鹰翼剑格",
+      "暗红厚呢",
+      "火花反光",
+      "皮革缠柄",
+      "胸甲双剑徽"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "DUAL_SWORD_KNIGHT"
+      ],
+      "keywords": [
+        "双剑",
+        "双刃",
+        "两柄剑",
+        "两柄长剑",
+        "两把剑",
+        "两把长剑",
+        "交叉双剑"
+      ]
+    }
+  },
+  {
+    "key": "P261027C-04",
+    "label": "白羽独角兽女骑兵",
+    "src": "/art/portraits-v6/04-white-feather-unicorn-cavalier-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "UNICORN_CAVALIER",
+      "CAVALRY",
+      "KNIGHT"
+    ],
+    "hair": [
+      "light-chestnut",
+      "浅栗长发",
+      "低侧辫"
+    ],
+    "eyes": [
+      "gray-violet",
+      "灰紫"
+    ],
+    "outfit": [
+      "珍珠白淡紫板甲",
+      "羽毛螺旋纹",
+      "淡紫战袍",
+      "银白护胫",
+      "浅灰战靴"
+    ],
+    "equipment": [
+      "白色长枪",
+      "浅紫燕尾枪旗",
+      "羽缨头盔"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "独角兽骑兵",
+      "人物站坐骑旁",
+      "浅栗发",
+      "侧辫",
+      "珍珠丝带",
+      "灰紫眼",
+      "珍珠白甲",
+      "淡紫甲",
+      "羽毛纹",
+      "螺旋纹",
+      "淡紫战袍",
+      "银白护胫",
+      "灰战靴",
+      "白长枪",
+      "浅紫燕尾旗",
+      "羽缨头盔",
+      "白色独角兽",
+      "珍珠独角",
+      "银白鬃毛",
+      "深蓝兽眼",
+      "浅紫银马铠",
+      "四蹄完整",
+      "人脚完整",
+      "女骑兵",
+      "珍珠母贝光泽",
+      "紫色枪旗",
+      "白羽盔缨",
+      "银羽毛护手",
+      "白色坐骑",
+      "站立组合"
+    ],
+    "composition": "character-and-mount",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "mount": {
+      "species": "unicorn",
+      "coat": "pure-white",
+      "mane": "silver-white",
+      "horn": "pearl",
+      "armor": "lavender-silver"
+    }
+  },
+  {
+    "key": "P261027C-05",
+    "label": "曙角独角兽男骑兵",
+    "src": "/art/portraits-v6/05-dawn-horn-unicorn-cavalier-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "UNICORN_CAVALIER",
+      "CAVALRY",
+      "KNIGHT",
+      "COMMANDER"
+    ],
+    "hair": [
+      "dark-gold",
+      "暗金短卷发"
+    ],
+    "eyes": [
+      "blue",
+      "蓝"
+    ],
+    "outfit": [
+      "白银精工板甲",
+      "日轮羽翼纹",
+      "蓝白战袍",
+      "白底蓝边披风",
+      "银白护胫",
+      "灰铁靴"
+    ],
+    "equipment": [
+      "银色长枪",
+      "蓝白燕尾枪旗",
+      "独角饰头盔"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "独角兽骑兵",
+      "先锋队长",
+      "暗金短发",
+      "浅金胡茬",
+      "蓝眼",
+      "浅麦肤色",
+      "白银板甲",
+      "金边",
+      "日轮纹",
+      "羽翼纹",
+      "金太阳徽",
+      "蓝白战袍",
+      "白蓝披风",
+      "银白护胫",
+      "灰铁靴",
+      "银长枪",
+      "蓝白燕尾旗",
+      "独角头盔",
+      "灰苹果斑独角兽",
+      "炭黑鬃尾",
+      "银色独角",
+      "白蓝马铠",
+      "金太阳马徽",
+      "人脚完整",
+      "站立坐骑",
+      "后蹄透视遮挡",
+      "男骑兵",
+      "灰色坐骑",
+      "苹果斑毛色",
+      "蓝白枪旗",
+      "太阳形肩扣",
+      "独角盔饰",
+      "银片护手"
+    ],
+    "composition": "character-and-mount",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "mount": {
+      "species": "unicorn",
+      "coat": "dapple-gray",
+      "mane": "charcoal",
+      "horn": "silver",
+      "armor": "white-blue"
+    }
+  },
+  {
+    "key": "P261027C-06",
+    "label": "星读水晶球女巫",
+    "src": "/art/portraits-v6/06-star-reader-crystal-witch-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "WITCH",
+      "DIVINER",
+      "MAGE"
+    ],
+    "hair": [
+      "purple-black",
+      "深紫黑长发",
+      "漂浮发尾"
+    ],
+    "eyes": [
+      "pale-violet",
+      "淡紫"
+    ],
+    "outfit": [
+      "深紫宽檐巫帽",
+      "紫黑长袍",
+      "钟形袖",
+      "靛蓝丝内衬",
+      "银蕾丝领",
+      "深紫薄纱"
+    ],
+    "equipment": [
+      "水晶球",
+      "三张无字塔罗牌",
+      "银符文圆环",
+      "天象仪吊坠"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "女巫",
+      "占卜师",
+      "深紫黑发",
+      "淡紫眼",
+      "深紫红唇",
+      "宽檐巫帽",
+      "银星帽沿",
+      "月牙帽扣",
+      "悬浮水晶球",
+      "球内紫蓝星云",
+      "球内高塔幻影",
+      "三张塔罗牌",
+      "无字星月牌背",
+      "银色圆环",
+      "紫黑长袍",
+      "钟形袖",
+      "靛蓝丝内衬",
+      "银星座刺绣",
+      "银链腰带",
+      "紫水晶戒",
+      "银手镯",
+      "星耳坠",
+      "天象仪坠饰",
+      "完整双鞋",
+      "紫蓝魔光",
+      "靛蓝丝绸",
+      "黑紫法袍",
+      "银星耳坠",
+      "短靴金属纹",
+      "银链坠饰"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "WITCH",
+        "DIVINER"
+      ],
+      "keywords": [
+        "水晶球",
+        "塔罗",
+        "女巫帽",
+        "巫帽",
+        "占卜"
+      ]
+    }
+  },
+  {
+    "key": "P261027C-07",
+    "label": "雷鸣风暴法师",
+    "src": "/art/portraits-v6/07-thunder-storm-mage-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "STORM_MAGE",
+      "MAGE"
+    ],
+    "hair": [
+      "silver-white",
+      "银白长发",
+      "低马尾",
+      "银环束发"
+    ],
+    "eyes": [
+      "ice-blue",
+      "淡冰蓝"
+    ],
+    "outfit": [
+      "石板灰长外套",
+      "银扣",
+      "银闪电刺绣",
+      "深蓝高领内衣",
+      "深灰披风",
+      "靛蓝内衬",
+      "黑高筒靴"
+    ],
+    "equipment": [
+      "深色木杖",
+      "悬浮蓝晶石杖头",
+      "掌上电光球",
+      "卷轴"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "风暴法师",
+      "银白长发",
+      "低马尾",
+      "银环束发",
+      "冰蓝眼",
+      "清瘦面容",
+      "苍白皮肤",
+      "石板灰长外套",
+      "银双排扣",
+      "闪电刺绣",
+      "深蓝高领",
+      "深灰披风",
+      "靛蓝内衬",
+      "深木杖",
+      "悬浮蓝晶石",
+      "白蓝电弧",
+      "掌上电光球",
+      "银拇指戒",
+      "蓝水晶戒面",
+      "雷霆胸徽",
+      "羊皮卷轴",
+      "黑高筒靴",
+      "双腿直立",
+      "银环低马尾",
+      "石板灰法袍",
+      "蓝水晶杖头",
+      "白蓝闪电",
+      "深灰手套",
+      "长披风",
+      "银扣外套",
+      "电光反射"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "STORM_MAGE"
+      ],
+      "keywords": [
+        "雷电",
+        "电光",
+        "闪电",
+        "雷霆",
+        "风暴法师",
+        "白蓝电弧"
+      ]
+    }
+  },
+  {
+    "key": "P261027C-08",
+    "label": "夜莺吟游诗人",
+    "src": "/art/portraits-v6/08-nightingale-lute-bard-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "BARD",
+      "MUSICIAN",
+      "SINGER"
+    ],
+    "hair": [
+      "dark-chestnut",
+      "深栗长卷发"
+    ],
+    "eyes": [
+      "honey-brown",
+      "蜜褐"
+    ],
+    "outfit": [
+      "酒红天鹅绒裙",
+      "奶油亚麻泡袖",
+      "酒红软毡帽",
+      "深绿短披肩",
+      "金流苏",
+      "层叠轻纱"
+    ],
+    "equipment": [
+      "木质鲁特琴",
+      "孔雀羽帽饰",
+      "小铜铃"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "吟游诗人",
+      "歌者",
+      "深栗长卷发",
+      "浅杏肤色",
+      "蜜褐眼",
+      "玫瑰红唇",
+      "歌唱神情",
+      "酒红软毡帽",
+      "孔雀羽",
+      "金发链",
+      "鲁特琴",
+      "左手按弦",
+      "右手拨弦",
+      "酒红天鹅绒",
+      "奶油亚麻泡袖",
+      "方领",
+      "金花卉刺绣",
+      "束腰皮带",
+      "铜铃",
+      "层叠轻纱",
+      "深绿披肩",
+      "金流苏",
+      "鸟吊坠",
+      "金白抽象光带",
+      "完整双鞋",
+      "木纹琴身",
+      "多弦鲁特琴",
+      "酒红长裙",
+      "奶油蕾丝",
+      "金音符耳坠",
+      "孔雀羽软帽",
+      "小鸟吊坠",
+      "绒面光泽"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "BARD",
+        "MUSICIAN",
+        "SINGER"
+      ],
+      "keywords": [
+        "鲁特琴",
+        "吟游诗人",
+        "弹琴",
+        "演奏鲁特琴"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-01",
+    "label": "琥珀女炼金术士",
+    "src": "/art/portraits-v7/01-amber-alchemist-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ALCHEMIST",
+      "ARTIFICER",
+      "SCHOLAR"
+    ],
+    "hair": [
+      "red-brown",
+      "深红棕",
+      "松散发髻",
+      "铅笔发簪"
+    ],
+    "eyes": [
+      "amber",
+      "琥珀"
+    ],
+    "outfit": [
+      "深棕皮工作长外套",
+      "奶白亚麻衬衫",
+      "修身灰裤",
+      "深棕高筒系带靴"
+    ],
+    "equipment": [
+      "圆底玻璃烧瓶",
+      "金色液体",
+      "摊开炼成笔记",
+      "试管",
+      "镊子",
+      "小勺"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "炼金术士",
+      "深红棕发",
+      "松散发髻",
+      "铅笔发簪",
+      "黄铜发簪",
+      "额上护目镜",
+      "琥珀眼",
+      "鼻尖煤灰",
+      "左颊煤灰",
+      "右手举烧瓶",
+      "左手托笔记",
+      "液态金光",
+      "圆底玻璃",
+      "几何炼成阵",
+      "深棕皮外套",
+      "黄铜双排扣",
+      "酸液斑点",
+      "奶白衬衫",
+      "卷袖",
+      "腰挂试管",
+      "左手橡胶手套",
+      "右手裸手",
+      "琥珀昆虫坠饰",
+      "棕系带靴",
+      "完整双鞋",
+      "深棕皮工作长外套",
+      "奶白亚麻衬衫",
+      "修身灰裤",
+      "深棕高筒系带靴",
+      "圆底玻璃烧瓶",
+      "金色液体",
+      "摊开炼成笔记",
+      "试管",
+      "镊子",
+      "小勺"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "anatomy": {
+      "leftHand": "rubber glove",
+      "rightHand": "bare"
+    },
+    "selection": {
+      "roles": [
+        "ALCHEMIST"
+      ],
+      "keywords": [
+        "烧瓶",
+        "炼成笔记",
+        "炼金",
+        "alchemist"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-02",
+    "label": "赤金男炼金术士",
+    "src": "/art/portraits-v7/02-redgold-alchemist-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "ALCHEMIST",
+      "SCHOLAR"
+    ],
+    "hair": [
+      "black-gray",
+      "黑银长发",
+      "低马尾",
+      "黑丝带"
+    ],
+    "eyes": [
+      "dark-brown",
+      "深褐"
+    ],
+    "outfit": [
+      "深酒红天鹅绒长外套",
+      "黑丝马甲",
+      "白衬衫",
+      "灰领巾",
+      "黑短披肩",
+      "黑短靴"
+    ],
+    "equipment": [
+      "赤红宝石",
+      "两个黄铜炼成环",
+      "皮面典籍",
+      "黄铜罗盘",
+      "羊皮纸卷"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "四十多岁",
+      "炼金术士",
+      "细金边圆眼镜",
+      "灰黑短须",
+      "深褐眼",
+      "黑银长发",
+      "低马尾",
+      "黑丝带",
+      "掌托赤红宝石",
+      "两个炼成环",
+      "厚重典籍",
+      "无字几何图",
+      "酒红天鹅绒",
+      "金线炼成纹",
+      "黑丝马甲",
+      "黄铜扣",
+      "黄铜怀表链",
+      "灰领巾",
+      "黑短披肩",
+      "腰挂玻璃瓶",
+      "黄铜罗盘",
+      "白亚麻手套",
+      "黄铜戒",
+      "太阳吊坠",
+      "黑短靴",
+      "深酒红天鹅绒长外套",
+      "白衬衫",
+      "赤红宝石",
+      "两个黄铜炼成环",
+      "皮面典籍",
+      "羊皮纸卷"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "ALCHEMIST"
+      ],
+      "keywords": [
+        "炼成环",
+        "炼金",
+        "alchemist"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-03",
+    "label": "齿轮女机械师",
+    "src": "/art/portraits-v7/03-gear-mechanic-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "MECHANIC",
+      "ENGINEER",
+      "ARTIFICER"
+    ],
+    "hair": [
+      "chestnut",
+      "深栗短发",
+      "细小发辫"
+    ],
+    "eyes": [
+      "teal-green",
+      "青绿"
+    ],
+    "outfit": [
+      "深橄榄绿帆布工装",
+      "棕皮补丁",
+      "米色亚麻衬衫",
+      "厚皮围裙",
+      "灰工装裤",
+      "棕高帮皮靴"
+    ],
+    "equipment": [
+      "蓝金机械核心",
+      "长柄大扳手",
+      "螺丝刀",
+      "卡尺",
+      "小锤",
+      "铜线",
+      "油壶"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "机械师",
+      "首席工匠造型",
+      "深栗短发",
+      "细辫铜环",
+      "额上黄铜护目镜",
+      "青绿眼",
+      "雀斑",
+      "机油污渍",
+      "左机械前臂",
+      "黄铜钢义肢",
+      "精细关节齿轮",
+      "右手托核心",
+      "蓝金玻璃核心",
+      "左手握大扳手",
+      "橄榄绿帆布",
+      "深棕皮补丁",
+      "米亚麻衬衫",
+      "皮围裙",
+      "工具口袋",
+      "铜线",
+      "油壶",
+      "褪色橙红围巾",
+      "齿轮吊坠",
+      "铜管工具背包",
+      "棕皮靴",
+      "深橄榄绿帆布工装",
+      "棕皮补丁",
+      "米色亚麻衬衫",
+      "厚皮围裙",
+      "灰工装裤",
+      "棕高帮皮靴",
+      "蓝金机械核心",
+      "长柄大扳手",
+      "螺丝刀",
+      "卡尺",
+      "小锤"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "anatomy": {
+      "leftForearm": "brass-steel mechanical prosthesis",
+      "rightHand": "natural"
+    },
+    "requiredProsthesis": "leftForearm"
+  },
+  {
+    "key": "P261027D-04",
+    "label": "铁砧男机械师",
+    "src": "/art/portraits-v7/04-anvil-mechanic-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT",
+      "ELDER"
+    ],
+    "species": "humanoid",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "MECHANIC",
+      "SMITH",
+      "ARTIFICER"
+    ],
+    "hair": [
+      "gray-brown",
+      "灰褐短发"
+    ],
+    "eyes": [
+      "dark-brown",
+      "深棕"
+    ],
+    "outfit": [
+      "深棕牛皮锻造围裙",
+      "灰粗布衬衫",
+      "灰防热披肩",
+      "厚灰裤",
+      "黑铁头工作靴"
+    ],
+    "equipment": [
+      "长柄大铁锤",
+      "橙红炉心",
+      "钳子",
+      "凿子",
+      "行会徽章",
+      "旧怀表"
+    ],
+    "keywords": [
+      "成年男性",
+      "人形工匠",
+      "成熟",
+      "魁梧敦实",
+      "灰褐短发",
+      "灰褐银白长胡须",
+      "古铜肤色",
+      "烫疤",
+      "深棕眼",
+      "皮帽小护目镜",
+      "左机械义臂",
+      "黄铜黑钢",
+      "粗关节齿轮",
+      "机械掌托炉心",
+      "右手握长柄铁锤",
+      "深棕牛皮围裙",
+      "烧灼痕",
+      "灰粗布卷袖",
+      "防热披肩",
+      "腰挂钳凿",
+      "蒸汽背包",
+      "两根铜管",
+      "旧行会徽章",
+      "旧怀表",
+      "厚皮手套",
+      "黑铁头靴",
+      "深棕牛皮锻造围裙",
+      "灰粗布衬衫",
+      "灰防热披肩",
+      "厚灰裤",
+      "黑铁头工作靴",
+      "长柄大铁锤",
+      "橙红炉心",
+      "钳子",
+      "凿子",
+      "行会徽章"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "allowedSpecies": [
+      "human",
+      "dwarf"
+    ],
+    "anatomy": {
+      "leftForearm": "brass-blacksteel mechanical prosthesis",
+      "rightHand": "natural"
+    },
+    "requiredProsthesis": "leftForearm"
+  },
+  {
+    "key": "P261027D-05",
+    "label": "渊誓女暗黑骑士",
+    "src": "/art/portraits-v7/05-abyss-oath-dark-knight-female-transparent-v2.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "DARK_KNIGHT",
+      "KNIGHT"
+    ],
+    "hair": [
+      "black",
+      "黑色长发",
+      "暗红烧灼发尾"
+    ],
+    "eyes": [
+      "dark-red",
+      "暗红"
+    ],
+    "outfit": [
+      "哑黑钢板甲",
+      "暗红细线甲纹",
+      "黑战袍",
+      "黑厚呢披风",
+      "暗红内衬",
+      "黑钢护胫",
+      "尖刺铁靴"
+    ],
+    "equipment": [
+      "黑色双手巨剑",
+      "暗红裂纹剑身",
+      "局部黑焰",
+      "破碎圣徽",
+      "断银链"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "暗黑骑士",
+      "黑色长发",
+      "暗红发尾",
+      "苍白肤色",
+      "暗红眼",
+      "暗紫红唇",
+      "无头盔",
+      "双手扶剑柄",
+      "竖立黑巨剑",
+      "剑尖向下",
+      "暗红剑身裂纹",
+      "黑焰",
+      "哑黑钢甲",
+      "暗红脉络细线",
+      "破碎圣徽",
+      "尖层叠肩甲",
+      "撕裂黑战袍",
+      "黑呢披风",
+      "暗红内衬",
+      "焦痕灰烬",
+      "尖刺护手",
+      "双翼剑格",
+      "断银链",
+      "黑钢护胫",
+      "完整黑铁靴",
+      "哑黑钢板甲",
+      "暗红细线甲纹",
+      "黑战袍",
+      "黑厚呢披风",
+      "尖刺铁靴",
+      "黑色双手巨剑",
+      "暗红裂纹剑身",
+      "局部黑焰"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "DARK_KNIGHT"
+      ],
+      "keywords": [
+        "黑焰",
+        "黑色火焰",
+        "black flame"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-06",
+    "label": "黑曜男暗黑骑士",
+    "src": "/art/portraits-v7/06-obsidian-dark-knight-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "DARK_KNIGHT",
+      "KNIGHT",
+      "COMMANDER"
+    ],
+    "hair": [
+      "white",
+      "白色短发",
+      "向后梳"
+    ],
+    "eyes": [
+      "lava-orange-red",
+      "熔岩橙红"
+    ],
+    "outfit": [
+      "黑曜石厚重板甲",
+      "暗红甲缝",
+      "裂冠胸徽",
+      "尖刺肩甲",
+      "黑战袍",
+      "黑呢披风",
+      "黑毛皮领"
+    ],
+    "equipment": [
+      "尖刺长柄战锤",
+      "掌上黑焰球",
+      "腰挂双角头盔"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "暗黑骑士",
+      "魁梧",
+      "白色短发",
+      "苍白面容",
+      "脸颈红裂纹",
+      "熔岩橙红眼",
+      "人物无角",
+      "腰挂双角头盔",
+      "右手握尖刺锤",
+      "左掌黑焰球",
+      "黑紫红火丝",
+      "黑曜石板甲",
+      "暗光泽",
+      "暗红甲缝",
+      "裂开王冠纹",
+      "巨大尖刺肩甲",
+      "无字几何纹",
+      "撕裂黑战袍",
+      "暗红内衬",
+      "焦痕",
+      "黑钢护手",
+      "黑毛皮领",
+      "灰烬",
+      "厚黑铁靴",
+      "黑曜石厚重板甲",
+      "裂冠胸徽",
+      "尖刺肩甲",
+      "黑战袍",
+      "黑呢披风",
+      "尖刺长柄战锤",
+      "掌上黑焰球"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "DARK_KNIGHT"
+      ],
+      "keywords": [
+        "黑焰",
+        "黑色火焰",
+        "black flame"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-07",
+    "label": "终钟女天启战士",
+    "src": "/art/portraits-v7/07-last-hour-apocalypse-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "APOCALYPSE_WARRIOR",
+      "WARRIOR",
+      "JUDGE"
+    ],
+    "hair": [
+      "pure-white",
+      "纯白长发",
+      "金红发梢"
+    ],
+    "eyes": [
+      "gold",
+      "金"
+    ],
+    "outfit": [
+      "黑暗金轻战甲",
+      "龟裂红光甲缝",
+      "放射纹胸甲",
+      "鸟翼肩甲",
+      "黑金战袍",
+      "黑轻披风",
+      "深红纱内衬"
+    ],
+    "equipment": [
+      "黑金长柄战刃",
+      "黄铜红沙沙漏",
+      "细薄火环"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "天启战士",
+      "纯白长发",
+      "金红发梢",
+      "白皙肤色",
+      "金眼白炽瞳心",
+      "细薄金火环",
+      "破裂火冠",
+      "右手持长柄战刃",
+      "竖直黑金刃",
+      "左手托黄铜沙漏",
+      "红沙流动",
+      "几何沙漏框",
+      "黑暗金轻甲",
+      "龟裂红光",
+      "放射纹胸甲",
+      "鸟翼肩甲",
+      "黑金战袍",
+      "黑轻披风",
+      "深红纱",
+      "金属拼皮护手",
+      "金色细颈环",
+      "金色火纹",
+      "黑金护胫",
+      "完整黑长靴",
+      "黑暗金轻战甲",
+      "龟裂红光甲缝",
+      "深红纱内衬",
+      "黑金长柄战刃",
+      "黄铜红沙沙漏",
+      "细薄火环"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "APOCALYPSE_WARRIOR"
+      ],
+      "keywords": [
+        "火环",
+        "火冠",
+        "fire halo"
+      ]
+    }
+  },
+  {
+    "key": "P261027D-08",
+    "label": "灰烬号角男天启战士",
+    "src": "/art/portraits-v7/08-ashen-herald-apocalypse-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "APOCALYPSE_WARRIOR",
+      "WARRIOR",
+      "HERALD"
+    ],
+    "hair": [
+      "gray-white",
+      "灰白长发",
+      "后束",
+      "焦黑发梢"
+    ],
+    "eyes": [
+      "gold-orange",
+      "金橙"
+    ],
+    "outfit": [
+      "黑暗金厚重板甲",
+      "红熔岩裂纹",
+      "破裂放射胸徽",
+      "不对称肩甲",
+      "黑锁子甲",
+      "破黑呢披风",
+      "旧灰围巾"
+    ],
+    "equipment": [
+      "肩扛黑双手巨剑",
+      "星形火光",
+      "残破薄火环",
+      "腰挂牛角号"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "天启战士",
+      "魁梧",
+      "灰白长发",
+      "后束发",
+      "焦黑发梢",
+      "灰白短须",
+      "眉至下颌长疤",
+      "古铜灰烬肤色",
+      "金橙眼",
+      "残破薄金火环",
+      "右手握柄肩扛巨剑",
+      "宽黑重剑",
+      "暗红熔岩剑纹",
+      "左掌星形火光",
+      "金色局部火光",
+      "黑暗金厚甲",
+      "龟裂红光",
+      "破裂放射胸徽",
+      "巨大破损左肩甲",
+      "较小右肩甲",
+      "黑锁子甲",
+      "焦黑战袍",
+      "破呢披风",
+      "旧灰围巾",
+      "腰挂牛角号",
+      "暗金号口",
+      "灰烬黑战靴",
+      "黑暗金厚重板甲",
+      "红熔岩裂纹",
+      "不对称肩甲",
+      "破黑呢披风",
+      "肩扛黑双手巨剑",
+      "星形火光",
+      "残破薄火环"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "APOCALYPSE_WARRIOR"
+      ],
+      "keywords": [
+        "火环",
+        "火冠",
+        "fire halo"
+      ]
+    }
+  },
+  {
+    "key": "P261027E-01",
+    "label": "骨语女死灵法师",
+    "src": "/art/portraits-v8/01-bone-whisper-necromancer-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "NECROMANCER",
+      "MAGE"
+    ],
+    "hair": [
+      "silver-white",
+      "银白长发",
+      "乌黑挑染"
+    ],
+    "eyes": [
+      "pale-green",
+      "淡幽绿"
+    ],
+    "outfit": [
+      "黑丝绒长袍",
+      "白骨领饰",
+      "尖角宽袖",
+      "墨绿丝绸袖衬",
+      "银线肋骨纹束腰",
+      "黑薄纱裙摆",
+      "灰白霜花刺绣",
+      "黑长纱银藤蔓"
+    ],
+    "equipment": [
+      "黑木骨首长杖",
+      "青绿色魂火",
+      "骨银戒指",
+      "灰白念珠",
+      "银链头骨吊坠",
+      "腰间小铃铛"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "死灵法师",
+      "守墓人造型",
+      "银白长发",
+      "黑色挑染",
+      "冷白肤色",
+      "淡幽绿眼",
+      "暗紫嘴唇",
+      "眼下灰青阴影",
+      "白骨黑藤冠环",
+      "额前黑薄纱",
+      "右手持骨首长杖",
+      "左掌青绿魂火",
+      "细小魂光丝线",
+      "黑丝绒",
+      "白骨领饰",
+      "黑束腰",
+      "银线肋骨纹",
+      "尖角宽袖",
+      "墨绿丝衬",
+      "多层黑薄纱",
+      "灰白霜花绣边",
+      "半透明黑长纱",
+      "银藤蔓刺绣",
+      "墨绿指甲",
+      "骨银戒指",
+      "灰白念珠",
+      "头骨吊坠",
+      "腰挂小铃铛",
+      "黑色鞋履",
+      "完整双鞋"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "NECROMANCER"
+      ],
+      "keywords": [
+        "魂火",
+        "魂焰",
+        "骨首长杖",
+        "骨片肩甲",
+        "死灵",
+        "亡灵",
+        "soul flame"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "1% -4% -11% -14%",
+        "--portrait-wide-inset": "1% -4% -11% -14%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "250%",
+        "left": "-75%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-76%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-02",
+    "label": "冥契男死灵法师",
+    "src": "/art/portraits-v8/02-grave-pact-necromancer-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT",
+      "ELDER"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "NECROMANCER",
+      "MAGE"
+    ],
+    "hair": [
+      "dark-gray",
+      "深灰及肩长发",
+      "银白发丝",
+      "灰白长须"
+    ],
+    "eyes": [
+      "cold-gray",
+      "冷灰"
+    ],
+    "outfit": [
+      "深炭黑高领长袍",
+      "暗银几何刺绣",
+      "灰白骨片黑铁肩甲",
+      "深灰丝质长衫",
+      "黑披风",
+      "暗靛蓝内衬",
+      "黑皮带",
+      "黑高帮皮靴"
+    ],
+    "equipment": [
+      "锁链黑皮典籍",
+      "灰白头骨浮雕书封",
+      "冰蓝魂焰",
+      "小瓷瓶",
+      "羊皮纸",
+      "细长银刀",
+      "月长石戒",
+      "黑圆形金属吊坠"
+    ],
+    "keywords": [
+      "成年男性",
+      "五十岁上下",
+      "人类",
+      "死灵法师",
+      "高瘦清癯",
+      "高颧骨",
+      "深眼窝",
+      "鹰钩鼻梁",
+      "细密皱纹",
+      "灰白整齐长须",
+      "冷灰眼",
+      "深灰及肩长发",
+      "银白发丝",
+      "黑铁低冠",
+      "三片灰白骨饰",
+      "左手托锁链典籍",
+      "右掌冰蓝魂焰",
+      "书页蓝绿微光",
+      "灰白头骨书封",
+      "深炭黑长袍",
+      "暗银几何刺绣",
+      "骨铁肩甲",
+      "暗靛蓝披风内衬",
+      "磨损流苏",
+      "瓷瓶卷轴",
+      "细银刀",
+      "银黑铁戒指",
+      "灰月长石戒",
+      "手背旧墨痕",
+      "黑圆形吊坠",
+      "黑高帮皮靴",
+      "完整双鞋"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "NECROMANCER"
+      ],
+      "keywords": [
+        "魂火",
+        "魂焰",
+        "骨首长杖",
+        "骨片肩甲",
+        "死灵",
+        "亡灵",
+        "soul flame"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "2% -5% -12% -12%",
+        "--portrait-wide-inset": "2% -5% -12% -12%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "250%",
+        "left": "-72%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-76%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-03",
+    "label": "绯夜女吸血鬼",
+    "src": "/art/portraits-v8/03-crimson-night-vampire-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "vampire",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "VAMPIRE"
+    ],
+    "hair": [
+      "black",
+      "深黑高位发髻",
+      "颈侧卷发"
+    ],
+    "eyes": [
+      "ruby-red",
+      "暗红宝石",
+      "细长竖瞳"
+    ],
+    "outfit": [
+      "酒红黑哥特长礼裙",
+      "黑丝绒红缎胸衣",
+      "高立领",
+      "黑珍珠扣",
+      "玫瑰藤蔓蕾丝",
+      "黑蕾丝长袖",
+      "红缎黑纱裙",
+      "黑缎鞋"
+    ],
+    "equipment": [
+      "水晶高脚杯",
+      "深红杯中液体",
+      "半开黑蕾丝折扇",
+      "银蝙蝠翼发饰",
+      "红宝石发簪",
+      "红宝石项圈",
+      "红宝石银流苏耳坠"
+    ],
+    "keywords": [
+      "成年女性外貌",
+      "吸血鬼",
+      "血族",
+      "冷白珍珠肤色",
+      "暗红宝石眼",
+      "细竖瞳",
+      "深红嘴唇",
+      "轻露尖犬齿",
+      "高位黑发髻",
+      "颈侧卷发",
+      "红宝石发簪",
+      "银蝙蝠翼发饰",
+      "右手托水晶酒杯",
+      "杯中深红液体",
+      "左手半开蕾丝扇",
+      "少量蝙蝠剪影",
+      "深酒红",
+      "黑色",
+      "哥特礼裙",
+      "黑丝绒胸衣",
+      "红缎拼接",
+      "高立领",
+      "黑珍珠扣",
+      "玫瑰藤蔓蕾丝",
+      "层叠黑纱",
+      "银线裙绣",
+      "黑蕾丝手套",
+      "深红指甲",
+      "水滴红宝石项圈",
+      "银流苏耳坠",
+      "细银链手镯",
+      "完整黑缎鞋"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "framing": {
+      "stage": {
+        "--portrait-inset": "2% 0% -9% -14%",
+        "--portrait-wide-inset": "2% 0% -9% -14%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "240%",
+        "left": "-84%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-86%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-04",
+    "label": "夜幕男吸血鬼",
+    "src": "/art/portraits-v8/04-nightfall-vampire-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "vampire",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "VAMPIRE"
+    ],
+    "hair": [
+      "silver-gray",
+      "银灰长发",
+      "黑丝带低马尾"
+    ],
+    "eyes": [
+      "dark-red",
+      "深红细瞳"
+    ],
+    "outfit": [
+      "黑天鹅绒长大衣",
+      "深红丝领衬",
+      "双排黑金属扣",
+      "暗红金线刺绣",
+      "酒红丝马甲",
+      "白衬衫",
+      "黑丝领巾",
+      "黑红长披风",
+      "黑修身裤",
+      "黑高筒皮靴"
+    ],
+    "equipment": [
+      "黑细长手杖",
+      "银蝙蝠翼杖头",
+      "杖剑接缝",
+      "左掌暗红雾",
+      "少量细小蝙蝠",
+      "银怀表链",
+      "红宝石领针",
+      "红宝石银印章戒"
+    ],
+    "keywords": [
+      "成年男性外貌",
+      "吸血鬼",
+      "血族",
+      "高挑修长",
+      "宽肩窄腰",
+      "冷白肤色",
+      "俊美冷峻",
+      "锋利下颌",
+      "深红细瞳",
+      "轻露尖犬齿",
+      "银灰长发",
+      "黑丝带低马尾",
+      "垂下鬓发",
+      "右手握黑手杖",
+      "银蝙蝠翼杖头",
+      "隐藏杖剑接缝",
+      "左掌局部红雾",
+      "少量蝙蝠剪影",
+      "黑天鹅绒长衣",
+      "高立领",
+      "深红丝内衬",
+      "双排黑金属扣",
+      "金线暗红衣绣",
+      "酒红丝马甲",
+      "白挺括衬衫",
+      "黑丝领巾",
+      "红宝石领针",
+      "银怀表链",
+      "黑红长披风",
+      "黑羊皮手套",
+      "红宝石印章戒",
+      "银十字耳钉",
+      "完整黑高筒靴"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "framing": {
+      "stage": {
+        "--portrait-inset": "1% -6% -14% -14%",
+        "--portrait-wide-inset": "1% -6% -14% -14%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "240%",
+        "left": "-72%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-76%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-05",
+    "label": "赤潮女海盗船长",
+    "src": "/art/portraits-v8/05-red-tide-pirate-female-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "PIRATE_CAPTAIN",
+      "PIRATE",
+      "CAPTAIN"
+    ],
+    "hair": [
+      "dark-red",
+      "深红长卷发",
+      "细辫贝壳金币"
+    ],
+    "eyes": [
+      "sea-blue-green",
+      "海蓝绿色"
+    ],
+    "outfit": [
+      "金边黑三角帽",
+      "红羽毛",
+      "深红呢绒长外套",
+      "金绣锚与波浪",
+      "奶白宽袖亚麻衬衫",
+      "交叉黑皮背带",
+      "金织锦腰带",
+      "深棕皮裤",
+      "黑翻口长靴"
+    ],
+    "equipment": [
+      "右手海盗弯刀",
+      "打开黄铜指南针",
+      "两把腰胸燧发枪",
+      "腰间匕首",
+      "小皮袋",
+      "红宝石金戒",
+      "大金环耳环",
+      "骷髅金币吊坠"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "海盗船长",
+      "高挑健美",
+      "蜜色肤色",
+      "鼻颊雀斑",
+      "鼻梁浅旧疤",
+      "海蓝绿眼",
+      "张扬笑容",
+      "深红长卷发",
+      "细辫贝壳金币",
+      "黑色三角帽",
+      "金线帽边",
+      "红色长羽毛",
+      "右手竖握弯刀",
+      "刀尖朝上",
+      "左手托打开指南针",
+      "黄铜指南针",
+      "深红呢绒外套",
+      "金线锚波浪纹",
+      "盐水深痕",
+      "奶白宽袖亚麻",
+      "交叉黑皮背带",
+      "两把燧发手枪",
+      "金织锦腰带",
+      "腰间匕首",
+      "小皮袋",
+      "深棕皮裤",
+      "黑翻口长靴",
+      "棕剪指皮手套",
+      "红宝石金戒",
+      "大金圆耳环",
+      "骷髅金币项坠",
+      "少量局部水珠",
+      "完整双靴"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "PIRATE_CAPTAIN",
+        "PIRATE"
+      ],
+      "keywords": [
+        "三角帽",
+        "燧发",
+        "海盗",
+        "tricorn",
+        "flintlock"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "2% -5% -12% -13%",
+        "--portrait-wide-inset": "2% -5% -12% -13%",
+        "--portrait-mobile-inset": "2% -2% -112% 27%"
+      },
+      "thumbnail": {
+        "width": "240%",
+        "left": "-72%",
+        "top": "-1px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-76%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-06",
+    "label": "黑潮男海盗船长",
+    "src": "/art/portraits-v8/06-black-tide-pirate-male-transparent.png",
+    "gender": "male",
+    "ages": [
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "WESTERN"
+    ],
+    "roles": [
+      "PIRATE_CAPTAIN",
+      "PIRATE",
+      "CAPTAIN"
+    ],
+    "hair": [
+      "black-gray",
+      "花白黑长发",
+      "两辫黑长胡须"
+    ],
+    "eyes": [
+      "dark-brown",
+      "右眼深棕",
+      "左眼眼罩"
+    ],
+    "outfit": [
+      "红头巾",
+      "银边黑三角帽",
+      "深海蓝呢绒外套",
+      "金滚边翻领袖口",
+      "深灰丝马甲",
+      "白敞领衬衫",
+      "双层宽皮带",
+      "深棕粗布裤",
+      "宽翻口黑长靴"
+    ],
+    "equipment": [
+      "左眼黑眼罩",
+      "右手雕银燧发手枪",
+      "左手黄铜折叠望远镜",
+      "腰挂弯刀",
+      "钥匙串",
+      "火药角",
+      "骷髅黄铜带扣",
+      "金粗链",
+      "蓝宝石戒指"
+    ],
+    "keywords": [
+      "成年男性",
+      "四十多岁",
+      "人类",
+      "海盗船长",
+      "魁梧结实",
+      "深古铜肤色",
+      "风霜皱纹",
+      "左眼黑眼罩",
+      "眼罩斜带",
+      "眼罩下旧疤",
+      "右眼深棕",
+      "黑灰长胡须",
+      "胡须分两辫",
+      "辫尾小金环",
+      "黑色长发",
+      "红头巾",
+      "银边黑三角帽",
+      "右手枪口朝上",
+      "雕银燧发手枪",
+      "左手垂握望远镜",
+      "黄铜折叠望远镜",
+      "深海蓝长外套",
+      "金滚边",
+      "补丁磨损",
+      "肩部火药焦痕",
+      "深灰丝马甲",
+      "白敞领衬衫",
+      "胸前旧疤金链",
+      "双层宽皮带",
+      "腰挂弯刀钥匙",
+      "火药角",
+      "骷髅黄铜扣",
+      "粗重金耳环",
+      "红布腕带",
+      "完整翻口黑靴"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "PIRATE_CAPTAIN",
+        "PIRATE"
+      ],
+      "keywords": [
+        "三角帽",
+        "燧发",
+        "海盗",
+        "tricorn",
+        "flintlock"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "3% -4% -11% -12%",
+        "--portrait-wide-inset": "3% -4% -11% -12%",
+        "--portrait-mobile-inset": "2% -2% -112% 27%"
+      },
+      "thumbnail": {
+        "width": "235%",
+        "left": "-77%",
+        "top": "-1px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-76%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-07",
+    "label": "寒梅白衣女侠",
+    "src": "/art/portraits-v8/07-cold-plum-swordswoman-transparent.png",
+    "gender": "female",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "EASTERN"
+    ],
+    "roles": [
+      "SWORDSMAN",
+      "WARRIOR",
+      "RANGER"
+    ],
+    "hair": [
+      "black",
+      "乌黑及腰长发",
+      "白玉簪半髻",
+      "素白发带"
+    ],
+    "eyes": [
+      "ink-black",
+      "深墨色"
+    ],
+    "outfit": [
+      "素白轻纱广袖长衫",
+      "冰蓝滚边",
+      "银线梅枝刺绣",
+      "灰蓝交领襦衫",
+      "白多层轻纱长裙",
+      "墨蓝腰封",
+      "浅灰银梅绣鞋"
+    ],
+    "equipment": [
+      "右手细长剑尖朝下",
+      "左手剑指",
+      "白玉簪",
+      "白玉佩",
+      "流苏香囊",
+      "白玉镯",
+      "浅蓝剑柄绳",
+      "白剑穗蓝琉璃珠",
+      "墨木银云剑鞘"
+    ],
+    "keywords": [
+      "成年女性",
+      "人类",
+      "东方武侠",
+      "女侠剑客",
+      "高挑清瘦",
+      "清冷秀丽",
+      "白皙肤色",
+      "深墨细长眼",
+      "淡梅红嘴唇",
+      "眼尾淡红晕",
+      "乌黑及腰长发",
+      "半束发髻",
+      "白玉发簪",
+      "素白发带",
+      "细碎刘海",
+      "少量雪花梅瓣",
+      "右手剑尖朝下",
+      "左手双指剑指",
+      "素白轻纱广袖",
+      "浅冰蓝滚边",
+      "银线梅枝梅花",
+      "灰蓝交领襦衫",
+      "白多层纱裙",
+      "墨蓝腰封",
+      "白玉佩",
+      "流苏香囊",
+      "白玉腕镯",
+      "浅蓝剑柄缠绳",
+      "白流苏蓝琉璃珠",
+      "深墨木剑鞘",
+      "银云纹鞘饰",
+      "完整浅灰绣鞋"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "SWORDSMAN"
+      ],
+      "keywords": [
+        "长剑",
+        "直刃剑",
+        "剑鞘",
+        "佩剑",
+        "女侠",
+        "剑客"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "2% -4% -11% -14%",
+        "--portrait-wide-inset": "2% -4% -11% -14%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "245%",
+        "left": "-68%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-65%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  },
+  {
+    "key": "P261027E-08",
+    "label": "孤鸿墨衣剑客",
+    "src": "/art/portraits-v8/08-lone-swan-swordsman-transparent.png",
+    "gender": "male",
+    "ages": [
+      "YOUNG",
+      "ADULT"
+    ],
+    "species": "human",
+    "cultures": [
+      "EASTERN"
+    ],
+    "roles": [
+      "SWORDSMAN",
+      "WARRIOR",
+      "RANGER"
+    ],
+    "hair": [
+      "black",
+      "黑长发半束高髻",
+      "深青发带"
+    ],
+    "eyes": [
+      "black",
+      "深黑"
+    ],
+    "outfit": [
+      "墨绿宽袖长袍",
+      "深色暗纹刺绣",
+      "黑丝内衬",
+      "黑劲装",
+      "深灰交领短衫",
+      "黑皮束腰",
+      "黑束脚裤",
+      "深灰绑腿",
+      "黑布软底长靴"
+    ],
+    "equipment": [
+      "右手直刃长剑尖朝下",
+      "圆铜剑格",
+      "黑皮剑柄绳",
+      "青丝剑穗",
+      "青玉佩",
+      "旧皮囊",
+      "斜背银云纹剑鞘",
+      "黑玉牌",
+      "旧白腕布"
+    ],
+    "keywords": [
+      "成年男性",
+      "人类",
+      "东方武侠",
+      "浪客剑客",
+      "高挑精瘦",
+      "宽肩窄腰",
+      "浅麦肤色",
+      "俊朗轮廓",
+      "淡青胡茬",
+      "斜飞浓眉",
+      "深黑眼",
+      "黑长发半束",
+      "深青发带高髻",
+      "长发披肩背",
+      "右手垂持直剑",
+      "剑尖朝下",
+      "局部细银剑光",
+      "左手背后",
+      "墨绿宽袖长袍",
+      "粗丝衣料",
+      "深色暗绣",
+      "黑丝内衬",
+      "深灰交领短衫",
+      "黑皮束腰",
+      "青玉佩",
+      "旧小皮囊",
+      "黑束脚长裤",
+      "深灰绑腿",
+      "黑布软底靴",
+      "斜背银云纹剑鞘",
+      "青色剑穗",
+      "半指皮护腕",
+      "铜钉旧茧",
+      "黑玉牌",
+      "旧白布腕带",
+      "少量青竹叶"
+    ],
+    "composition": "single-character",
+    "cinematic": true,
+    "approved": true,
+    "background": "transparent",
+    "selection": {
+      "roles": [
+        "SWORDSMAN"
+      ],
+      "keywords": [
+        "长剑",
+        "直刃剑",
+        "剑鞘",
+        "佩剑",
+        "女侠",
+        "剑客"
+      ]
+    },
+    "framing": {
+      "stage": {
+        "--portrait-inset": "2% -4% -11% -14%",
+        "--portrait-wide-inset": "2% -4% -11% -14%",
+        "--portrait-mobile-inset": "1% 0% -116% 29%"
+      },
+      "thumbnail": {
+        "width": "245%",
+        "left": "-65%",
+        "top": "-2px",
+        "height": "auto",
+        "maxWidth": "none"
+      },
+      "card": {
+        "inset": "auto",
+        "left": "-65%",
+        "top": "-3px",
+        "bottom": "auto",
+        "width": "250%",
+        "height": "auto",
+        "objectFit": "contain",
+        "objectPosition": "50% 0"
+      }
+    }
+  }
+]

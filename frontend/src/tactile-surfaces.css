@@ -1,0 +1,83 @@
+/* Paper signatures: selected ink, folded light, and restrained cast shadows. */
+body.refraction-theme{--surface-ink:#284c6e;--surface-line:#9eb2c4;--surface-paper:#faf9f2;--surface-cut:#f6f4ee}
+.selection-track{isolation:isolate}
+.selection-ribbon{display:block;position:absolute;left:0;top:0;z-index:0;pointer-events:none;visibility:hidden;box-sizing:border-box;border:1px solid #a6bbcc;background:linear-gradient(112deg,#dce7f0,#edf1ef 76%);box-shadow:2px 3px 0 -1px #acbecd42,inset 0 1px #fff;clip-path:polygon(0 0,calc(100% - 9px) 0,100% 9px,100% 100%,0 100%)}
+.selection-ribbon.has-selection{visibility:visible}
+.selection-ribbon.ink-positioned{transition:transform 260ms var(--motion-arrive),width 260ms var(--motion-arrive),height 260ms var(--motion-arrive)}
+.selection-ribbon .selection-bevel{position:absolute;inset:3px;border:1px solid #fdfefa9c;pointer-events:none}
+.selection-ribbon .selection-pin{position:absolute;left:0;top:0;bottom:0;width:2px;background:#375f84}
+body.refraction-theme .el-overlay :is(.illuminated-profile .profile-tabs,.illuminated-book .book-directory .book-actions,.engraved-formula .formula-tabs){position:relative;isolation:isolate}
+body.refraction-theme .el-overlay :is(.illuminated-profile .profile-tabs,.illuminated-book .book-directory .book-actions,.engraved-formula .formula-tabs)>button{z-index:1;position:relative;background:transparent!important;transition:color 160ms,border-color 160ms,translate 120ms}
+body.refraction-theme .el-overlay :is(.illuminated-profile .profile-tabs,.illuminated-book .book-directory .book-actions,.engraved-formula .formula-tabs)>button[aria-pressed=true]{background:transparent!important;color:#23496c!important;box-shadow:none!important;font-weight:600!important}
+body.refraction-theme .el-overlay .illuminated-profile .profile-tabs>button[aria-pressed=true]::before{content:'◆';color:#375f84;font-size:8px}
+body.refraction-theme .el-overlay .illuminated-profile .profile-tabs>button[aria-pressed=true]::after{content:none!important}
+body.refraction-theme .el-overlay .illuminated-book .book-directory .book-actions>button[aria-pressed=true]{border-bottom-color:transparent!important}
+body.refraction-theme .el-overlay .engraved-formula .formula-tabs>button[aria-pressed=true]{border-color:transparent!important}
+body.refraction-theme .el-overlay .illuminated-profile .profile-tabs>button{padding-left:12px!important}
+body.refraction-theme .el-overlay .illuminated-book .book-directory .book-actions>button{padding-left:9px;padding-right:9px}
+/* Keep the desktop profile directory anchored while its paper tab moves. */
+@media(min-width:651px){body.refraction-theme .el-overlay .illuminated-profile .profile-tabs{position:sticky}}
+
+.tactile-surface{position:relative;isolation:isolate;--paper-shadow-x:4px;--paper-shadow-y:7px;--paper-fold-size:27px}
+.paper-finish{display:block;position:absolute;inset:0;z-index:auto;pointer-events:none;overflow:hidden}
+.paper-glaze{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at var(--paper-light-x,65%) var(--paper-light-y,25%),#ffffff6b,transparent 58%);opacity:0;transition:opacity 260ms var(--motion-settle);pointer-events:none}
+.paper-fold{position:absolute;right:-1px;top:-1px;z-index:3;width:var(--paper-fold-size);height:var(--paper-fold-size);overflow:visible;pointer-events:none}
+.tactile-surface.save-card>:is(.save-card-heading,h3,p,.el-button),.tactile-surface.relic-detail>:is(header,p,section,button),.tactile-surface.talent-contract .talent-contract-copy{position:relative;z-index:1}
+.fold-void{fill:var(--fold-underlay,var(--surface-cut));stroke:var(--fold-underlay,var(--surface-cut));stroke-width:2}
+.fold-shadow{fill:#203d5a29;transform:translate(-1px,2px);transform-origin:0 0}
+.fold-leaf{transform:rotate(var(--paper-fold-angle,0deg));transform-origin:0 0;transition:transform 280ms var(--motion-settle)}
+.fold-edge{fill:none;stroke:#fdfef6c4;stroke-width:1.3}
+body.refraction-theme .el-overlay .engraved-archive .save-card{--fold-underlay:#f6f4ee;box-shadow:var(--paper-shadow-x) var(--paper-shadow-y) 0 -1px #cfdae3a6,calc(var(--paper-shadow-x) + 3px) calc(var(--paper-shadow-y) + 6px) 21px #1e3e5c10!important;transition:translate 220ms var(--motion-arrive),box-shadow 220ms var(--motion-settle),border-color 160ms}
+body.refraction-theme .el-overlay .engraved-archive .save-card:focus-within{border-color:#607f9d;box-shadow:3px 5px 0 -1px #c4d4e0,6px 11px 22px #1e3e5c17!important}
+body.refraction-theme .el-overlay .engraved-archive .save-card.save-resuming{border-color:#315bd8;box-shadow:inset 0 -2px #315bd8,4px 7px 0 -1px #cbd9e5!important}
+body.refraction-theme .el-overlay .engraved-archive .save-card.save-resuming .save-number{color:#315bd8!important}
+body.refraction-theme .el-overlay .illuminated-profile .relic-detail{--fold-underlay:#f7f5ee;--paper-fold-size:32px;border-color:#acbdcc!important;box-shadow:4px 7px 0 -1px #d7e0e677,9px 14px 28px #1e3e5c0d!important}
+body.refraction-theme .creation-edition .talent-contract{--fold-underlay:#f4f3ef;--paper-fold-size:32px;position:relative;isolation:isolate}
+body.refraction-theme .creation-edition .talent-contract.talent-selected{border-color:#456b92!important;box-shadow:inset 0 -3px #375c84,5px 8px 0 -1px #c5d5e2,9px 14px 25px #18395b18!important}
+body.refraction-theme .creation-edition .talent-selected .talent-contract-copy footer{color:#274d74;font-weight:600}
+body.refraction-theme .creation-edition .talent-selected .talent-contract-copy footer i{background:#365d85;color:#fffdf3;width:23px;height:23px;display:grid;place-items:center;font-size:13px;clip-path:polygon(0 0,80% 0,100% 20%,100% 100%,0 100%)}
+
+/* Item selection is a physical edge and an ink stamp, not a hovering glow. */
+body.refraction-theme .el-overlay .illuminated-profile .relic-tile{transition:background-color 160ms,border-color 160ms,box-shadow 200ms}
+body.refraction-theme .el-overlay .illuminated-profile .relic-tile[aria-pressed=true]{background:linear-gradient(110deg,#dfe9f0,#f2f3ec)!important;border-color:#7897b2!important;box-shadow:inset 3px 0 #355c82,inset 0 0 0 3px #fff9,2px 3px 0 #bed0df42!important}
+body.refraction-theme .el-overlay .illuminated-profile .relic-tile[aria-pressed=true]>.relic-glyph{color:#365f86}
+body.refraction-theme .el-overlay .illuminated-book .book-entry.entry-in-focus{background:linear-gradient(90deg,#dce8f15e,#fbfcfa 85%)!important;border-color:#8ca6be!important;box-shadow:inset 3px 0 #668aaa,inset 0 1px #e6edf2!important}
+body.refraction-theme .el-overlay .illuminated-book .book-entry.entry-in-focus .entry-leaf-number{color:#315b83}
+body.refraction-theme .el-overlay .illuminated-book .book-entry-index button[aria-pressed=true]{background:#e1eaf0!important;border-bottom-color:#456b93!important;color:#2e557a!important;font-weight:600;box-shadow:inset 0 -1px #8ca8bd}
+
+/* Static engraving remains readable; movement happens in the material layers. */
+body.refraction-theme :is(.entry-field,.book-search input,.book-search select,.collection-tools input,.collection-tools select):focus-within{outline:1px solid #6d8dab;outline-offset:2px}
+body.refraction-theme :is(.profile-tabs,.book-actions,.formula-tabs,.collection-filters,.stage-cast-list,.music-track-list) button:focus-visible{outline:2px solid #476f98!important;outline-offset:3px}
+body.refraction-theme .music-track-list button[aria-current=true]{background:linear-gradient(90deg,#dce8f2,#eef1ed)!important;border-left:2px solid #456d93;border-radius:0;box-shadow:inset 0 1px #fff8}
+body.refraction-theme .stage-cast-list button[aria-pressed=true]{box-shadow:inset 2px 0 #9abbdc;background:linear-gradient(90deg,#b6cfea21,transparent)}
+body.refraction-theme .el-overlay .illuminated-profile .collection-filters button[aria-pressed=true]{border-color:#58758f!important;background:#334f6e!important;color:#fbfbf3!important;box-shadow:inset 0 1px #c2d7e44d,1px 2px 0 #b9cbd852;clip-path:polygon(0 0,calc(100% - 4px) 0,100% 4px,100% 100%,0 100%)}
+/* The approved blue cut plane gains a lit edge and a dark folded face. */
+body.refraction-theme .refraction-stage .refraction-plane::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(112deg,#0d264120 28%,transparent 39%,#061c3e38 45%,#c7dfff4d 48%,#eff6ff17 49%,transparent 54%);opacity:.65;transform:translateX(calc(var(--stage-x,0px)*1.2));transition:transform 650ms var(--motion-settle),opacity 450ms}
+body.refraction-theme .refraction-stage .hero-seams::before{background:linear-gradient(90deg,#b3c9e077,#e2eef6b3 55%,#8da9ce55);box-shadow:0 3px 0 #071b3226}
+body.refraction-theme .refraction-stage .hero-seams::after{box-shadow:0 1px 0 #d6e6f33d}
+
+@media(hover:hover) and (pointer:fine){
+ body.refraction-theme .tactile-surface.paper-lit .paper-glaze,body.refraction-theme .tactile-surface:hover .paper-glaze{opacity:.42}
+ body.refraction-theme .el-overlay .engraved-archive .save-card:hover{translate:0 -2px;box-shadow:var(--paper-shadow-x) var(--paper-shadow-y) 0 -1px #c6d5e0b3,calc(var(--paper-shadow-x) + 3px) calc(var(--paper-shadow-y) + 6px) 24px #1636571c!important}
+ body.refraction-theme .el-overlay .illuminated-profile .relic-tile:hover:not([aria-pressed=true]){border-color:#88a2b8!important;background:#f0f2ec!important;box-shadow:2px 3px 0 #bacddc38!important}
+ body.refraction-theme .el-overlay :is(.profile-tabs,.book-directory .book-actions,.formula-tabs)>button:hover:not([aria-pressed=true]){color:#284f73!important;box-shadow:inset 0 -1px #a1b7c9!important}
+ body.refraction-theme .entry-tabs button:hover:not([aria-pressed=true]){color:#375d83!important}
+ body.refraction-theme .folio-home .journey-card:hover:not(:disabled) .card-kicker{letter-spacing:3px;color:#375b80}
+ body.refraction-theme .folio-home .journey-card .card-kicker{transition:letter-spacing 240ms var(--motion-settle),color 160ms}
+}
+@media(max-width:650px){
+ .selection-ribbon{clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,0 100%)}
+ .selection-ribbon .selection-pin{left:0;right:0;top:auto;bottom:0;width:auto;height:2px}
+ body.refraction-theme .el-overlay .illuminated-profile .profile-tabs>button{padding-left:5px!important;padding-right:5px!important}
+ body.refraction-theme .el-overlay .illuminated-book .book-directory .book-actions>button{padding-inline:5px}
+ .tactile-surface{--paper-fold-size:23px}
+ body.refraction-theme .el-overlay .illuminated-profile .relic-detail{--paper-fold-size:26px}
+ body.refraction-theme .creation-edition .talent-contract{--paper-fold-size:27px}
+}
+@media(prefers-reduced-motion:reduce){
+ .selection-ribbon.ink-positioned,.fold-leaf,.paper-glaze{transition:none!important}
+ body.refraction-theme .tactile-surface{translate:none!important;transition:none!important}
+ .paper-glaze{display:none}
+ body.refraction-theme .folio-home .journey-card .card-kicker{transition:none!important}
+ body.refraction-theme .refraction-stage .refraction-plane::after{transform:none;transition:none}
+}

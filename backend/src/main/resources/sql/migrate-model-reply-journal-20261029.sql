@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS model_reply_journal (
+ session_id VARCHAR(64) NOT NULL,
+ stage VARCHAR(32) NOT NULL,
+ source_hash CHAR(64) NOT NULL,
+ original_response LONGTEXT NOT NULL,
+ latest_response LONGTEXT NOT NULL,
+ issue VARCHAR(1200) NOT NULL DEFAULT '',
+ repair_count INT NOT NULL DEFAULT 0,
+ updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY(session_id,stage,source_hash)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

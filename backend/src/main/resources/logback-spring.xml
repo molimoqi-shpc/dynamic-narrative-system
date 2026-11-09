@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 结构化 JSON 日志（毕设级：每行一条 JSON，便于 ELK / 论文分析） -->
+    <appender name="CONSOLE_JSON" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>Asia/Shanghai</timeZone>
+                </timestamp>
+                <logLevel/>
+                <loggerName/>
+                <threadName/>
+                <message/>
+                <stackTrace/>
+                <context/>
+            </providers>
+        </encoder>
+    </appender>
+
+    <!-- LLM Token 日志单独走一个 appender（控制台打印人类可读格式） -->
+    <appender name="TOKEN_LOG" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- LLM Token 日志用人类可读格式，便于控制台直接看 -->
+    <logger name="LLM-TOKEN-LOG" level="INFO" additivity="false">
+        <appender-ref ref="TOKEN_LOG"/>
+    </logger>
+
+    <!-- 根日志走 JSON -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE_JSON"/>
+    </root>
+
+    <!-- 降低 Hibernate / Spring 日志噪音 -->
+    <logger name="org.hibernate.SQL" level="WARN"/>
+    <logger name="org.springframework" level="INFO"/>
+</configuration>
