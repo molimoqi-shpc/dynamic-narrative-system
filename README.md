@@ -4,7 +4,27 @@
 
 前端 Vue 3 + Vite + Element Plus，后端 Spring Boot 3.3 + Java 17 + JPA + MySQL，模型层兼容 OpenAI 协议的 DeepSeek 通道。
 
-![界面预览](docs/design-reference/20261030-story-stage-target.png)
+![故事舞台](docs/screenshots/05-stage.png)
+
+## 界面预览
+
+| 首页 · 入梦 | 故事舞台 |
+|---|---|
+| ![首页](docs/screenshots/01-home.png) | ![故事舞台](docs/screenshots/05-stage.png) |
+
+| 命谱 · 六维 | 旧梦 · 存档 |
+|---|---|
+| ![命谱](docs/screenshots/06-character-panel.png) | ![存档](docs/screenshots/04-archive.png) |
+
+| 众生留影 · 图鉴 | 阅读偏好 |
+|---|---|
+| ![图鉴](docs/screenshots/02-portrait-atlas.png) | ![阅读偏好](docs/screenshots/07-reading-settings.png) |
+
+| 配乐 | 主模型选择 |
+|---|---|
+| ![配乐](docs/screenshots/08-music-player.png) | ![模型选择](docs/screenshots/09-model-select.png) |
+
+> 截图取自实际运行的主舞台（`/play`），非设计稿。
 
 ## 功能特性
 
