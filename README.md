@@ -173,3 +173,10 @@ npm run build
 
 - 本仓库不包含任何 API Key、数据库密码或论文正文。
 - 代码与文档仅用于学习与交流，版权归作者所有。
+
+## 许可协议
+
+本项目采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 许可协议：
+**禁止商业使用**，转载或改编须署名作者并以相同协议共享。详见 [LICENSE](LICENSE)。
+
+第三方美术素材、音乐与字体的版权归各自权利人所有，不在上述授权范围内。
